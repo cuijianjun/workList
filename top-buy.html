@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<style><!--
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.tok_top {
+  z-index: 1;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: #000;
+  margin-top:15px;
+}
+
+.tok_top .top_word {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.tok_top .top_word .word_left {
+  float: left;
+  color: #a6a6a6;
+}
+
+.tok_top .top_word .word_right {
+  float: right;
+  width: 123px;
+  height: 30px;
+}
+
+.tok_top .top_word .right0 {
+  color: #949494;
+}
+
+.tok_top .top_word .right1 {
+  color: #4b4a4a;
+}
+
+.tok_top .top_word .right2 {
+  background: #019bff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.tok_top .top_word .right2 a {
+  color: #fff;
+}
+
+.tok {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.word_btn {
+  width: 240px;
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word_btn .btn_span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #71717a;
+  margin-right: 30px;
+}
+
+.word_btn .btn_span:hover {
+  cursor: pointer;
+}
+
+.tok_detail {
+  background: #fff;
+}
+
+.detail_main {
+  width: 1200px;
+  margin: 0 auto;
+  color: #4c4849;
+}
+
+.detail_main .main_tok .main_span {
+  display: inline-block;
+  width: 350px;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+
+.detail_main .main_tok .main_word {
+  display: inline-block;
+  width: 840px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.detail_main .main_two .word_two {
+  box-sizing: content-box;
+  height: 430px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/size.png?5658618421159846973') center no-repeat;
+  background-size: contain;
+}
+
+.word_fourteen {
+  box-sizing: content-box;
+  height: 1120px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/detail.png?5658618421159846973') center no-repeat;
+  background-size: contain;
+}
+
+.word_fifteen {
+  box-sizing: content-box;
+  height: 195px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/table.png?5658618421159846973') center no-repeat;
+  background-size: contain;
+}
+
+.main_nineteen {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 70px;
+}
+
+.tok_eleven {
+  height: 130px;
+  background: #7829a2;
+}
+
+.tok_eleven ul {
+  width: 1200px;
+  height: 74px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.tok_eleven ul li {
+  height: 74px;
+  line-height: 74px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+}
+
+.tok_eleven ul li img {
+  width: 74px;
+  height: 74px;
+  margin-right: 20px;
+}
+
+.tok_up {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 50px;
+  right: 55px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tok_up:hover {
+  cursor: pointer;
+  background: #fff;
+}
+
+.tok_one {
+  height: 830px;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.tok_one .one_main {
+  position: relative;
+  width: 1200px;
+  height: 830px;
+  margin: 50px auto;
+}
+
+.tok_one .one_main .main_left {
+  position: absolute;
+  left: 0;
+  width: 580px;
+  height: 830px;
+}
+
+.tok_one .one_main .main_left .tok_img {
+  width: 512px;
+  height: 512px;
+  margin: 0 auto;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/tok_blank.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+
+.tok_one .one_main .main_left .tok_select {
+  margin: 0 auto;
+}
+
+.tok_one .one_main .main_left .tok_select ul li {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/tok_small_228cdb13-a521-419b-a714-5418b58a1f89.png?5658618421159846973') center no-repeat;
+  background-size: contain;
+}
+
+.tok_one .one_main .main_left .tok_select ul li:hover {
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.tok_one .one_main .main_left .tok_select ul li:first-child {
+  border: 1px solid #eee;
+}
+
+.tok_one .one_main .main_right {
+  position: absolute;
+  right: 0;
+  width: 620px;
+  height: 830px;
+  margin-top: 50px;
+}
+
+.tok_one .one_main .main_right .right_title {
+  font-size: 32px;
+}
+
+.tok_one .one_main .main_right .right_detail {
+  font-size: 15px;
+  color: #a0a0a0;
+}
+
+.tok_one .one_main .main_right .right_price {
+  font-size: 30px;
+  color: #019bff;
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.tok_one .one_main .main_right .right_btn {
+  display: inline-block;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  color: #bebebe;
+  border-radius: 8px;
+  border: 1px solid #bebebe;
+}
+
+.tok_one .one_main .main_right .right_btn:hover {
+  color: #000;
+  border: 2px solid #019bff;
+  cursor: pointer;
+}
+
+.tok_one .one_main .main_right .btn {
+  color: #000;
+  display: inline-block;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #bebebe;
+}
+
+.tok_one .one_main .main_right .btn:hover {
+  color: #fff;
+  background: #019bff;
+  cursor: pointer;
+}
+
+.tok_one .one_main .main_right .right_count {
+  width: 156px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tok_one .one_main .main_right .right_count span {
+  text-align: center;
+  display: block;
+}
+
+.tok_one .one_main .main_right .right_count .count {
+  height: 50px;
+  width: 50px;
+  background: #f4f4f4;
+}
+.tok_one .one_main .main_right .right_count .count:hover{
+  cursor: pointer;
+}
+.tok_one .one_main .main_right .right_count .num {
+  height: 50px;
+  width: 50px;
+}
+
+.tok_one .one_main .main_right .logo_buy {
+  width: 360px;
+  height: 22px;
+  margin-top: 30px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/logo_buy.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+
+.pro {
+  width: 100%;
+  height: 550px;
+  background: #f7f8f9;
+  padding-top: 50px;
+}
+
+.pro_main {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.pro_detail {
+  margin-top: 33px;
+}
+
+.pro_detail ul {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pro_detail ul li {
+  width: 290px;
+  height: 400px;
+  background: #fff;
+}
+
+.pro_detail ul li:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 4px -4px #cdcece;
+}
+
+.pro_detail ul li .li_img {
+  width: 290px;
+  height: 230px;
+}
+.pro_detail ul li .li_first {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/tok.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+.pro_detail ul li .li_second {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/top.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+.pro_detail ul li .li_third {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/toh_e6bede7b-6045-4c45-901c-0436393f94aa.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+.pro_detail ul li .li_forth {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/parts.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+.pro_detail .buy_now{
+  margin:0 auto;
+  width: 180px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size:18px;
+  color:#000;
+  font-weight:bold;
+  margin-top:25px;
+}
+.pro_detail .buy_now:hover{
+  background: #019bff;
+  border-radius: 7px;
+  color:#fff;
+}
+--></style>
+<div class="tok_top">
+  <div class="top_word"><span class="word_left">Light Keyboard</span> <span class="word_right right2"> <a href="#">Buy Now</a> </span> <span class="word_right right1">Tech Specs</span> <span class="word_right right0">Overview</span></div>
+</div>
+<div class="tok_one tok">
+  <div class="one_main">
+    <div class="main_left" align="center">
+      <div class="tok_img"></div>
+      <div class="tok_select">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_right">
+      <p class="right_title">Light Keyboard</p>
+      <p class="right_detail">The ONE 61-key portable light keyboard, electronic midi keyboar</p>
+      <p class="right_price">USD 299</p>
+      <div style="display: flex; height: 115px; line-height: 115px; align-items: center;"><span style="display: inline-block; width: 100px; color: #666666;">Colour</span>
+        <div style="display: flex; width: 510px; border-bottom: 1px solid #dcdcdc; align-items: center; justify-content: space-between;"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_blank.png?5658618421159846973" alt="" width="40" height="40" /> <span style="vertical-align: top;">Onyx Black</span> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_gold.png?5658618421159846973" alt="" width="40" height="40" /> <span style="vertical-align: top;">White Gold</span> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_pink.png?5658618421159846973" alt="" width="40" height="40" /> <span style="vertical-align: top;">Sakura Pink</span></div>
+      </div>
+      <div style="display: flex; height: 115px; line-height: 115px; align-items: center;"><span style="display: inline-block; width: 100px; color: #666666;">Pack</span>
+        <div style="display: flex; width: 510px; height: 115px; border-bottom: 1px solid #dcdcdc; align-items: center; justify-content: space-between;"><span class="right_btn">Keyboard</span> <span class="right_btn">Standard Pack</span></div>
+      </div>
+      <div style="display: flex;"><span style="display: inline-block; width: 100px; color: #666666; margin-top: 45px;">QTY</span>
+        <div style="width: 510px;">
+          <div class="right_count"><span class="count" id="sub" style="border-right: 1px solid #bfbfbf;">-</span> <span class="num" id="num">1</span> <span class="count" id="add" style="border-left: 1px solid #bfbfbf;">+</span></div>
+          <span class="btn" style="margin-right: 40px;">Add to Cart</span> <span class="btn">Buy Now</span>
+          <p style="font-size: 12px; color: #9b9999; margin-top: 20px;">* Within 7 days after the order delivery.</p>
+          <div class="logo_buy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tok_detail tok">
+  <p style="font-size: 26px; border-bottom: 1px solid #dcdcdc; color: #4b4b4b; width: 1200px; margin: 0 auto; line-height: 120px;">Tech Specs</p>
+  <div class="detail_main">
+    <div class="main_tok main_one"><span class="main_span">Colour</span>
+      <div class="main_word"><span style="display: inline-block; width: 20px; height: 20px; background: #000; border-radius: 50%;"></span> <span style="display: inline-block; margin-right: 40px; vertical-align: top;">Onyx Black</span> <span style="display: inline-block; width: 20px; height: 20px; background: #e6d2bb; border-radius: 50%;"></span> <span style="display: inline-block; margin-right: 40px; vertical-align: top;">White Gold</span> <span style="display: inline-block; width: 20px; height: 20px; background: #f5b0ce; border-radius: 50%;"></span> <span style="display: inline-block; margin-right: 40px; vertical-align: top;">Sakura Pink</span></div>
+    </div>
+    <div class="main_tok main_two"><span class="main_span">Size</span>
+      <div class="main_word word_two"></div>
+    </div>
+    <div class="main_tok main_three"><span class="main_span">Weight</span>
+      <div class="main_word"><span>5kg</span></div>
+    </div>
+    <div class="main_tok main_four"><span class="main_span">Keyboard</span>
+      <div class="main_word"><span>61 non-weighted keys, standard piano keyboard texture</span></div>
+    </div>
+    <div class="main_tok main_five"><span class="main_span">Polyphony</span>
+      <div class="main_word"><span>128 Polyphony. Same note.</span></div>
+    </div>
+    <div class="main_tok main_six"><span class="main_span">Sound</span>
+      <div class="main_word"><span> 417 timbres, 16 folk instruments, 9 percussion sets, 603 drum sounds, 256 GM2 tones. <br /> When used alone, the piano preset with 20 instruments. </span></div>
+    </div>
+    <div class="main_tok main_seven"><span class="main_span">LED</span>
+      <div class="main_word"><span>61 red back-lit LEDs</span></div>
+    </div>
+    <div class="main_tok main_eight"><span class="main_span">Pedals</span>
+      <div class="main_word"><span>Note sustain function</span></div>
+    </div>
+    <div class="main_tok main_nine"><span class="main_span">Device / Connection</span>
+      <div class="main_word"><span> ios 9.0 + <br /> iPad 2/4, iPad mini, iPad mini 2, iPad Air, New iPad <br /> iPhone 4/4s/5/5c/6/6 plus/6s/6s plus/7/7 plus </span></div>
+    </div>
+    <div class="main_tok main_ten"><span class="main_span">Audio sockrt</span>
+      <div class="main_word"><span>One 1/8’’ headphone socket</span></div>
+    </div>
+    <div class="main_tok main_eleven"><span class="main_span">Mic socket</span>
+      <div class="main_word"><span>One 1/4’’ extemal microphone socket</span></div>
+    </div>
+    <div class="main_tok main_twive"><span class="main_span">Auxiliary input</span>
+      <div class="main_word"><span>One 1/4’’ auxiliary input socket</span></div>
+    </div>
+    <div class="main_tok main_thirteen"><span class="main_span">Auxiliary output</span>
+      <div class="main_word"><span>One 1/4’’ auxiliary output socket</span></div>
+    </div>
+    <div class="main_tok main_fourteen"><span class="main_span">Panel controls</span>
+      <div class="main_word word_fourteen"></div>
+    </div>
+    <div class="main_tok main_fifteen"><span class="main_span">Troubleshooting</span>
+      <div class="main_word word_fifteen"></div>
+    </div>
+    <div class="main_tok main_sixteen"><span class="main_span">Using Batteries</span>
+      <div class="main_word"><span>This instrument requires 6 “AA” size batteries.</span></div>
+    </div>
+    <div class="main_tok main_seventeen"><span class="main_span">Download</span>
+      <div class="main_word"><a>
+        <p style="color: #019bff; height: 26px;">The ONE Light Keyboard User Manual (English) <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;">PDF</span></p>
+      </a> <a href="#">
+        <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Light Keyboard User Manual (French) <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;">PDF</span></p>
+      </a> <a href="#">
+        <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Light Keyboard User Manual (Russian) <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;">PDF</span></p>
+      </a> <a href="#">
+        <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Light Keyboard User Manual (German) <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;">PDF</span></p>
+      </a></div>
+    </div>
+    <div class="main_tok main_eighteen"><span class="main_span">Product care</span>
+      <div class="main_word">
+        <p>1. To clean the device, use a soft and dry cloth.</p>
+        <p>2. Do not use paint thinners, solvents, cleaning fluids, or chemicals on the cloth.</p>
+        <p>3. Do not apply too much force on the On/Off button.</p>
+        <p>4. The piano is best stored in the following condition: 59-95 degrees fahrenheit, and a humidity level of 75%.</p>
+      </div>
+    </div>
+    <div class="main_tok main_nineteen"><span class="main_span">Components list</span>
+      <div class="main_word" style="border: none;"><span> Keyboard body <br /> DC 12V power cord <br /> User manual <br /> Data cables </span></div>
+    </div>
+    <p style="font-size: 12px; color: #a8a8a8; margin-top: 30px; margin-bottom: 30px;">Note: When specification are subject to change, refer to the actual product.</p>
+  </div>
+</div>
+<div class="pro">
+  <div class="pro_main">
+    <h2 style="display: block; font-size: 26px; border-left: 5px solid #792aa2; height: 35px; padding-left: 5px;">Recommend</h2>
+    <div class="pro_detail">
+      <ul>
+        <li align="center">
+          <div class="li_img li_first"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
+          <p style="font-size: 12px;"><a href="#" style="color: #019bff;">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_second"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
+          <p style="font-size: 12px;"><a href="#" style="color: #019bff;">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 1,499.99">$ 1,499.99</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_third"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
+          <p style="font-size: 12px;"><a href="#" style="color: #019bff;">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_forth"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
+          <p style="font-size: 12px;"><a href="#" style="color: #019bff;">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="tok_eleven tok">
+  <ul>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="" /> <span>Free Shipping</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="" /> <span>7-days Return</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="" /> <span>30-days Replacement</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="" /> <span>1-year Warranty</span></li>
+  </ul>
+</div>
+<div class="tok_up" id="tok_up"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/upup.png?5658618421159846973" width="12" height="11" alt="" /></div>
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?5658618421159846973"></script><script>// <![CDATA[
+$('#tok_up').click(function () {
+  if ($(window).scrollTop() > 100) {
+    $('body,html').animate({ scrollTop: 0 }, 1000);
+  }
+});
+$('.buy_now').mouseover(function(){
+  $(this).text('Add to Cart');
+});
+$('.buy_now').mouseout(function(){
+  $(this).text($(this).data('price'));
+});
+$('#add').click(function(){
+  var num = $('#num').text();
+  num++;
+  $('#num').text(num);
+})
+$('#sub').click(function(){
+  var num = $('#num').text();
+  num--;
+  if(num<0) num = 0;
+  $('#num').text(num);
+})
+$('.btn_span').mouseover(function () {
+  var temp_url = $(this).data('src');
+  var temp_col = $(this).data('col');
+  if (temp_col == '#71717a') {
+    $('.p_up').css('color', '#cacacc');
+  } else {
+    $('.p_up').css('color', '#4c4849');
+  }
+  $(this).css('border', '4px solid ' + temp_col).siblings().css('border', '1px solid #71717a');
+  $('.tok_one').css('backgroundImage', 'url(' + temp_url + ')')
+})
+// ]]></script>
+</body>
+</html>
