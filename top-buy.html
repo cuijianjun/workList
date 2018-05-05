@@ -10,11 +10,13 @@
       font-style: normal;
       font-size: 13px;
     }
+
     p {
       margin: 0 0 15px;
       font-style: normal;
       line-height: 1.6em;
     }
+
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -27,7 +29,7 @@
     article, aside, canvas, details, embed,
     figure, figcaption, footer, header,
     menu, nav, output, ruby, section, summary,
-    time, mark, audio, video, input{
+    time, mark, audio, video, input {
       margin: 0;
       padding: 0;
       border: 0;
@@ -36,84 +38,93 @@
       vertical-align: baseline;
     }
 
-      /* HTML5 display-role reset for older browsers */
+    /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure,
-    footer, header, menu, nav, section{
+    footer, header, menu, nav, section {
       display: block
     }
 
-    body
-    {
+    body {
       line-height: 1
     }
 
-    blockquote, q{
+    blockquote, q {
       quotes: none
     }
 
     blockquote:before, blockquote:after,
-    q:before, q:after{
+    q:before, q:after {
       content: none
     }
 
-    table{
+    table {
       border-collapse: collapse;
       border-spacing: 0
     }
 
     /* custom */
 
-    a{
+    a {
       color: #7e8c8d;
       -webkit-backface-visibility: hidden;
       text-decoration: none
     }
 
-    li{
+    li {
       list-style: none
     }
 
     /*截止*/
-    .splitLine{
+    .splitLine {
       height: 0;
       border-bottom: 1px solid #cccccc;
     }
-    .container{
+
+    .container {
       margin: 0 18%;
     }
-    .top{
+
+    .top {
       height: 900px;
     }
-    .top .left,.top .right{
+
+    .top .left, .top .right {
       width: 50%;
       float: left;
       margin-top: 100px;
     }
+
     html, body {
       position: relative;
       height: 100%;
     }
+
     body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      color:#000;
+      color: #000;
       margin: 0;
       padding: 0;
     }
+
     /*轮播图*/
     .swiper-container {
       height: 500px;
     }
-    .swiper-button-prev,.swiper-button-next{
+
+    .swiper-button-prev, .swiper-button-next {
       display: none;
     }
-    .swiper-container:hover .swiper-button-prev{
+
+    .swiper-container:hover .swiper-button-prev {
       display: block;
     }
-    .swiper-container:hover .swiper-button-next{
+
+    .swiper-container:hover .swiper-button-next {
       display: block;
     }
+
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -133,21 +144,26 @@
       -webkit-align-items: center;
       align-items: center;
     }
-    .small{
+
+    .small {
       width: 500px;
       height: 80px;
       margin: 30px auto 0;
     }
-    .small .item{
+
+    .small .item {
       float: left;
       margin-left: 2px;
     }
-    .small .item img{
+
+    .small .item img {
       vertical-align: bottom;
     }
-    .small .item.active{
+
+    .small .item.active {
       border: 1px solid orangered;
     }
+
     /*头部右边*/
     .one_main .right .right_btn {
       display: inline-block;
@@ -160,14 +176,17 @@
       border-radius: 8px;
       border: 1px solid #bebebe;
     }
+
     .one_main .right .right_btn:hover {
       color: #000;
       border: 2px solid #019bff;
       cursor: pointer;
     }
-    .one_main .right .right_count .count:hover{
+
+    .one_main .right .right_count .count:hover {
       cursor: pointer;
     }
+
     .one_main .right .right_count {
       width: 156px;
       height: 50px;
@@ -179,15 +198,18 @@
       margin-top: 30px;
       margin-bottom: 30px;
     }
+
     .one_main .right .right_count .count {
       height: 50px;
       width: 50px;
       background: #f4f4f4;
     }
+
     .one_main .right .right_count span {
       text-align: center;
       display: block;
     }
+
     .one_main .right .btn {
       color: #000;
       display: inline-block;
@@ -205,6 +227,7 @@
       background: #019bff;
       cursor: pointer;
     }
+
     .one_main .right .logo_buy {
       width: 360px;
       height: 22px;
@@ -212,6 +235,7 @@
       background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/logo_buy.png?5658618421159846973') center no-repeat;
       background-size: cover;
     }
+
     .one_main .right .price {
       font-size: 30px;
       color: #019bff;
@@ -219,43 +243,52 @@
       line-height: 100px;
       border-bottom: 1px solid #dcdcdc;
     }
-     .one_main .right .title {
+
+    .one_main .right .title {
       font-size: 32px;
     }
 
-     .one_main .right .detail {
+    .one_main .right .detail {
       font-size: 15px;
-       margin-top: 10px;
+      margin-top: 10px;
       color: #a0a0a0;
     }
+
     /*tab页*/
-    .description .tabs{
+    .description .tabs {
       width: 100%;
     }
-    .description .tabs li{
+
+    .description .tabs li {
       display: inline-block;
       width: 24%;
       height: 31px;
       text-align: center;
       cursor: pointer;
     }
-    .description .tabs li.active{
+
+    .description .tabs li.active {
       color: #019bff;
-      border-bottom:2px solid #019bff;
+      border-bottom: 2px solid #019bff;
     }
-    .description .tabs-content li{
+
+    .description .tabs-content li {
       display: none;
+      border-top: 1px solid #dddddd;
     }
-    .description .tabs-content li.active{
+
+    .description .tabs-content li.active {
       display: block;
     }
+
     /*推荐页*/
     .pro {
       width: 100%;
       height: 550px;
-      background: #f7f8f9;
+      background: #ddd;
       padding-top: 50px;
     }
+
     .pro_main {
       width: 1200px;
       height: 600px;
@@ -265,6 +298,7 @@
     .pro_detail {
       margin-top: 33px;
     }
+
     .pro_detail ul {
       width: 1200px;
       display: flex;
@@ -287,43 +321,51 @@
       width: 290px;
       height: 230px;
     }
+
     .pro_detail ul li .li_first {
       background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/tok.png?5658618421159846973') center no-repeat;
       background-size: cover;
     }
+
     .pro_detail ul li .li_second {
       background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/top.png?5658618421159846973') center no-repeat;
       background-size: cover;
     }
+
     .pro_detail ul li .li_third {
       background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/toh_e6bede7b-6045-4c45-901c-0436393f94aa.png?5658618421159846973') center no-repeat;
       background-size: cover;
     }
+
     .pro_detail ul li .li_forth {
       background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/parts.png?5658618421159846973') center no-repeat;
       background-size: cover;
     }
-    .pro_detail .buy_now{
+
+    .pro_detail .buy_now {
       margin: 25px auto 0;
       width: 180px;
       height: 35px;
       text-align: center;
       line-height: 35px;
-      font-size:18px;
-      color:#000;
-      font-weight:bold;
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
     }
-    .pro_detail .buy_now:hover{
+
+    .pro_detail .buy_now:hover {
       background: #019bff;
       border-radius: 7px;
-      color:#fff;
+      color: #fff;
     }
+
     /*底部*/
     .tok {
       width: 100%;
       background-size: cover;
       overflow: hidden;
     }
+
     .tok_eleven {
       height: 130px;
       background: #7829a2;
@@ -350,7 +392,8 @@
       height: 74px;
       margin-right: 20px;
     }
-  /*向上滚动*/
+
+    /*向上滚动*/
     .tok_up {
       position: fixed;
       width: 48px;
@@ -369,184 +412,543 @@
       background: #fff;
     }
 
+    #tab1 > div.tab1-detail > .detail {
+      width: 48.5%;
+    }
+
+    #tab1 > div.tab1-detail > .detail span {
+      line-height: 20px;
+      display: inline-block;
+      margin-top: 22px;
+    }
+
+    .advantage .content .sure {
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      background: url("./imgThe/完成副本.png") 0 0 no-repeat;
+    }
+
+    #tab1 > div.keyBoard > div.tips > div.advantage > .content {
+      margin-top: 18px;
+      line-height: 22px;
+    }
+
+    #tab1 > div.piano-detail > .content {
+      background-color: #ddd;
+      width: 287px;
+    }
+
+    /*规格*/
+    .detail_main {
+      width: 1200px;
+      margin: 0 auto;
+      color: #4c4849;
+    }
+
+    .detail_main .main_tok .main_span {
+      display: inline-block;
+      width: 350px;
+      font-size: 18px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      vertical-align: top;
+    }
+
+    .detail_main .main_tok .main_word {
+      display: inline-block;
+      width: 840px;
+      border-bottom: 1px solid #dcdcdc;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .detail_main .main_two .word_two {
+      box-sizing: content-box;
+      height: 460px;
+      background: url(./imgThe/侧面.jpg) center no-repeat;
+      background-size: contain;
+      margin-top: 30px;
+      border: none;
+      margin-bottom: 70px;
+    }
+
+    .word_fourteen {
+      box-sizing: content-box;
+      height: 660px;
+      background: url('./imgThe/面板控制.jpg') center no-repeat;
+      background-size: contain;
+      margin-top: 30px;
+      border: none;
+    }
+
   </style>
 </head>
 <body>
-  <div class="container one_main">
-    <div class="top">
-      <div class="left">
-        <div class="swiper-container">
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" data-hash="slide1"><img src="./img/b1.jpg"></div>
-            <div class="swiper-slide" data-hash="slide2"><img src="./img/b2.jpg"></div>
-            <div class="swiper-slide" data-hash="slide3"><img src="./img/b3.jpg"></div>
-            <div class="swiper-slide" data-hash="slide4"><img src="./img/b4.jpg"></div>
-            <div class="swiper-slide" data-hash="slide5"><img src="./img/b5.jpg"></div>
-            <div class="swiper-slide" data-hash="slide6"><img src="./img/b6.jpg"></div>
-          </div>
-        </div>
-        <div class="small">
-          <div class="item active" data-index="1"><img src="./img/s1.jpg" alt=""></div>
-          <div class="item" data-index="2"><img src="./img/s2.jpg" alt=""></div>
-          <div class="item" data-index="3"><img src="./img/s3.jpg" alt=""></div>
-          <div class="item" data-index="4"><img src="./img/s4.jpg" alt=""></div>
-          <div class="item" data-index="5"><img src="./img/s5.jpg" alt=""></div>
+<div class="container one_main">
+  <div class="top">
+    <div class="left">
+      <div class="swiper-container">
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-hash="slide1"><img src="./img/b1.jpg"></div>
+          <div class="swiper-slide" data-hash="slide2"><img src="./img/b2.jpg"></div>
+          <div class="swiper-slide" data-hash="slide3"><img src="./img/b3.jpg"></div>
+          <div class="swiper-slide" data-hash="slide4"><img src="./img/b4.jpg"></div>
+          <div class="swiper-slide" data-hash="slide5"><img src="./img/b5.jpg"></div>
+          <div class="swiper-slide" data-hash="slide6"><img src="./img/b6.jpg"></div>
         </div>
       </div>
-      <div class="right">
-        <div class="title">
-          <span>SMART PIANO</span>
-          <span>***</span>
-        </div>
-        <div class="detail">The ONE smart piano,grand graded hammer-action keys upright piano</div>
-        <div class="price">
-          USD 299
-        </div>
-        <div class="splitLine"></div>
-        <div style="display: flex; height: 115px; line-height: 115px; align-items: center;">
-          <span style="display: inline-block; width: 100px; color: #666666;">Colour</span>
-          <div id="color" style="display: flex; width: 510px; border-bottom: 1px solid #dcdcdc; align-items: center; justify-content: space-between;">
-            <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
-              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_blank.png?5658618421159846973" alt="" width="40" height="40">
-              <span style="vertical-align: top;">Onyx Black</span>
-            </div>
-            <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
-              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_gold.png?5658618421159846973" alt="" width="40" height="40">
-              <span style="vertical-align: top;">White Gold</span>
-            </div>
-            <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
-              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_pink.png?5658618421159846973" alt="" width="40" height="40">
-              <span style="vertical-align: top;">Sakura Pink</span>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex; height: 200px; line-height: 160px; align-items: baseline;">
-          <span style="display: inline-block; width: 100px; color: #666666;">Pack</span>
-          <div class="pack_btn" style="border-bottom: 1px solid #dcdcdc;line-height: 30px;height: 170px;">
-            <div style="display: flex; width: 510px; height: 115px;align-items: center; justify-content: space-between;">
-              <span class="right_btn">Keyboard</span>
-              <span class="right_btn">Standard Pack</span>
-            </div>
-            <div class="tips">
-              <div class="keyboard">Standard Pack includes: Smart Piano + Piano Bench.</div>
-              <div class="standardPack" style="display: none">Standard Pack includes: Smart Piano</div>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex;">
-          <span style="display: inline-block; width: 100px; color: #666666; margin-top: 45px;">QTY</span>
-          <div style="width: 510px;">
-            <div class="right_count">
-              <span class="count" id="sub" style="border-right: 1px solid #bfbfbf;">-</span>
-              <span class="num" id="num">1</span>
-              <span class="count" id="add" style="border-left: 1px solid #bfbfbf;">+</span>
-            </div>
-            <span class="btn" style="margin-right: 40px;">Add to Cart</span>
-            <span class="btn">Buy Now</span>
-            <p style="font-size: 12px; color: #9b9999; margin-top: 20px;">* Within 7 days after the order delivery.</p>
-            <div class="logo_buy"></div>
-          </div>
-        </div>
+      <div class="small">
+        <div class="item active" data-index="1"><img src="./img/s1.jpg" alt=""></div>
+        <div class="item" data-index="2"><img src="./img/s2.jpg" alt=""></div>
+        <div class="item" data-index="3"><img src="./img/s3.jpg" alt=""></div>
+        <div class="item" data-index="4"><img src="./img/s4.jpg" alt=""></div>
+        <div class="item" data-index="5"><img src="./img/s5.jpg" alt=""></div>
       </div>
     </div>
-    <div class="section">
-      <div class="description">
-        <ul class="tabs">
-          <li class="active" data-tab-value="#tab1">
-            <a>Features</a>
-          </li>
-          <li data-tab-value="#tab2">
-            <a>Tech Specs</a>
-          </li>
-          <li data-tab-value="#tab3">
-            <a>Reviews</a>
-          </li>
-          <li data-tab-value="#tab4">
-            <a>FAQ‘s</a>
-          </li>
-        </ul>
-        <ul class="tabs-content">
-          <li id="tab1" class="active" style="position: relative;">
-            <div class="light-keyBoard" style="width: 100%;height: 500px;background-color: #019bff;">
-              <img src="#" alt="">
-            </div>
-            <div class="tips" style="width: 450px;height: 500px;background-color: green;position:absolute;right: 35px;bottom: -35px;">
-              <div class="small-tips" style="position: absolute;width: 83px;height: 8px;background-color: greenyellow;bottom: 0;right: 0;"></div>
-            </div>
-          </li>
-          <li id="tab2">2</li>
-          <li id="tab3">3</li>
-          <li id="tab4">4</li>
-        </ul>
+    <div class="right">
+      <div class="title">
+        <span>SMART PIANO</span>
+        <span>***</span>
       </div>
-    </div>
-    <div class="pro">
-      <div class="pro_main">
-        <h2 style="display: block; font-size: 26px; border-left: 5px solid #792aa2; height: 35px; padding-left: 5px;">Recommend</h2>
-        <div class="pro_detail">
-          <ul> <li align="center">
-            <div class="li_img li_first"></div>
-            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
-            <p style="font-size: 12px;">
-              <a href="#" style="color: #019bff;">Explore &gt;</a>
-            </p>
-            <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
-          </li>
-            <li align="center">
-              <div class="li_img li_second"></div>
-              <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
-              <p style="font-size: 12px;">
-                <a href="#" style="color: #019bff;">Explore &gt;</a>
-              </p>
-              <p class="buy_now" data-price="$ 1,499.99">$ 1,499.99</p>
-            </li>
-            <li align="center">
-              <div class="li_img li_third"></div>
-              <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
-              <p style="font-size: 12px;">
-                <a href="#" style="color: #019bff;">Explore &gt;</a>
-              </p>
-              <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
-            </li>
-            <li align="center">
-              <div class="li_img li_forth"></div>
-              <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
-              <p style="font-size: 12px;">
-                <a href="#" style="color: #019bff;">Explore &gt;</a>
-              </p>
-              <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
-            </li>
-          </ul>
+      <div class="detail">The ONE smart piano,grand graded hammer-action keys upright piano</div>
+      <div class="price">
+        USD 299
+      </div>
+      <div class="splitLine"></div>
+      <div style="display: flex; height: 115px; line-height: 115px; align-items: center;">
+        <span style="display: inline-block; width: 100px; color: #666666;">Colour</span>
+        <div id="color"
+             style="display: flex; width: 510px; border-bottom: 1px solid #dcdcdc; align-items: center; justify-content: space-between;">
+          <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
+            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_blank.png?5658618421159846973" alt=""
+                 width="40" height="40">
+            <span style="vertical-align: top;">Onyx Black</span>
+          </div>
+          <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
+            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_gold.png?5658618421159846973" alt=""
+                 width="40" height="40">
+            <span style="vertical-align: top;">White Gold</span>
+          </div>
+          <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
+            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_pink.png?5658618421159846973" alt=""
+                 width="40" height="40">
+            <span style="vertical-align: top;">Sakura Pink</span>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; height: 200px; line-height: 160px; align-items: baseline;">
+        <span style="display: inline-block; width: 100px; color: #666666;">Pack</span>
+        <div class="pack_btn" style="border-bottom: 1px solid #dcdcdc;line-height: 30px;height: 170px;">
+          <div style="display: flex; width: 510px; height: 115px;align-items: center; justify-content: space-between;">
+            <span class="right_btn">Keyboard</span>
+            <span class="right_btn">Standard Pack</span>
+          </div>
+          <div class="tips">
+            <div class="keyboard">Standard Pack includes: Smart Piano + Piano Bench.</div>
+            <div class="standardPack" style="display: none">Standard Pack includes: Smart Piano</div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <span style="display: inline-block; width: 100px; color: #666666; margin-top: 45px;">QTY</span>
+        <div style="width: 510px;">
+          <div class="right_count">
+            <span class="count" id="sub" style="border-right: 1px solid #bfbfbf;">-</span>
+            <span class="num" id="num">1</span>
+            <span class="count" id="add" style="border-left: 1px solid #bfbfbf;">+</span>
+          </div>
+          <span class="btn" style="margin-right: 40px;">Add to Cart</span>
+          <span class="btn">Buy Now</span>
+          <p style="font-size: 12px; color: #9b9999; margin-top: 20px;">* Within 7 days after the order delivery.</p>
+          <div class="logo_buy"></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="tok_eleven tok">
-    <ul>
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">
-        <span>Free Shipping</span>
-      </li>
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">
-        <span>7-days Return</span>
-      </li>
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">
-        <span>30-days Replacement</span>
-      </li>
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">
-        <span>1-year Warranty</span>
-      </li>
-    </ul>
+  <div class="section">
+    <div class="description">
+      <ul class="tabs">
+        <li class="active" data-tab-value="#tab1">
+          <a>Features</a>
+        </li>
+        <li data-tab-value="#tab2">
+          <a>Tech Specs</a>
+        </li>
+        <li data-tab-value="#tab3">
+          <a>Reviews</a>
+        </li>
+        <li data-tab-value="#tab4">
+          <a>FAQ‘s</a>
+        </li>
+      </ul>
+      <ul class="tabs-content">
+        <li id="tab1">
+          <div class="keyBoard" style="position: relative;">
+            <div class="light-keyBoard" style="width: 100%;height: 500px;">
+              <img src="./imgThe/5D3_6184－ok.png" alt="">
+            </div>
+            <div class="tips"
+                 style="width: 450px;height: 500px;background-color: #fff;position:absolute;right: 35px;bottom: -35px;box-shadow: 0 5px 4px #ddd;">
+              <div class="advantage" style="margin: 43px 50px;">
+                <div class="title" style="font-size: 28px;line-height: 36px;margin-bottom: 12px">
+                  Light Keyboard
+                </div>
+                <div class="content">
+                  <i class="sure"></i>
+                  <span class="detail-content" style="vertical-align: super">Guided by LED Lights to start playing in minutes</span>
+                </div>
+                <div class="content">
+                  <i class="sure"></i>
+                  <span class="detail-content" style="vertical-align: super">4000+ sheet music, 100+ videos, fun crash course and games in the free app</span>
+                </div>
+                <div class="content">
+                  <i class="sure"></i>
+                  <span class="detail-content" style="vertical-align: super">Supporting both iOS and Android, phone and tablet</span>
+                </div>
+                <div class="content">
+                  <i class="sure"></i>
+                  <span class="detail-content" style="vertical-align: super">MIDI output, recording and sharing with your social network</span>
+                </div>
+                <div class="content">
+                  <i class="sure"></i>
+                  <span class="detail-content" style="vertical-align: super">High Grade Piano: 88 weighted keys, professional stereo sound, 3 piano pedals and classic wooden body</span>
+                </div>
+                <div class="content">
+                  <i class="sure"></i>
+                  <span class="detail-content" style="vertical-align: super">Made for beginners, loved by musicians and teachers</span>
+                </div>
+              </div>
+              <div class="small-tips"
+                   style="position: absolute;width: 83px;height: 8px;background-color: #7829a2;bottom: 0;right: 0;"></div>
+            </div>
+          </div>
+          <div class="tab1-detail"
+               style="width: 100%;height: 800px;margin-top:108px;display: flex;flex-wrap:wrap;justify-content: space-between">
+            <div class="detail">
+              <div class="img">
+                <img src="./imgThe/Choose.jpg" alt="">
+              </div>
+              <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
+            </div>
+            <div class="detail">
+              <div class="img">
+                <img src="./imgThe/Choose.jpg" alt="">
+              </div>
+              <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
+            </div>
+            <div class="detail">
+              <div class="img">
+                <img src="./imgThe/Choose.jpg" alt="">
+              </div>
+              <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
+            </div>
+            <div class="detail">
+              <div class="img">
+                <img src="./imgThe/Choose.jpg" alt="">
+              </div>
+              <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
+            </div>
+          </div>
+          <div class="topPiano" style="text-align: center;margin-top: 80px;border-top: 1px solid #ddd;">
+            <span class="quality"
+                  style="border-top: 8px solid #7829a2;font-size: 32px;line-height: 36px;display: inline-block;padding-top: 22px;">
+              TOP QUALITY DIGITAL PIANO
+            </span>
+          </div>
+          <div class="piano-detail" style="display: flex;margin-top:70px;justify-content:space-between">
+            <div class="content">
+              <div class="show">
+                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+              </div>
+              <div class="bottom" style="margin: 50px 30px 30px;">
+                <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
+                <div style="font-size: 20px;line-height: 30px">Light-up Key Practice</div>
+                <span style="margin-top: 24px;display: inline-block;font-size: 13px;line-height: 22px">The LED lights on the keyboard will work with the app and light up to show which keys to press.
+</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="show">
+                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+              </div>
+              <div class="bottom" style="margin: 50px 30px 30px;">
+                <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
+                <div style="font-size: 20px;line-height: 30px">Hammer-Action Keys</div>
+                <span style="margin-top: 24px;display: inline-block;font-size: 13px;line-height: 22px">Graded hammer action keyboard will allow you to play soft, medium and hard in a pretty close simulation of an acoustic piano.
+
+</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="show">
+                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+              </div>
+              <div class="bottom" style="margin: 50px 30px 30px;">
+                <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
+                <div style="font-size: 20px;line-height: 30px">Three Pedals</div>
+                <span style="margin-top: 24px;display: inline-block;font-size: 13px;line-height: 22px">Three foot-operated levers give you the full range control of
+instrument's sound.</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="show">
+                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+              </div>
+              <div class="bottom" style="margin: 50px 30px 30px;">
+                <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
+                <div style="font-size: 20px;line-height: 30px">Full Dynamics Control</div>
+                <span style="margin-top: 24px;display: inline-block;font-size: 13px;line-height: 22px">Classic features include built-in metronome and volume control，blended with technical controls via the app.</span>
+              </div>
+            </div>
+          </div>
+          <div class="topPiano" style="text-align: center;margin-top: 80px;border-top: 1px solid #ddd;">
+            <span class="quality"
+                  style="border-top: 8px solid #7829a2;font-size: 32px;line-height: 36px;display: inline-block;padding-top: 22px;">
+              In The News
+            </span>
+          </div>
+          <div class="news" style="display: flex;margin-top: 73px; justify-content: space-between;">
+            <div class="content" style="position: relative;width: 290px;">
+              <div class="img">
+                <img src="./imgThe/TheNewYorkTimes.png" alt="">
+              </div>
+              <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 84px;line-height: 20px">
+                <span>“A fighting hero...Witness the rebirth of the classical piano.”</span>
+              </div>
+            </div>
+            <div class="content" style="position: relative;width: 290px;">
+              <div class="img">
+                <img src="./imgThe/TheNewYorkTimes.png" alt="">
+              </div>
+              <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 84px;line-height: 20px">
+                <span>“A patient instructor who is willing to let me proceed at my own pace.  ” </span>
+              </div>
+            </div>
+            <div class="content" style="position: relative;width: 290px;">
+              <div class="img">
+                <img src="./imgThe/TheNewYorkTimes.png" alt="">
+              </div>
+              <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 84px;line-height: 20px">
+                <span>“Bringing Reviving Mozart For The 21st Century.”</span>
+              </div>
+            </div>
+            <div class="content" style="position: relative;width: 290px;">
+              <div class="img">
+                <img src="./imgThe/TheNewYorkTimes.png" alt="">
+              </div>
+              <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 84px;line-height: 20px">
+                <span>“Fun and kid-friendly, with a good mix of music-minded features in the app.”</span>
+              </div>
+            </div>
+          </div>
+          <div class="guide" style="margin-top: 56px">
+            <img src="./imgThe/1.png">
+          </div>
+        </li>
+        <li id="tab2" class="active">
+          <div class="detail_main">
+            <div class="main_tok main_one">
+              <span class="main_span">Colour</span>
+              <div class="main_word">
+                <span
+                    style="display: inline-block; width: 20px; height: 20px; background: #000; border-radius: 50%;"></span>
+                <span style="display: inline-block; margin-right: 40px; vertical-align: super;">Matte Black</span> <span
+                  style="display: inline-block; width: 20px; height: 20px; background: #fff;border: 1px solid #333333; border-radius: 50%;"></span>
+                <span style="display: inline-block; margin-right: 40px; vertical-align: super;">Classic White</span>
+              </div>
+            </div>
+            <div class="main_tok main_two"><span class="main_span">Size</span>
+              <div class="main_word word_two"></div>
+            </div>
+            <div class="main_tok main_three"><span class="main_span">Weight</span>
+              <div class="main_word" style="border-top: 1px solid #dcdcdc;"><span>107 lbs</span></div>
+            </div>
+            <div class="main_tok main_four"><span class="main_span">Keyboard</span>
+              <div class="main_word"><span>88-key graded hammer action piano keyboard</span></div>
+            </div>
+            <div class="main_tok main_five"><span class="main_span">Maximum Polyphony</span>
+              <div class="main_word"><span>128-note polyphony</span></div>
+            </div>
+            <div class="main_tok main_six"><span class="main_span">Tones</span>
+              <div class="main_word"><span>128 GM-programmed timbres and 4 drum sets (only the timbre of a grand piano is available for demo play)</span>
+              </div>
+            </div>
+            <div class="main_tok main_seven"><span class="main_span">Piano Lights</span>
+              <div class="main_word"><span>88 sets of red and blue LED lights</span></div>
+            </div>
+            <div class="main_tok main_eight"><span class="main_span">Audio Sampling rate</span>
+              <div class="main_word"><span>44.1KHz</span></div>
+            </div>
+            <div class="main_tok main_nine"><span class="main_span">Sampling Tones</span>
+              <div class="main_word"><span>16-bit stereo</span>
+              </div>
+            </div>
+            <div class="main_tok main_ten"><span class="main_span">Amplifier Power</span>
+              <div class="main_word"><span>25w*2</span></div>
+            </div>
+            <div class="main_tok main_eleven"><span class="main_span">Speaker Size</span>
+              <div class="main_word"><span>Tweeter 1.25"*2 + Woofer 5"*2</span></div>
+            </div>
+            <div class="main_tok main_twive"><span class="main_span">Device / Connection</span>
+              <div class="main_word"><span style="line-height: 28px">iOS 9.0 +<br>iPad 2/4, iPad mini, iPad mini 2, iPad Air, New iPad<br>iPhone 4/4s/5/5c/6/6 plus/6s/6s plus/7/7 plus/8/X<br>Android 4.4+ with USB Host/OTG<br></span>
+              </div>
+            </div>
+            <div class="main_tok main_thirteen"><span class="main_span">On/Off</span>
+              <div class="main_word"><span>Power will be automatically turned off if inactive for 30 minutes.</span>
+              </div>
+            </div>
+            <div class="main_tok"><span class="main_span">Volume</span>
+              <div class="main_word"><span>Adjustable</span></div>
+            </div>
+            <div class="main_tok"><span class="main_span">Metronome*</span>
+              <div class="main_word"><span>Optional to use. Turn the knob to adjust the tempo</span></div>
+            </div>
+            <div class="main_tok"><span class="main_span">Pedals</span>
+              <div class="main_word">
+                <span>Three pedals. Soft, Sostenuto, and Sustain respectively from left to right</span></div>
+            </div>
+            <div class="main_tok"><span class="main_span">Recording Function*</span>
+              <div class="main_word"><span>Record music while playing and share with your social network</span></div>
+            </div>
+            <div class="main_tok"><span class="main_span">Tone Selection*</span>
+              <div class="main_word"><span>A variety of timbres to choose from</span></div>
+            </div>
+            <div class="main_tok"><span class="main_span">Power Source</span>
+              <div class="main_word"><span>15V power cord connected to the back of the piano</span></div>
+            </div>
+            <div class="main_tok"><span class="main_span">Cable Interface</span>
+              <div class="main_word"><span style="line-height: 28px">The port is visible by pressing on and opening the small box on top of the piano.<br>
+The interface supports four specialized cables for The ONE Smart Piano.</span></div>
+            </div>
+            <div class="main_tok"><span class="main_span">Headphone Jack</span>
+              <div class="main_word"><span style="line-height: 28px">Two 6.5mm headphone jacks (front and rear)<br>Connecting a headphone with the front headphone jack (via a headphone jack adaptor) makes the<br> sound audible only through the headphone, while connecting a headphone with the rear headphone jack <br>makes the sound audible through both the headphone and piano speakers.</span>
+              </div>
+            </div>
+            <div class="main_tok"><span class="main_span">Aux In/Out</span>
+              <div class="main_word"><span>6.5mm auxiliary interface</span></div>
+            </div>
+            <div class="main_tok main_fourteen">
+              <span class="main_span">Panel controls</span>
+              <div class="main_word word_fourteen"></div>
+            </div>
+            <div class="main_tok main_seventeen"><span class="main_span">Download</span>
+              <div class="main_word">
+                <a>
+                  <p style="color: #019bff; height: 26px;">The ONE Smart Piano User Manual (English)
+                    <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
+                  </p>
+                </a>
+                <a href="#">
+                  <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Smart Piano User Manual
+                    (French)<span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
+                  </p>
+                </a>
+                <a href="#">
+                  <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Smart Piano User Manual (Russian)
+                    <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
+                  </p>
+                </a>
+                <a href="#">
+                  <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Smart Piano User Manual (German)
+                    <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="main_tok main_eighteen"><span class="main_span">Care Instructions</span>
+              <div class="main_word" style="line-height: 28px">
+                <p>1. Avoid direct sunlight. It will cause damage to the piano.</p>
+                <p>2. Do not disassemble the piano. Disassembling may cause damages that are not covered under the
+                  warranty.</p>
+              </div>
+            </div>
+            <div class="main_tok main_nineteen" style="border-bottom: 1px solid #ddd;"><span class="main_span">Components list</span>
+              <div class="main_word" style="border: none;">
+                <span style="line-height: 28px">Main body<br>Pedal<br>Back plate<br>Piano legs (left and right)<br>Toolkit<br>Headphone adaptor and cable<br>Power source DC 15V<br>User manual</span>
+              </div>
+            </div>
+            <p style="font-size: 12px; color: #a8a8a8; margin-top: 30px; margin-bottom: 30px;">Note: When specification
+              are subject to change, refer to the actual product.</p>
+            <p style="font-size: 12px; color: #a8a8a8; margin-top: 30px; margin-bottom: 30px;">Functions with *:
+              availability varies with the mobile device you’re using The ONE smart piano application on.</p>
+          </div>
+        </li>
+        <li id="tab3">3</li>
+        <li id="tab4">4</li>
+      </ul>
+    </div>
   </div>
-  <div class="tok_up" id="tok_up">
-    <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/upup.png?5658618421159846973" width="12" height="11" alt="">
+</div>
+<div class="pro">
+  <div class="pro_main">
+    <span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;">
+      Recommend</span>
+    <div class="pro_detail">
+      <ul>
+        <li align="center">
+          <div class="li_img li_first"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_second"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 1,499.99">$ 1,499.99</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_third"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_forth"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
+        </li>
+      </ul>
+    </div>
   </div>
+</div>
+<div class="tok_eleven tok">
+  <ul>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">
+      <span>Free Shipping</span>
+    </li>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">
+      <span>7-days Return</span>
+    </li>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">
+      <span>30-days Replacement</span>
+    </li>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">
+      <span>1-year Warranty</span>
+    </li>
+  </ul>
+</div>
+<div class="tok_up" id="tok_up">
+  <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/upup.png?5658618421159846973" width="12" height="11"
+       alt="">
+</div>
 
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
@@ -554,18 +956,18 @@
 <script>
   $(function () {
     var swiper = new Swiper('.swiper-container', {
-      speed:1000,
-      grabCursor : true,
-      width:500,
-      loop : true,
-      autoHeight:true,
+      speed: 1000,
+      grabCursor: true,
+      width: 500,
+      loop: true,
+      autoHeight: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
         hideOnClick: true,
       },
       on: {
-        init: function(){
+        init: function () {
           /*$(".swiper-slide").find("img").addClass("ani").attr({
             "swiper-animate-effect":"shake",
             "swiper-animate-duration":"0.5s"
@@ -573,11 +975,11 @@
           //swiperAnimateCache(this); //隐藏动画元素
           //swiperAnimate(this); //初始化完成开始动画
         },
-        transitionEnd: function(){
+        transitionEnd: function () {
           //swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
         },
-        slideChangeTransitionStart:function(){
-          setTimeout(() =>{
+        slideChangeTransitionStart: function () {
+          setTimeout(() => {
             console.log(swiper.realIndex)
             $(".small>.item").eq(swiper.realIndex).addClass("active").siblings(".item").removeClass("active")
             console.log($(".small>.item").eq(swiper.realIndex));
@@ -586,14 +988,14 @@
       },
     });
     //轮播联动
-    $(".small").on("click",".item",function (e) {
+    $(".small").on("click", ".item", function (e) {
       e.stopPropagation()
       $(this).addClass("active").siblings(".item").removeClass("active")
       var index = $(this).attr("data-index")
       swiper.slideTo(index, 1000, false);
     })
-  //  tab页
-    $(".tabs").on("click","li",function(e){
+    //  tab页
+    $(".tabs").on("click", "li", function (e) {
       e.stopPropagation()
       console.log(this);
       var value = $(this).attr("data-tab-value");
@@ -604,29 +1006,29 @@
   })
   $('#tok_up').click(function () {
     if ($(window).scrollTop() > 100) {
-      $('body,html').animate({ scrollTop: 0 }, 1000);
+      $('body,html').animate({scrollTop: 0}, 1000);
     }
   });
-  $('.buy_now').mouseover(function(){
+  $('.buy_now').mouseover(function () {
     $(this).text('Add to Cart');
   });
-  $('.buy_now').mouseout(function(){
+  $('.buy_now').mouseout(function () {
     $(this).text($(this).data('price'));
   });
-  $('#add').click(function(){
+  $('#add').click(function () {
     var num = $('#num').text();
     num++;
     $('#num').text(num);
   })
-  $('#sub').click(function(){
+  $('#sub').click(function () {
     var num = $('#num').text();
     num--;
-    if(num <0) num = 0;
+    if (num < 0) num = 0;
     $('#num').text(num);
   })
 
-  $("#color").on("click","div",function (e) {
-        e.stopPropagation()
+  $("#color").on("click", "div", function (e) {
+    e.stopPropagation()
     //TODO   -- color 换背景
     $(this).find("img").attr()
   })
