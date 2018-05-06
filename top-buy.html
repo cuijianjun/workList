@@ -65,7 +65,6 @@
     /* custom */
 
     a {
-      color: #7e8c8d;
       -webkit-backface-visibility: hidden;
       text-decoration: none
     }
@@ -100,7 +99,6 @@
     }
 
     body {
-      background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color: #000;
@@ -110,7 +108,8 @@
 
     /*轮播图*/
     .swiper-container {
-      height: 500px;
+      height: 512px;
+      width: 512px;
     }
 
     .swiper-button-prev, .swiper-button-next {
@@ -175,9 +174,10 @@
       color: #bebebe;
       border-radius: 8px;
       border: 1px solid #bebebe;
+      cursor: pointer;
     }
 
-    .one_main .right .right_btn:hover {
+    .one_main .right .right_btn.active {
       color: #000;
       border: 2px solid #019bff;
       cursor: pointer;
@@ -512,6 +512,27 @@
       -moz-border-radius: 0 3px 3px 0;
       border-radius: 0 3px 3px 0;
     }
+    /*top问答页面*/
+    .FAQ-content{
+      padding: 20px 50px;
+      margin-bottom: 20px;
+    }
+    .FAQ-content .item{
+      padding: 35px 0;
+      border-bottom: 1px solid #dddddd;
+    }
+    .FAQ-content .item .title{
+      font-size: 19px;
+      line-height: 34px;
+      margin-bottom: 15px;
+    }
+    .FAQ-content .item .title .Q{
+      color: #019bff;
+    }
+    .FAQ-content .item .answer{
+      font-size: 14px;
+      line-height: 24px;
+    }
   </style>
 </head>
 <body>
@@ -523,63 +544,63 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-wrapper">
-          <div class="swiper-slide" data-hash="slide1"><img src="./img/b1.jpg"></div>
-          <div class="swiper-slide" data-hash="slide2"><img src="./img/b2.jpg"></div>
-          <div class="swiper-slide" data-hash="slide3"><img src="./img/b3.jpg"></div>
-          <div class="swiper-slide" data-hash="slide4"><img src="./img/b4.jpg"></div>
-          <div class="swiper-slide" data-hash="slide5"><img src="./img/b5.jpg"></div>
-          <div class="swiper-slide" data-hash="slide6"><img src="./img/b6.jpg"></div>
+          <div class="swiper-slide" data-hash="slide1"><img src="./imgThe/top/top.png"></div>
+          <div class="swiper-slide" data-hash="slide2"><img src="./imgThe/top/top.png"></div>
+          <div class="swiper-slide" data-hash="slide3"><img src="./imgThe/top/top.png"></div>
+          <div class="swiper-slide" data-hash="slide4"><img src="./imgThe/top/top.png"></div>
+          <div class="swiper-slide" data-hash="slide5"><img src="./imgThe/top/top.png"></div>
+          <div class="swiper-slide" data-hash="slide6"><img src="./imgThe/top/top.png"></div>
         </div>
       </div>
       <div class="small">
-        <div class="item active" data-index="1"><img src="./img/s1.jpg" alt=""></div>
-        <div class="item" data-index="2"><img src="./img/s2.jpg" alt=""></div>
-        <div class="item" data-index="3"><img src="./img/s3.jpg" alt=""></div>
-        <div class="item" data-index="4"><img src="./img/s4.jpg" alt=""></div>
-        <div class="item" data-index="5"><img src="./img/s5.jpg" alt=""></div>
+        <div class="item active" data-index="1"><img src="./imgThe/top/top小.png" alt=""></div>
+        <div class="item" data-index="2"><img src="./imgThe/top/top小.png" alt=""></div>
+        <div class="item" data-index="3"><img src="./imgThe/top/top小.png" alt=""></div>
+        <div class="item" data-index="4"><img src="./imgThe/top/top小.png" alt=""></div>
+        <div class="item" data-index="5"><img src="./imgThe/top/top小.png" alt=""></div>
       </div>
     </div>
     <div class="right">
       <div class="title">
         <span>SMART PIANO</span>
-        <span>***</span>
+        <span><img src="./imgThe/top/star.png" alt=""></span>
       </div>
       <div class="detail">The ONE smart piano,grand graded hammer-action keys upright piano</div>
       <div class="price">
-        USD 299
+        USD 1,499.99
       </div>
       <div class="splitLine"></div>
       <div style="display: flex; height: 115px; line-height: 115px; align-items: center;">
         <span style="display: inline-block; width: 100px; color: #666666;">Colour</span>
         <div id="color"
-             style="display: flex; width: 510px; border-bottom: 1px solid #dcdcdc; align-items: center; justify-content: space-between;">
+             style="display: flex; width: 510px; border-bottom: 1px solid #dcdcdc; align-items: center; justify-content: flex-start;">
           <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
             <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_blank.png?5658618421159846973" alt=""
                  width="40" height="40">
-            <span style="vertical-align: top;">Onyx Black</span>
+            <span style="vertical-align: top;">Matte Black</span>
           </div>
-          <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_gold.png?5658618421159846973" alt=""
+          <div style="display: flex;align-items: center; justify-content: space-between;width: 28%;margin-left: 30px">
+            <img src="./imgThe/top/but白金色.png" alt=""
                  width="40" height="40">
-            <span style="vertical-align: top;">White Gold</span>
+            <span style="vertical-align: top;">Classic White</span>
           </div>
-          <div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
+          <!--<div style="display: flex;align-items: center; justify-content: space-between;width: 26%;">
             <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/spot_pink.png?5658618421159846973" alt=""
                  width="40" height="40">
             <span style="vertical-align: top;">Sakura Pink</span>
-          </div>
+          </div>-->
         </div>
       </div>
       <div style="display: flex; height: 200px; line-height: 160px; align-items: baseline;">
         <span style="display: inline-block; width: 100px; color: #666666;">Pack</span>
-        <div class="pack_btn" style="border-bottom: 1px solid #dcdcdc;line-height: 30px;height: 170px;">
+        <div class="pack_btn" id="pack_btn" style="border-bottom: 1px solid #dcdcdc;line-height: 30px;height: 170px;">
           <div style="display: flex; width: 510px; height: 115px;align-items: center; justify-content: space-between;">
-            <span class="right_btn">Keyboard</span>
-            <span class="right_btn">Standard Pack</span>
+            <span class="right_btn active" data-index="#keyboard">Keyboard</span>
+            <span class="right_btn" data-index="#standardPack">Standard Pack</span>
           </div>
           <div class="tips">
-            <div class="keyboard">Standard Pack includes: Smart Piano + Piano Bench.</div>
-            <div class="standardPack" style="display: none">Standard Pack includes: Smart Piano</div>
+            <div class="keyboard" id="keyboard">Standard Pack includes: Smart Piano </div>
+            <div class="standardPack" id="standardPack" style="display: none">Standard Pack includes: Smart Piano + Piano Bench.</div>
           </div>
         </div>
       </div>
@@ -587,9 +608,9 @@
         <span style="display: inline-block; width: 100px; color: #666666; margin-top: 45px;">QTY</span>
         <div style="width: 510px;">
           <div class="right_count">
-            <span class="count" id="sub" style="border-right: 1px solid #bfbfbf;">-</span>
+            <span class="count" id="sub" style="border-right: 1px solid #bfbfbf;border-radius: 6px 0 0 6px;">-</span>
             <span class="num" id="num">1</span>
-            <span class="count" id="add" style="border-left: 1px solid #bfbfbf;">+</span>
+            <span class="count" id="add" style="border-left: 1px solid #bfbfbf;border-radius: 0 6px 6px 0;">+</span>
           </div>
           <span class="btn" style="margin-right: 40px;">Add to Cart</span>
           <span class="btn">Buy Now</span>
@@ -616,7 +637,7 @@
         </li>
       </ul>
       <ul class="tabs-content">
-        <li id="tab1">
+        <li id="tab1" class="active">
           <div class="keyBoard" style="position: relative;">
             <div class="light-keyBoard" style="width: 100%;height: 500px;">
               <img src="./imgThe/5D3_6184－ok.png" alt="">
@@ -666,19 +687,19 @@
             </div>
             <div class="detail">
               <div class="img">
-                <img src="./imgThe/Choose.jpg" alt="">
+                <img src="./imgThe/top/2.png" alt="">
               </div>
               <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
             </div>
             <div class="detail">
               <div class="img">
-                <img src="./imgThe/Choose.jpg" alt="">
+                <img src="./imgThe/top/3.png" alt="">
               </div>
               <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
             </div>
             <div class="detail">
               <div class="img">
-                <img src="./imgThe/Choose.jpg" alt="">
+                <img src="./imgThe/top/4.png" alt="">
               </div>
               <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
             </div>
@@ -692,7 +713,7 @@
           <div class="piano-detail" style="display: flex;margin-top:70px;justify-content:space-between">
             <div class="content">
               <div class="show">
-                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+                <img src="./imgThe/top/pic_6.png" alt="">
               </div>
               <div class="bottom" style="margin: 50px 30px 30px;">
                 <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
@@ -703,7 +724,7 @@
             </div>
             <div class="content">
               <div class="show">
-                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+                <img src="./imgThe/top/pic_7.png" alt="">
               </div>
               <div class="bottom" style="margin: 50px 30px 30px;">
                 <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
@@ -715,7 +736,7 @@
             </div>
             <div class="content">
               <div class="show">
-                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+                <img src="./imgThe/top/pic_8.png" alt="">
               </div>
               <div class="bottom" style="margin: 50px 30px 30px;">
                 <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
@@ -726,7 +747,7 @@ instrument's sound.</span>
             </div>
             <div class="content">
               <div class="show">
-                <img src="./imgThe/5D3_6035357274215ok.jpg" alt="">
+                <img src="./imgThe/top/pic_9.png" alt="">
               </div>
               <div class="bottom" style="margin: 50px 30px 30px;">
                 <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
@@ -776,7 +797,7 @@ instrument's sound.</span>
             </div>
           </div>
           <div class="guide" style="margin-top: 56px">
-            <img src="./imgThe/1.png">
+            <img src="./imgThe/top/媒体logo.png">
           </div>
         </li>
         <li id="tab2">
@@ -791,7 +812,7 @@ instrument's sound.</span>
                 <span style="display: inline-block; margin-right: 40px; vertical-align: super;">Classic White</span>
               </div>
             </div>
-            <div class="main_tok main_two"><span class="main_span">Size</span>
+            <div class="main_tok main_two"><span class="main_span" style="width: 320px;">Size</span>
               <div class="main_word word_two"></div>
             </div>
             <div class="main_tok main_three"><span class="main_span">Weight</span>
@@ -907,7 +928,7 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
               availability varies with the mobile device you’re using The ONE smart piano application on.</p>
           </div>
         </li>
-        <li id="tab3" class="active">
+        <li id="tab3">
           <div class="title">
             <div class="switch">
               <div class="s-btn left active" data-index="#s-tab1">Media</div>
@@ -915,7 +936,7 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
             </div>
           </div>
           <div class="tab-container">
-            <div class="show s-tab1" id="s-tab1" style="display: flex;flex-wrap: wrap" >
+            <div class="show s-tab1" id="s-tab1" style="display: flex;flex-wrap: wrap;margin-bottom: 40px" >
               <img src="./imgThe/aol.png" alt="">
               <img src="./imgThe/appleinsider.png" alt="">
               <img src="./imgThe/gamerhub.png" alt="">
@@ -927,7 +948,48 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
             </div>
           </div>
         </li>
-        <li id="tab4">4</li>
+        <li id="tab4">
+          <div class="FAQ-content">
+            <div class="item">
+              <div class="title">
+                <span class="Q">Q:</span>
+                <span class="F-detail">Where is the power cord?</span>
+              </div>
+              <div class="answer">It's in the packing foam of one end, to ensure smooth delivery.</div>
+            </div>
+            <div class="item">
+              <div class="title">
+                <span class="Q">Q:</span>
+                <span class="F-detail">Why does the keyboard make no sound when playing?</span>
+              </div>
+              <div class="answer">It's very likely due to the volume setting. Please check the master volume control button on the keyboard main panel to ensure it's not set to minimum volume.  Please also ensure the tablet/smartphone connected to this keyboard is unmuted. Also, if you are using a headphone, please check if the headphone jack is inserted in.</div>
+            </div>
+            <div class="item">
+              <div class="title">
+                <span class="Q">Q:</span>
+                <span class="F-detail">Is it normal to hear some noise when the piano is turned on or off?</span>
+              </div>
+              <div class="answer">Yes, this is normal. It's an electronic device and electrical current can cause some small noise when turning on/off the keyboard.</div>
+            </div>
+            <div class="item">
+              <div class="title">
+                <span class="Q">Q:</span>
+                <span class="F-detail">Can headphones be used with the piano?</span>
+              </div>
+              <div class="answer">Yes. The socket is 6.5 mm, but the piano comes with an adapter so you can use standard 3.5 mm earphones as well.</div>
+            </div>
+            <div class="item" style="border: none;">
+              <div class="title">
+                <span class="Q">Q:</span>
+                <span class="F-detail">How do I register for The ONE Smart Piano app?</span>
+              </div>
+              <div class="answer">1. Download the app from the APP Store/Google Play.<br>
+                2. Once downloaded, open the app.<br>
+                3. Enter an email address and create a password!<br>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -1086,6 +1148,15 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
     e.stopPropagation()
     $(this).addClass("active").siblings(".s-btn").removeClass("active")
     let val = $(this).attr("data-index")
+    $(val).show().siblings().hide()
+  })
+
+  $("#pack_btn").on("click",".right_btn",function(e){
+    e.stopPropagation()
+    $(this).addClass("active").siblings(".right_btn").removeClass("active")
+    let val = $(this).attr('data-index')
+    console.log(val);
+    console.log($(val));
     $(val).show().siblings().hide()
   })
 </script>
