@@ -481,7 +481,37 @@
       margin-top: 30px;
       border: none;
     }
-
+  /*评论页*/
+    #tab3 .title{
+      height: 200px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #tab3 .switch .s-btn{
+      width: 163px;
+      height: 42px;
+      float: left;
+      line-height: 42px;
+      text-align: center;
+      background-color: #ddd;
+      cursor: pointer;
+    }
+    #tab3 .switch .s-btn.active{
+      color: #fff;
+      background-color: #019bff;
+    }
+    #tab3 .switch .s-btn.left{
+      -webkit-border-radius: 3px 0 0 3px;
+      -moz-border-radius: 3px 0 0 3px;
+      border-radius: 3px 0 0 3px;
+    }
+    #tab3 .switch .s-btn.right{
+      -webkit-border-radius: 0 3px 3px 0;
+      -moz-border-radius: 0 3px 3px 0;
+      border-radius: 0 3px 3px 0;
+    }
   </style>
 </head>
 <body>
@@ -749,7 +779,7 @@ instrument's sound.</span>
             <img src="./imgThe/1.png">
           </div>
         </li>
-        <li id="tab2" class="active">
+        <li id="tab2">
           <div class="detail_main">
             <div class="main_tok main_one">
               <span class="main_span">Colour</span>
@@ -877,7 +907,26 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
               availability varies with the mobile device you’re using The ONE smart piano application on.</p>
           </div>
         </li>
-        <li id="tab3">3</li>
+        <li id="tab3" class="active">
+          <div class="title">
+            <div class="switch">
+              <div class="s-btn left active" data-index="#s-tab1">Media</div>
+              <div class="s-btn right" data-index="#s-tab2">User</div>
+            </div>
+          </div>
+          <div class="tab-container">
+            <div class="show s-tab1" id="s-tab1" style="display: flex;flex-wrap: wrap" >
+              <img src="./imgThe/aol.png" alt="">
+              <img src="./imgThe/appleinsider.png" alt="">
+              <img src="./imgThe/gamerhub.png" alt="">
+              <img src="./imgThe/gamermotion.png" alt="">
+              <img src="./imgThe/noiseporn.png" alt="">
+            </div>
+            <div class="s-tab2" id="s-tab2">
+
+            </div>
+          </div>
+        </li>
         <li id="tab4">4</li>
       </ul>
     </div>
@@ -1031,6 +1080,13 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
     e.stopPropagation()
     //TODO   -- color 换背景
     $(this).find("img").attr()
+  })
+
+  $(".switch").on('click',".s-btn",function(e){
+    e.stopPropagation()
+    $(this).addClass("active").siblings(".s-btn").removeClass("active")
+    let val = $(this).attr("data-index")
+    $(val).show().siblings().hide()
   })
 </script>
 </html>
