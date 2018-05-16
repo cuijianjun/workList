@@ -303,12 +303,14 @@
     .pro_detail ul {
       width: 1200px;
       display: flex;
+      padding: 0;
       justify-content: space-between;
     }
 
     .pro_detail ul li {
       width: 290px;
       height: 400px;
+      list-style: none;
       background: #fff;
     }
 
@@ -427,7 +429,7 @@
       display: inline-block;
       height: 18px;
       width: 18px;
-      background: url("imgThe/top/完成副本.png") 0 0 no-repeat;
+      background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/eb40b96d88eb9b9c001ebcaa9dcb0fdd.png?18073322277349748054") 0 0 no-repeat;
     }
 
     #tab1 > div.keyBoard > div.tips > div.advantage > .content {
@@ -467,7 +469,7 @@
     .detail_main .main_two .word_two {
       box-sizing: content-box;
       height: 460px;
-      background: url(imgThe/top/侧面.png) center no-repeat;
+      background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/477d1760907049ad1b509fa14b350374.png?18073322277349748054) center no-repeat;
       background-size: contain;
       margin-top: 30px;
       border: none;
@@ -477,7 +479,7 @@
     .word_fourteen {
       box-sizing: content-box;
       height: 660px;
-      background: url('imgThe/top/面板控制.png') center no-repeat;
+      background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/4260d1ffb58745ed3bac3b3c9291bac3.png?18073322277349748054') center no-repeat;
       background-size: contain;
       margin-top: 30px;
       border: none;
@@ -533,6 +535,23 @@
     .FAQ-content .item .answer{
       font-size: 14px;
       line-height: 24px;
+    }
+
+
+    /*定位居中*/
+    .img{
+      position: relative;
+      cursor: pointer;
+    }
+    .img .positionBlock{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      -webkit-transform:translate(-50%,-50%);
+    }
+    .img:hover .positionBlock{
+      display: none;
     }
   </style>
 </head>
@@ -682,25 +701,29 @@
                style="width: 100%;height: 800px;margin-top:108px;display: flex;flex-wrap:wrap;justify-content: space-between">
             <div class="detail">
               <div class="img">
-                <img src="imgThe/top/Choose.jpg" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-01.png?4624088886897489724" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_3c29a82e-cc63-4562-ab8a-05366842717b.png?4624088886897489724" class="positionBlock">
               </div>
               <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
             </div>
             <div class="detail">
               <div class="img">
-                <img src="./imgThe/top/2.png" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-02.png?4624088886897489724" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_0154aad0-b28b-41a0-aa93-06a30694380f.png?4624088886897489724" class="positionBlock">
               </div>
               <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
             </div>
             <div class="detail">
               <div class="img">
-                <img src="./imgThe/top/3.png" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-03.png?4624088886897489724" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_3da50b5c-4bb6-4532-b4a1-56d71d87952c.png?4624088886897489724" class="positionBlock">
               </div>
               <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
             </div>
             <div class="detail">
               <div class="img">
-                <img src="./imgThe/top/4.png" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-04.png?4624088886897489724" width="100%">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4.png?4624088886897489724" class="positionBlock">
               </div>
               <span>Choose from thousands of sheet music to learn, from classical to pop, jazz & blues, and much more. You can play different piano songs with the free app.</span>
             </div>
@@ -1116,11 +1139,13 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
       $(`${value}`).show()
     })
   })
+  //回到顶部
   $('#tok_up').click(function () {
     if ($(window).scrollTop() > 100) {
       $('body,html').animate({scrollTop: 0}, 1000);
     }
-  });
+  })
+  //推荐
   $('.buy_now').mouseover(function () {
     $(this).text('Add to Cart');
   });
