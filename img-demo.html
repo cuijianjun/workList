@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  .container{
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+  }
+  ul{
+    position: relative;
+  }
+  ul>li{
+    list-style: none;
+    position: absolute;
+  }
+  .item{
+    width: 200px;
+    height: 200px;
+  }
+</style>
+<body>
+
+<div class="container">
+  <ul>
+    <li><div class="item" style="background-color:red;opacity: 1;z-index: 2;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -50, 1);"></div></li>
+    <li><div class="item" style="background-color:burlywood;opacity: 1;pointer-events: auto;z-index: 4;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div></li>
+    <li><div class="item" style="background-color:blue;opacity: 1;pointer-events: auto;z-index: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1)"></div></li>
+    <li><div class="item" style="background-color:yellow;"></div></li>
+    <li><div class="item" style="background-color:green;"></div></li>
+  </ul>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</body>
+</html>
