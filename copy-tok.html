@@ -9,6 +9,48 @@
   body{
     background-color: #fff;
   }
+  @font-face {
+    font-family: "Avalon_Italic";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff?5501549469581235168") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.ttf?5501549469581235168") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.eot?5501549469581235168") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.svg?5501549469581235168") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold_Italic";
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.woff?16404743671803088182") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.ttf?16404743671803088182") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.eot?16404743671803088182") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.svg?16404743671803088182") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff2?8612130786139656726") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff?8612130786139656726") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.ttf?8612130786139656726") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.eot?8612130786139656726") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.svg?8612130786139656726") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff2?298629140359487415") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff?298629140359487415") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.ttf?298629140359487415") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.eot?298629140359487415") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.svg?298629140359487415") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
   /*向上滚动*/
   .tok_up {
     position: fixed;
@@ -298,7 +340,7 @@
 <p>The ONE Light is a portable keyboard for beginners and experienced players alike. There are keys that light up with sheet music, video lessons, and games when connected with The ONE Smart Piano app.</p>
 <p> </p>
 <p>Standard Pack includes the Keyboard + Keyboard Stand. <!-- split --> <!--Start tab labels--></p>
-<ul class="tabs">
+<ul class="tabs" style="text-transform:none">
   <li><a class="active" href="#tab1">Features</a></li>
   <li><a href="#tab2">Tech Specs</a></li>
   <li><a href="#tab3">Reviews</a></li>
@@ -314,7 +356,7 @@
       <div class="tips"
            style="width: 37.5%;height: 500px;background-color: #fff;position:absolute;right: 35px;bottom: -35px;box-shadow: 0 5px 4px #ddd;">
         <div class="advantage" style="margin: 43px 50px;">
-          <div class="title" style="font: bold 28px Avalon;line-height: 36px;margin-bottom: 12px">
+          <div class="title" style="font: 28px Avalon_bold;line-height: 36px;margin-bottom: 12px;text-transform:none">
             Light Keyboard
           </div>
           <div class="content">
@@ -400,7 +442,7 @@ designed learning steps with hand gesture videos and section exercise, users can
     <div class="topPiano" style="text-align: center;margin-top: 80px;border-top: 1px solid #ddd;">
             <span class="quality"
                   style="border-top: 8px solid #7829a2;font-size: 32px;font-family: AvalonBold;line-height: 36px;display: inline-block;padding-top: 22px;">
-              In The News
+              IN THE NEWS
             </span>
     </div>
     <div class="news" style="display: flex;margin-top: 73px; justify-content: space-between;">
