@@ -335,6 +335,160 @@
     height: 74px;
     margin-right: 20px;
   }
+  /*轮波图*/
+  .d-left .container-item {
+    position: relative;
+    width: 562px;
+    height: 629px;
+  }
+
+  .d-left ul {
+    width: 562px;
+    height: 629px;
+    margin: 0;
+    position: relative;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-perspective-origin: 50% -30%;
+    perspective-origin: 50% -30%;
+  }
+
+  .d-left ul > li {
+    list-style: none;
+    position: absolute;
+    transition: all .6s;
+    overflow: hidden;
+    z-index: 10;
+    display: none;
+  }
+  .control-btn {
+    opacity: 0;
+    background-color: transparent
+  }
+  .d-left .container-item:hover .control-btn {
+    opacity: 1
+  }
+  .d-left .item div {
+    width: 300px;
+    height: 300px;
+    z-index: 400;
+    display: block;
+    text-align: center;
+    line-height: 300px;
+    font-size: 30px;
+    /*color: white;*/
+  }
+
+  .d-left .item:nth-child(1) {
+    z-index: 400;
+    display: block;
+    -webkit-transform: translate3d(0, 0, 15px);
+    transform: translate3d(0, 0, 15px);
+    opacity: 0;
+  }
+
+  .d-left .item:nth-child(2) {
+    z-index: 300;
+    display: block;
+  }
+
+  .d-left .item:nth-child(3) {
+    z-index: 200;
+    display: block;
+  }
+
+  .d-left .item:nth-child(4),
+  .d-left .item:nth-child(5) {
+    z-index: 100;
+    display: block;
+  }
+
+  .d-left .container-item:hover .item:nth-child(3) {
+    -webkit-transform: translate3d(0, 0, -15px);
+    transform: translate3d(0, 0, -15px)
+  }
+
+  .d-left .container-item:hover .item:nth-child(4),
+  .d-left .container-item:hover .item:nth-child(5) {
+    -webkit-transform: translate3d(0, 0, -30px);
+    transform: translate3d(0, 0, -30px)
+  }
+
+
+  .d-left .container-item .control-btn:hover {
+    opacity: .5
+  }
+
+  .d-left .control-btn {
+    position: absolute;
+    height: 128px;
+    width: 64px;
+    top: 50%;
+    background-color: rgba(194, 200, 204, .5);
+    margin-top: -64px;
+    z-index: 400;
+    transition: all .4s;
+    border-top-right-radius: 64px;
+    border-bottom-right-radius: 64px;
+    cursor: pointer;
+  }
+  .d-left .control-btn.control-btn-right {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 0
+  }
+
+  .d-left .control-btn.control-btn-left {
+    left: 0
+  }
+
+  .d-left span.control-arrow-left {
+    top: 50%;
+    margin-top: -25px;
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    left: 15px;
+  }
+
+  .d-left span.control-arrow-left:after, span.control-arrow-left:before {
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    content: '';
+    background-color: #fff
+  }
+
+  .d-left span.control-arrow-left:before {
+    top: 0;
+    border-bottom-right-radius: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+  }
+
+  .d-left span.control-arrow-left:after {
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top-right-radius: 3px
+  }
+
+  .d-left .slide-control {
+    position: absolute;
+    top: 50%;
+  }
+
+  .d-left .slide-control-pre {
+    left: 0;
+  }
+
+  .d-left .slide-control-next {
+    right: 0;
+  }
 </style>
 <h3></h3>
 <p>The ONE Light is a portable keyboard for beginners and experienced players alike. There are keys that light up with sheet music, video lessons, and games when connected with The ONE Smart Piano app.</p>
@@ -427,8 +581,36 @@ designed learning steps with hand gesture videos and section exercise, users can
       </div>
     </div>
     <div class="piano-detail" style="margin-top:70px;width: 100%;display: flex;justify-content: space-between;">
-      <div class="d-left">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/pic_5.png?11710980378914982863" width="100%">
+      <div class="d-left" style="margin-top: 35px">
+        <div class="container-item js-tg">
+          <ul>
+            <li class="item">
+              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ONESmart-Junshien-10607webonly.png?5682310615079605883" alt="">
+            </li>
+            <li class="item">
+              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ONESmart-Junshien-10548webonly.png?5682310615079605883" alt="">
+            </li>
+            <li class="item">
+              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ONESmart-Junshien-10607webonly.png?5682310615079605883" alt="">
+            </li>
+            <li class="item">
+              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ONESmart-Junshien-10607webonly.png?5682310615079605883" alt="">
+            </li>
+            <li class="item">
+              <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ONESmart-Junshien-10607webonly.png?5682310615079605883" alt="">
+            </li>
+          </ul>
+          <div class="slide-control-pre slide-control">
+            <div class="control-btn control-btn-left">
+              <span class="control-arrow-left"></span>
+            </div>
+          </div>
+          <div class="slide-control-next slide-control">
+            <div class="control-btn control-btn-right">
+              <span class="control-arrow-left"></span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="d-right" style="display: flex;flex-direction:column;justify-content: flex-start;">
         <div class="d-top">
@@ -784,6 +966,29 @@ designed learning steps with hand gesture videos and section exercise, users can
       e.stopPropagation()
       $(this).find(".positionBlock").animate({opacity:'1'},"slow")
     })
+    //轮波图
+    $(".container-item").on("click", ".slide-control-next", function (e) {
+      change('next')
+    });
+    $(".container-item").on("click", ".slide-control-pre", function (e) {
+      change('prev')
+    })
+    function change(flag) {
+      var listObj = $('.js-tg ul');
+      var tgEl;
+      if (flag === 'next') {
+        tgEl = listObj.find('li').eq(0);
+        var str = tgEl.prop("outerHTML");
+        tgEl.remove();
+        listObj.append(str);
+      }
+      if (flag === 'prev') {
+        tgEl = listObj.find('li').eq(listObj.find('li').length - 1);
+        var str = tgEl.prop("outerHTML");
+        tgEl.remove();
+        listObj.prepend(str);
+      }
+    }
   })
 </script>
 </body>

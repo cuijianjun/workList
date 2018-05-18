@@ -6,33 +6,211 @@
 </head>
 <style>
   .container{
-    margin: 100px auto;
-    width: 200px;
-    height: 200px;
+    margin: 100px 300px;
+  }
+  .container-item{
+    position: relative;
+    width: 300px;
+    height: 300px;
   }
   ul{
+    width: 300px;
+    height: 300px;
+    /*overflow: hidden;*/
     position: relative;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-perspective-origin: 50% -30%;
+    perspective-origin: 50% -30%;
   }
   ul>li{
     list-style: none;
     position: absolute;
+    transition: all .6s;
+    overflow: hidden;
+    z-index: 10;
+    display: none;
   }
-  .item{
-    width: 200px;
-    height: 200px;
+  .item div{
+    width: 300px;
+    height: 300px;
+  }
+  .control-btn {
+    opacity: 0;
+    background-color: transparent
+  }
+  .one{
+    z-index: 400;
+    display: block;
+    opacity: 0;
+    -webkit-transform: translate3d(0,0,15px);
+    transform: translate3d(0,0,15px);
+  }
+  .two{
+    z-index: 300;
+    display: block;
+  }
+  .three{
+    z-index: 200;
+    display: block;
+  }
+  .four{
+    z-index: 100;
+    display: block;
+  }
+  .five{
+    z-index: 90;
+    display: block;
+  }
+  .container-item:hover .control-btn {
+    opacity: 1
+  }
+
+  .container-item:hover .control-btn:hover {
+    opacity: .5
+  }
+  .container-item:hover .one{
+    display: none;
+  }
+  .container-item:hover .three{
+    -webkit-transform: translate3d(0,0,-15px);
+    transform: translate3d(0,0,-15px)
+  }
+  .container-item:hover .four,.container-item:hover .five{
+    -webkit-transform: translate3d(0,0,-30px);
+    transform: translate3d(0,0,-30px)
+  }
+  .control-btn {
+    position: absolute;
+    height: 128px;
+    width: 64px;
+    background-color: rgba(194,200,204,.5);
+    top: 50%;
+    margin-top: -64px;
+    z-index: 400;
+    transition: all .4s;
+    border-top-right-radius: 64px;
+    border-bottom-right-radius: 64px;
+    cursor: pointer
+  }
+
+  .control-btn.control-btn-right {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 0
+  }
+
+  .control-btn.control-btn-left {
+    left: 0
+  }
+  span.control-arrow-left{
+    top: 50%;
+    margin-top: -25px;
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    left: 15px;
+  }
+  span.control-arrow-left:after,span.control-arrow-left:before {
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    content: '';
+    background-color: #fff
+  }
+
+  span.control-arrow-left:before {
+    top: 0;
+    border-bottom-right-radius: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+  }
+
+  span.control-arrow-left:after {
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top-right-radius: 3px
+  }
+  .slide-control{
+    position: absolute;
+    top: 50%;
+  }
+  .slide-control-pre{
+    left: 40px;
+  }
+  .slide-control-next{
+    right: -40px;
   }
 </style>
 <body>
 
 <div class="container">
-  <ul>
-    <li><div class="item" style="background-color:red;opacity: 1;z-index: 2;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -50, 1);"></div></li>
-    <li><div class="item" style="background-color:burlywood;opacity: 1;pointer-events: auto;z-index: 4;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div></li>
-    <li><div class="item" style="background-color:blue;opacity: 1;pointer-events: auto;z-index: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1)"></div></li>
-    <li><div class="item" style="background-color:yellow;"></div></li>
-    <li><div class="item" style="background-color:green;"></div></li>
-  </ul>
+  <div class="container-item">
+    <ul>
+      <li class="item one"><div  style="background-color:red;"></div></li>
+      <li class="item two"><div  style="background-color:burlywood;"></div></li>
+      <li class="item three"><div  style="background-color:blue"></div></li>
+      <li class="item four"><div  style="background-color:yellow;"></div></li>
+      <li class="item five"><div  style="background-color:green;"></div></li>
+    </ul>
+    <div class="slide-control-pre slide-control">
+      <div class="control-btn control-btn-left">
+        <span class="control-arrow-left"></span>
+      </div>
+
+    </div>
+    <div class="slide-control-next slide-control">
+      <div class="control-btn control-btn-right">
+        <span class="control-arrow-left"></span>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+  $(function (e) {
+    var arr=["one","two","three","four","five"]
+    $(".container-item").on("click",".slide-control-next",function(e){
+      next(arr,"next")
+    })
+    $(".container-item").on("click",".slide-control-pre",function(e){
+      next(arr,"left")
+    })
+
+  })
+  function next(arr,flag) {
+    var item = $(".item");
+    var temp = item.find("div").slice();
+    if(flag == "next"){
+      arr.unshift(arr.pop())
+    }else{
+      arr.push(arr.shift())
+    }
+
+    for(var i = 0;i<item.length;i++){
+      $(item[i]).removeClass().addClass(`item ${arr[i]}`)
+    }
+  }
+  /*function next() {
+    var item = $(".item");
+    var temp = item.find("div").slice();
+    var first = temp.splice(0,1)
+    temp.push(first)
+    $(first).animate({opacity:0,width:"320px",height:"320px"},600)
+    for(var i = 0;i<item.length;i++){
+      $(temp[i]).css({
+        "opacity":"1",
+        width:"300px",
+        height:"300px"
+      })
+      $(item[i]).html(temp[i])
+    }
+  }*/
+</script>
 </body>
 </html>
