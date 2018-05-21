@@ -339,6 +339,14 @@
     height: 74px;
     margin-right: 20px;
   }
+  /*推荐页链接*/
+  .buy_now a{
+    color: #000000;
+    outline:none;
+  }
+  .buy_now:hover a{
+    color: #fff;
+  }
 </style>
 <h3></h3>
 <meta charset="utf-8" />
@@ -728,36 +736,38 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
     <div class="pro_detail">
       <ul>
         <li align="center">
+        <!--ton-->
           <div class="li_img li_first"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="#" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
+          <p class="buy_now" data-price="$ 759.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-light-keyboard?variant=12106058203238">$ 759.00</a></p>
         </li>
         <li align="center">
           <div class="li_img li_second"></div>
+          <!--tok-->
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Light Keyboard</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/pages/light-keyboard-1" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 1,499.99">$ 299.00</p>
+          <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-keyboard-pro-88-keys-portable-piano">$ 299.00</a></p>
         </li>
         <li align="center">
           <div class="li_img li_third"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
+          <p class="buy_now" data-price="$ 269.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.00</a></p>
         </li>
         <li align="center">
           <div class="li_img li_forth"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
+          <p class="buy_now" data-price="$ 39.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 39.99 - $ 79.99</a></p>
         </li>
       </ul>
     </div>
@@ -792,11 +802,11 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
         $('body,html').animate({scrollTop: 0}, 1000);
       }
     });
-    $('.buy_now').mouseover(function () {
-      $(this).text('Buy Now');
+    $('.buy_now').mouseenter(function () {
+      $(this).find("a").html(`Buy Now`);
     });
-    $('.buy_now').mouseout(function () {
-      $(this).text($(this).data('price'));
+    $('.buy_now').mouseleave(function () {
+      $(this).find("a").text($(this).data('price'));
     });
     //tab切换
     $(".switch").on('click',".s-btn",function(e){
@@ -808,7 +818,8 @@ The interface supports four specialized cables for The ONE Smart Piano.</span></
   //  删掉related
     $(".container.related-products--grid").remove()
     $(".related-products__title").parents(".container").remove()
-
+  //删掉滚动底部
+    $(".footer_pro").remove();
     //动画
     $(".detail>.img").mouseenter(function (e) {
       e.stopPropagation()
