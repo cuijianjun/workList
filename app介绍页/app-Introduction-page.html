@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>app-Introduction-page</title>
+</head>
+<style>
+  body{
+    background-color: #fff;
+  }
+  @font-face {
+    font-family: "Avalon_Italic";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff?5501549469581235168") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.ttf?5501549469581235168") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.eot?5501549469581235168") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.svg?5501549469581235168") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold_Italic";
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.woff?16404743671803088182") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.ttf?16404743671803088182") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.eot?16404743671803088182") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.svg?16404743671803088182") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff2?8612130786139656726") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff?8612130786139656726") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.ttf?8612130786139656726") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.eot?8612130786139656726") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.svg?8612130786139656726") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff2?298629140359487415") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff?298629140359487415") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.ttf?298629140359487415") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.eot?298629140359487415") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.svg?298629140359487415") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*top*/
+  .app .content .top{
+    width: 100%;
+    height: 900px;
+    background: url("./01TheONESmartPiano.png") center center;
+  }
+  .app .content .top .detail{
+    width: 1200px;
+    margin: 0 18%;
+    padding-top: 210px;
+  }
+  .app .content .top .detail .left{
+    float: left;
+  }
+  .app .content .top .detail .right{
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+  }
+  .app .content .top .detail .right .title{
+    width: 297px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 55px;
+    color: #ffffff;
+  }
+  .app .content .top .detail .right .content_detail {
+    margin-top: 10px;
+    width: 306px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .app .content .top .detail .right .download{
+    margin-top: 20px;
+    width: 400px;
+  }
+  /*轮播图*/
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .app .content .slider{
+    margin: 100px 0;
+  }
+  .app .content .slider .box{
+    margin-top: 80px;
+    width: 100%;
+    height: 580px;
+
+    position: relative;
+  }
+  .app .content .slider .list{
+    width: 100%;
+    height: 532px;
+    overflow: hidden;
+    position: absolute;
+    /*left: 50%;*/
+    /*margin-left: -600px;*/
+  }
+  .app .content .slider .btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(0,255,0,.5);
+    cursor: pointer;
+  }
+  .app .content .slider .next{
+    right: 0;
+  }
+  .app .content .slider li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+  .app .content .slider img{
+    width: 715px;
+    height: 532px;
+    border:none;
+    float: left;
+  }
+  .app .content .slider .p1{
+    transform: translate3d(-155px,0,0) scale(0.54);
+    opacity: 1;
+  }
+  .app .content .slider .p2{
+    transform: translate3d(400px,0,0) scale(1);
+    transform-origin: 0 50%;
+    opacity: 1;
+    z-index: 9;
+  }
+  .app .content .slider .p3{
+    transform: translate3d(960px,0,0) scale(0.54);
+    z-index: 3;
+    opacity: 1;
+  }
+  .app .content .slider .p4{
+    transform: translate3d(1192px,0,0) scale(0.54);
+    transform-origin: 100% 50%;
+    opacity: 0.8;
+    z-index: 2;
+  }
+  .app .content .slider .buttons{
+    position: absolute;
+    width: 1200px;
+    height: 30px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -600px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .app .content .slider .buttons a{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    padding-top: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .app .content .slider span{
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: red;
+    border-radius: 50%;
+  }
+  .app .content .slider .blue{
+    background: blue;
+  }
+  /*third*/
+  .app .content .third{
+    width: 100%;
+    height: 900px;
+    background: url("./05拓展app.png") center center;
+  }
+  .app .content .third .third-content{
+    color: #fff;
+    padding: 120px 570px 0;
+    text-align: center;
+  }
+  .app .content .third .third-content .title {
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+  }
+  .app .content .third .third-content .third-detail {
+    width: 806px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #b9b9b9;
+  }
+  /*fourth*/
+  .app .content .fourth{
+    width: 100%;
+    height: 900px;
+    background: url("./4led灯.png") center center;
+    margin-top: 50px;
+  }
+  .app .content .fourth .fourth-content{
+    padding: 70px 570px 0;
+    text-align: center;
+  }
+  .app .content .fourth .fourth-content .title {
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #1f1f1f;
+  }
+  .app .content .fourth .fourth-content .fourth-detail {
+    width: 806px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #151515;
+  }
+</style>
+<body>
+  <div class="app">
+    <div class="content">
+      <div class="top">
+        <div class="detail">
+          <div class="left">
+            <img src="./icon.png" width="176" height="176">
+          </div>
+          <div class="right">
+            <div class="title">The ONE Smart Piano</div>
+            <div class="content_detail">Award winning app to learn in your preferred way</div>
+            <div class="download">
+              <a href="#">
+                <img src="./App-Store.png" alt="">
+              </a>
+              <a href="#">
+                <img style="margin-left: 10px" src="./2000px-Get_it_on_Google_play.svg.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="box">
+
+          <div class="list">
+            <ul>
+              <li class="p4"><a href="#"><img  src="img/44.jpg" ></a></li>
+              <li class="p3"><a href="#"><img  src="img/55.jpg" ></a></li>
+              <li class="p2"><a href="#"><img  src="img/66.jpg" ></a></li>
+              <li class="p1"><a href="#"><img  src="img/77.jpg" ></a></li>
+            </ul>
+          </div>
+
+          <a href="javascript:;" class="prev btn"><</a>
+          <a href="javascript:;" class="next btn">></a>
+
+          <div class="buttons">
+            <a href="javascript:;"><span class="blue"></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="top" style="background: url('./03OnePianist.png') center center;">
+        <div class="detail">
+          <div class="left">
+            <img src="./512的副本拷贝.png" width="176" height="176">
+          </div>
+          <div class="right">
+            <div class="title">One Pianist</div>
+            <div class="content_detail">Fun piano learning for kids, positive screen time for families!</div>
+            <div class="download">
+              <a href="#">
+                <img src="./App-Store.png" alt="">
+              </a>
+              <a href="#">
+                <img style="margin-left: 10px" src="./2000px-Get_it_on_Google_play.svg.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="box">
+
+          <div class="list">
+            <ul>
+              <li class="p4"><a href="#"><img  src="img/44.jpg" ></a></li>
+              <li class="p3"><a href="#"><img  src="img/55.jpg" ></a></li>
+              <li class="p2"><a href="#"><img  src="img/66.jpg" ></a></li>
+              <li class="p1"><a href="#"><img  src="img/77.jpg" ></a></li>
+            </ul>
+          </div>
+
+          <a href="javascript:;" class="prev btn"><</a>
+          <a href="javascript:;" class="next btn">></a>
+
+          <div class="buttons">
+            <a href="javascript:;"><span class="blue"></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="third">
+        <div class="third-content">
+          <div class="title">
+            Endless Possibilities
+          </div>
+          <div class="third-detail">
+            The smart piano works with your favorite third-party apps, from audio playlists to music composition.
+          </div>
+        </div>
+      </div>
+      <div class="fourth">
+        <div class="fourth-content">
+          <div class="title">
+            3 Steps to Start Using the App
+          </div>
+          <div class="fourth-detail">
+            Download, Connect, Start Playing
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+  $(function () {
+    var $a=$(".buttons a");
+    var $s=$(".buttons span");
+    var cArr=["p4","p3","p2","p1"];
+    var index=0;
+    $(".next").click(
+      function(){
+        nextimg();
+      }
+    )
+    $(".prev").click(
+      function(){
+        previmg();
+      }
+    )
+    //上一张
+    function previmg(){
+      cArr.unshift(cArr[3]);
+      cArr.pop();
+      //i是元素的索引，从0开始
+      //e为当前处理的元素
+      //each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
+      $("li").each(function(i,e){
+        $(e).removeClass().addClass(cArr[i]);
+      })
+      index++;
+      if (index<0) {
+        index=3;
+      }
+      show();
+    }
+
+    //下一张
+    function nextimg(){
+      cArr.push(cArr[0]);
+      cArr.shift();
+      $("li").each(function(i,e){
+        $(e).removeClass().addClass(cArr[i]);
+      })
+      index++;
+      if (index>3) {
+        index=0;
+      }
+      show();
+    }
+
+    //通过底下按钮点击切换
+    $a.each(function(){
+      $(this).click(function(){
+        var myindex=$(this).index();
+        var b=myindex-index;
+        if(b==0){
+          return;
+        }
+        else if(b>0) {
+          /*
+           * splice(0,b)的意思是从索引0开始,取出数量为b的数组
+           * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
+           * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
+           * 这时候原本的数组也将这部分数组进行移除了
+           * 再把移除的数组添加的原本的数组的后面
+           */
+          var newarr=cArr.splice(0,b);
+          cArr=$.merge(cArr,newarr);
+          $("li").each(function(i,e){
+            $(e).removeClass().addClass(cArr[i]);
+          })
+          index=myindex;
+          show();
+        }
+        else if(b<0){
+          /*
+           * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
+           * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
+           * 也就是从原本的照片到需要点击的照片的数组
+           * 然后将原本的数组跟取出的数组进行拼接
+           * 再次倒序,使原本的倒序变为正序
+           */
+          cArr.reverse();
+          var oldarr=cArr.splice(0,-b)
+          cArr=$.merge(cArr,oldarr);
+          cArr.reverse();
+          $("li").each(function(i,e){
+            $(e).removeClass().addClass(cArr[i]);
+          })
+          index=myindex;
+          show();
+        }
+      })
+    })
+
+    //改变底下按钮的背景色
+    function show(){
+      $($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
+    }
+
+    //点击class为p2的元素触发上一张照片的函数
+    $(document).on("click",".p1",function(){
+      previmg();
+      return false;//返回一个false值，让a标签不跳转
+    });
+
+    //点击class为p4的元素触发下一张照片的函数
+    $(document).on("click",".p4",function(){
+      nextimg();
+      return false;
+    });
+
+    //			鼠标移入box时清除定时器
+    $(".box").mouseover(function(){
+      clearInterval(timer);
+    })
+
+    //			鼠标移出box时开始定时器
+    $(".box").mouseleave(function(){
+      timer=setInterval(nextimg,4000);
+    })
+
+    //			进入页面自动开始定时器
+    timer=setInterval(nextimg,4000);
+  })
+</script>
+

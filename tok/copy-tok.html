@@ -893,16 +893,16 @@ designed learning steps with hand gesture videos and section exercise, users can
           <p style="font-size: 12px;">
             <a target="_blank" href="#" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 759.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-light-keyboard?variant=12106058203238">$ 759.00</a></p>
+          <p class="buy_now" data-price="$ 759.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-keyboard-pro-88-keys-portable-piano">$ 759.00</a></p>
         </li>
         <li align="center">
           <div class="li_img li_second"></div>
           <!--top-->
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
           <p style="font-size: 12px;">
-            <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/pages/smart-piano-1" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 1,499.99</a></p>
+          <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano-1?variant=12103129563238">$ 1,499.99</a></p>
         </li>
         <li align="center">
           <div class="li_img li_third"></div>
@@ -953,11 +953,11 @@ designed learning steps with hand gesture videos and section exercise, users can
         $('body,html').animate({scrollTop: 0}, 1000);
       }
     });
-    $('.buy_now').mouseover(function () {
-      $(this).text('Buy Now');
+    $('.buy_now').mouseenter(function () {
+      $(this).find("a").html(`Buy Now`);
     });
-    $('.buy_now').mouseout(function () {
-      $(this).text($(this).data('price'));
+    $('.buy_now').mouseleave(function () {
+      $(this).find("a").text($(this).data('price'));
     });
     //tab切换
     $(".switch").on('click',".s-btn",function(e){
