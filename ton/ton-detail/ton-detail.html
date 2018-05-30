@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<link rel="stylesheet" href="../../swiper-4.2.2.min.css">
+<style>
+  body{
+    background-color: #fff;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: "Avalon_Italic";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff?5501549469581235168") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.ttf?5501549469581235168") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.eot?5501549469581235168") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.svg?5501549469581235168") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold_Italic";
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.woff?16404743671803088182") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.ttf?16404743671803088182") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.eot?16404743671803088182") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.svg?16404743671803088182") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff2?8612130786139656726") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff?8612130786139656726") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.ttf?8612130786139656726") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.eot?8612130786139656726") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.svg?8612130786139656726") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff2?298629140359487415") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff?298629140359487415") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.ttf?298629140359487415") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.eot?298629140359487415") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.svg?298629140359487415") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*top*/
+  .ton .ton-content .top{
+    width: 100%;
+    height: 900px;
+    background: url("./背景图1.png") center center;
+    position: relative;
+  }
+  .ton .ton-content .top .detail{
+    position: absolute;
+    top: 114px;
+    right: 410px;
+
+  }
+  .ton .ton-content .top .detail .top-title {
+    width: 342px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #2f2f2f;
+  }
+  .ton .ton-content .top .detail .top-detail {
+    width: 324px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+  }
+  .ton .ton-content .one{
+    width: 100%;
+    height: 1060px;
+  }
+  .one .swiper-wrapper .swiper-slide{
+    width:100%;
+    height: 1060px;
+  }
+  .one .swiper-wrapper .slide1{
+    background: url('./黑色.png') center no-repeat;
+    background-size:cover;
+  }
+  .one .swiper-wrapper .slide2{
+    background: url('./白色.png') center no-repeat;
+    background-size:cover;
+  }
+  .one span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #313131;
+    opacity: 1;
+    border: 1px solid #f7f7f7;
+  }
+
+  .one span:last-child {
+    background: #fff;
+    border: 1px solid #999;
+    margin-left: 20px !important;
+  }
+
+  .one .swiper-pagination-bullet-active {
+    border: 1px solid gray;
+  }
+  .two{
+    width: 100%;
+    height: 1040px;
+    background: url("./背景图.png") center center;
+    position: relative;
+  }
+  .two .detail {
+    position: absolute;
+    top: 150px;
+    left: 400px;
+  }
+  .two .detail  .two-title{
+    width: 485px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #000000;
+  }
+  .two .detail .two-content{
+    width: 384px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #484848;
+    margin-top: 20px;
+  }
+  .three{
+    width: 100%;
+    height: 1040px;
+    background: url("./04免费app.png") center center;
+    position: relative;
+  }
+  .three .detail {
+    position: absolute;
+    top: 180px;
+    left: 400px;
+  }
+  .three .detail .three-title {
+    width: 345px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #ffffff;
+  }
+  .three .detail .three-detail {
+    width: 382px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #ffffff;
+  }
+  .three .detail .img{
+    margin-top: 100px;
+
+  }
+  .three .detail .img .left,.right{
+    float: left;
+  }
+  .four{
+    width: 100%;
+    height: 1060px;
+    background: url("./背景图3.png") center center;
+    position: relative;
+  }
+  .four .detail {
+    position: absolute;
+    top: 160px;
+    left: 600px;
+  }
+  .four .detail  .four-title{
+    width: 732px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #202020;
+  }
+  .four .detail .four-content{
+    width: 754px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #202020;
+  }
+  .five{
+    width: 100%;
+    height: 1060px;
+    background: url("./背景图4.png") center center;
+    position: relative;
+  }
+  .five .detail {
+    position: absolute;
+    top: 160px;
+    left: 1140px;
+  }
+  .five .detail  .five-title{
+    width: 392px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 52px;
+    color: #ffffff;
+  }
+  .five .detail .five-content{
+    width: 382px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .six{
+    width: 100%;
+    height: 1060px;
+    background: url("./背景图5.png") center center;
+    position: relative;
+  }
+  .six .detail {
+    position: absolute;
+    top: 180px;
+    left: 390px;
+  }
+  .six .detail  .six-title{
+    width: 605px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #fefeff;
+  }
+  .six .detail .six-content{
+    width: 432px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #fefeff;
+    margin-top: 30px;
+  }
+  .seven{
+    width: 100%;
+    height: 1040px;
+    background: url("./08音量,音色一键调整.png") center center;
+    position: relative;
+  }
+  .seven .detail {
+    position: absolute;
+    top: 200px;
+    left: 380px;
+  }
+  .seven .detail  .seven-title{
+    width: 430px;
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #303030;
+  }
+  .seven .detail .seven-content{
+    width: 403px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #505050;
+    margin-top: 20px;
+  }
+  .eight{
+    width: 100%;
+    height: 1040px;
+    background: url("./09第三方app.png") center center;
+    position: relative;
+  }
+  .eight .detail {
+    position: absolute;
+    top: 140px;
+    left: 555px;
+    text-align: center;
+  }
+  .eight .detail  .eight-title{
+    font-family: AvalonBold;
+    font-size: 52px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #2d2d2d;
+  }
+  .eight .detail .eight-content{
+    width: 808px;
+    font-family: AvalonPlain;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #2d2d2d;
+    margin-top: 30px;
+  }
+  .tok {
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .tok_eleven {
+    height: 130px;
+    background: #7829a2;
+  }
+
+  .tok_eleven ul {
+    width: 1200px;
+    height: 74px;
+    margin: 28px auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tok_eleven ul li {
+    height: 74px;
+    line-height: 74px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+  }
+
+  .tok_eleven ul li img {
+    width: 74px;
+    height: 74px;
+    margin-right: 20px;
+  }
+</style>
+<body>
+<div class="ton">
+  <div class="ton-content">
+    <div class="top">
+      <div class="detail">
+        <div class="top-title">
+          The ONE Keyboard Pro
+        </div>
+        <div class="top-detail">
+          Unleashing the music instrument of the future.
+        </div>
+        <img src="./矩形1拷贝.png" alt="">
+      </div>
+    </div>
+    <div class="one">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide1"></div>
+          <div class="swiper-slide slide2"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="two">
+      <div class="detail">
+        <div class="two-title">
+          Neon Lights Guide You the Way
+        </div>
+        <div class="two-content">
+          LED lights work with the free app and light up to show you which keys to press. The lights stay lit until you hit the right notes.
+        </div>
+      </div>
+    </div>
+    <div class="three">
+      <div class="detail">
+        <div class="three-title">
+          Free iOS & Android Apps
+        </div>
+        <div class="three-detail">
+          Free apps provide various modes and let you learn in your preferred way.
+        </div>
+        <div class="img">
+          <div class="left">
+            <img src="./OnePianist.png" alt="">
+            <span class="txt">
+              One Pianist
+            </span>
+          </div>
+          <div class="right">
+            <img src="./TheONESmartPiano.png" alt="">
+            <span class="txt">
+              The ONE Smart Piano
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="four">
+      <div class="detail">
+        <div class="four-title">
+          Elegant Modern Appearance
+        </div>
+        <div class="four-content">
+          Award-winning design for better usability and cooler modern appearance
+        </div>
+      </div>
+    </div>
+    <div class="five">
+      <div class="detail">
+        <div class="five-title">
+          Excellent Hammer Action keyboard
+        </div>
+        <div class="five-content">
+          Premium feeling weighted keys just as classic acoustic pianos
+        </div>
+      </div>
+    </div>
+    <div class="six">
+      <div class="detail">
+        <div class="six-title">
+          Outstanding <br>Acoustical Performance
+        </div>
+        <div class="six-content">
+          128-maximum note polyphony and top tier built-in speakers
+        </div>
+      </div>
+    </div>
+    <div class="seven">
+      <div class="detail">
+        <div class="seven-title">
+          Adjustable Volume and Instrument Sound
+        </div>
+        <div class="seven-content">
+          Easy to set up and change any time via app setting or keyboard nob
+        </div>
+      </div>
+    </div>
+    <div class="eight">
+      <div class="detail">
+        <div class="eight-title">
+          Endless Possibilities
+        </div>
+        <div class="eight-content">
+          Whatever your goal for music is, The ONE Keyboard Pro gets you there.<br>
+          Connect with other MIDI based apps to experience endless expanded features.
+        </div>
+      </div>
+    </div>
+    <div class="tok_eleven tok">
+      <ul>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">
+          <span>Free Shipping</span>
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">
+          <span>7-days Return</span>
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">
+          <span>30-days Replacement</span>
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">
+          <span>1-year Warranty</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.js?7174514192763789409"></script>
+<script>
+  $(function () {
+    var btn = ['', ''];
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      autoplay:true,
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (btn[index]) + '</span>';
+        },
+      },
+    })
+    $('.swiper-pagination').css('bottom', '340px');
+    mySwiper.el.onmouseover = function(){
+      mySwiper.autoplay.stop();
+    }
+    mySwiper.el.onmouseout = function(){
+      mySwiper.autoplay.start();
+    }
+  })
+</script>
+</html>

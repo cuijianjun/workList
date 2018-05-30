@@ -1,0 +1,456 @@
+<style><!--
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.tok_top {
+  z-index: 99;
+  position: fixed;
+  margin-top: 60px;
+  height: 50px;
+  width: 100%;
+  background: #000;
+}
+
+.tok_top .top_word {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.tok_top .top_word .word_left {
+  float: left;
+  color: #a6a6a6;
+}
+
+.tok_top .top_word .word_right {
+  float: right;
+  width: 123px;
+  height: 30px;
+}
+
+.tok_top .top_word .right0 {
+  color: #949494;
+}
+
+.tok_top .top_word .right1 {
+  color: #4b4a4a;
+}
+
+.tok_top .top_word .right2 {
+  background: #019bff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.tok_top .top_word .right2 a {
+  color: #fff;
+}
+
+.tok {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tok_one {
+  height: 910px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban1.jpg?9081035980650471108') center no-repeat;
+}
+
+.tok_one .one_word {
+  margin-top: 160px;
+  margin-left: 370px;
+  color: #fff;
+}
+
+.tok_two {
+  position: relative;
+  height: 960px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban2.png?9081035980650471108') center no-repeat;
+}
+
+.tok_three {
+  max-width: 1920px;
+  height: 1260px;
+  font-size: 18px;
+  color: #626262;
+}
+
+.tok_three .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 1260px;
+}
+
+.tok_three .swiper-wrapper .slide1 {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban3_black.png?9081035980650471108') center no-repeat;
+  background-size: cover;
+}
+
+.tok_three .swiper-wrapper .slide2 {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban3_white.png?9081035980650471108') center no-repeat;
+  background-size: cover;
+}
+
+.tok_three span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #313131;
+  opacity: 1;
+}
+
+.tok_three span:last-child {
+  background: #fff;
+}
+
+.tok_three .swiper-pagination-bullet-active {
+  border: 1px solid gray;
+}
+
+.tok_four {
+  position: relative;
+  height: 1060px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban4.png?9081035980650471108') center no-repeat;
+  position: relative;
+}
+
+.four_word {
+  width: 910px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.tok_five {
+  position: relative;
+  height: 1040px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban5.png?9081035980650471108') center no-repeat;
+}
+
+.tok_five .five_word {
+  width: 500px;
+  height: 500px;
+  margin-top: 280px;
+  margin-left: 350px;
+}
+
+.tok_six {
+  height: 1000px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban6.png?9081035980650471108') center no-repeat;
+}
+
+.tok_six .six_word {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 360px;
+}
+
+.tok_seven {
+  position: relative;
+  height: 1000px;
+  background:url('https://cdn.shopify.com/s/files/1/1017/9603/files/app_interview.png?1523872395634243774') center no-repeat;
+<!-- background: #f5f5f5; -->
+}
+
+.tok_seven .seven_word {
+  width: 600px;
+  height: 600px;
+  margin-top: 180px;
+  margin-left: 300px;
+}
+
+.tok_seven .seven_img0 {
+  position: absolute;
+  width: 895px;
+  height: 730px;
+  right: 0;
+  top: 100px;
+}
+
+.tok_seven .seven_img1 {
+  position: absolute;
+  width: 640;
+  height: 473;
+  right: 0;
+  bottom: 20px;
+}
+
+.tok_eight {
+  height: 1360px;
+  position: relative;
+}
+
+.eight_img {
+  width: 1490px;
+  height: 749px;
+  margin-top: 100px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban8.png?9081035980650471108') center no-repeat;
+  background-size: cover;
+}
+
+.tok_nine {
+  height: 1020px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban9.png?9081035980650471108') center no-repeat;
+}
+
+.tok_ten {
+  height: 1020px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban10.png?9081035980650471108') center no-repeat;
+}
+
+.tok_eleven0 {
+  height: 1040px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban11.png?9081035980650471108') center no-repeat;
+}
+
+.tok_eleven0 .eleven0_word {
+  margin-top: 590px;
+  margin-left: 375px;
+}
+
+.tok_twelve {
+  height: 1080px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/ban12.png?9081035980650471108') center no-repeat;
+}
+
+.tok_twelve .twelve {
+  margin: 0 auto;
+}
+
+.tok_eleven {
+  height: 130px;
+  background: #7829a2;
+}
+
+.tok_eleven ul {
+  width: 1200px;
+  height: 74px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.tok_eleven ul li {
+  height: 74px;
+  line-height: 74px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+}
+
+.tok_eleven ul li img {
+  width: 74px;
+  height: 74px;
+  margin-right: 20px;
+}
+
+.tok_up {
+  z-index: 9;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 50px;
+  right: 55px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tok_up:hover {
+  cursor: pointer;
+  background: #fff;
+}
+
+.video_play:hover {
+  cursor: pointer;
+}
+
+.video_div {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .6);
+  align-items: center;
+}
+
+.video_close {
+  z-index: 9;
+  display: block;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #eee;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+
+.video_close:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, .4);
+}
+.video_video {
+  width: 1200px !important;
+  height: 700px !important;
+  margin-top: 50px;
+}
+--></style>
+<div class="tok_top">
+  <div class="top_word"><span class="word_left">Light Keyboard</span> <span class="word_right right2"> <a href="https://www.smartpiano.com/products/the-one-smart-piano-1?variant=12103129563238" target="_blank" rel="noopener noreferrer">Buy Now</a> </span> <span class="word_right right0">Overview</span></div>
+</div>
+<div class="tok_one tok">
+  <div class="one_word">
+    <p style="font-size: 52px; font-weight: bold; margin-bottom: 20px;">The ONE Smart Piano</p>
+    <p style="font-size: 20px; width: 450px;">The award-winning smart piano to help you to start playing in minutes.</p>
+  </div>
+</div>
+<div class="tok_two tok" align="center">
+  <p style="font-size: 52px; color: #fff; margin-bottom: 20px; margin-top: 350px;">Everyone Can Play</p>
+  <div><img id="playInt" class="video_play" src="https://cdn.shopify.com/s/files/1/1017/9603/files/play.png?9081035980650471108" alt="" /></div>
+</div>
+<div id="videoInt" class="video_div">
+  <div style="z-index: 9999; width: 1300px; height: 800px; margin: 0 auto; margin-top: 100px; display: flex; justify-content: center; position: relative;"><span id="closeInt" class="video_close">X</span> <video id="Intvideo" class="video_video" controls="controls" src="https://cdn.shopify.com/s/files/1/1017/9603/files/TOP.mp4?11631399412361023638"></video></div>
+</div>
+<div class="tok_three tok swiper-container" align="center" id="tok_scroll">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide slide1"></div>
+    <div class="swiper-slide slide2"></div>
+  </div>
+  <!-- 如果需要分页器 -->
+  <div class="swiper-pagination"></div>
+</div>
+<div class="tok_four tok">
+  <div class="four_word" align="center"><span style="font-size: 52px; color: #000; font-weight: bold; margin-right: 25px;">Guided by LED Lights</span> <img id="playled" class="video_play" src="https://cdn.shopify.com/s/files/1/1017/9603/files/play0.png?9081035980650471108" alt="" />
+    <p style="font-size: 20px; color: #000; margin-top: 20px;">Playing piano is as easy as following lights. red lights represent right hand notes, and blue lights represent left hand notes.</p>
+  </div>
+  <div id="videoLED" class="video_div">
+    <div style="z-index: 9999; width: 1300px; height: 800px; margin: 0 auto; margin-top: 100px; display: flex; justify-content: center; position: relative;"><span id="closeLED" class="video_close">X</span> <video id="LEDvideo" class="video_video" controls="controls" src="https://cdn.shopify.com/s/files/1/1017/9603/files/TOP_Light_Up_Keys1.mp4?4145088853319209584"></video></div>
+  </div>
+</div>
+<div class="tok_five tok">
+  <div class="five_word">
+    <p style="font-size: 52px; color: #000; font-weight: bold; margin-top: 150px; margin-bottom: 36px;">Connects to <br />Your Own Device</p>
+    <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ban5_ios.png?9081035980650471108" alt="" width="482" height="85" /> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ban5_android.png?9081035980650471108" alt="" width="487" height="88" /> <a href="https://www.smartpiano.com/pages/app" target="_blank" rel="noopener noreferrer" style="display: block; width: 164px; height: 38px; margin-left: 90px; margin-top: 45px;"> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ban5_down.png?9081035980650471108" alt="" width="164" height="38" /> </a></div>
+</div>
+<div class="tok_six tok" align="center">
+  <div class="six_word">
+    <p style="font-size: 52px; color: #fff; font-weight: bold; margin-top: 140px; margin-bottom: 20px;">Thousands of Sheet Music</p>
+    <p style="font-size: 20px; color: #fff;">Choose from our library of over <br /> 3000 free music sheets or <br /> purchase the latest pop songs, <br /> and learn to play a piece note <br /> by note.</p>
+  </div>
+</div>
+<div class="tok_seven tok"><!-- <div class="seven_word">
+<p style="font-size: 52px; color: #000; font-weight: bold; margin-top: 140px; margin-bottom: 20px;">Pick Your Preferred <br /> Learning Method</p>
+<p style="font-size: 20px; color: #000; margin-bottom: 120px;">Fun games, Interactive Video Lessons, Sheet Music and more <br /> are available from our free apps. Just search for "The ONE <br /> Smart Piano" or "One Pianist" in the App Store/Google Play.</p>
+<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ban7_icon_010b93eb-59b3-4e4a-a451-5d62245ce363.png?9081035980650471108" alt="" /></div>
+<div class="seven_img0"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ban7_ipad.png?9081035980650471108" alt="" /></div>
+<div class="seven_img1"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ban7_iphone.png?9081035980650471108" alt="" /></div> --></div>
+<div class="tok_eight tok" align="center">
+  <p style="font-size: 52px; color: #000; font-weight: bold; margin-top: 150px;">High Grade Piano</p>
+  <p style="font-size: 20px; color: #000; font-weight: bold; margin-top: 20px; margin-bottom: 20px;"><span>P2 Plate</span>   <span style="color: gray; font-weight: 100;">|</span>  <span>Push-pull Cover</span>   <span style="color: gray; font-weight: 100;">|</span>  <span>Full Dynamics Control</span>   <span style="color: gray; font-weight: 100;">|</span>  <span>Metal Foot Pedals</span></p>
+  <p style="font-size: 20px; color: #000;">It's not just beginners who love the smart piano. Experts love the weighted keys, the <br /> professional stereo sound, and classic wooden look.</p>
+  <div class="eight_img"></div>
+</div>
+<div class="tok_nine tok">
+  <p style="font-size: 52px; color: #fff; font-weight: bold; margin-top: 145px; margin-left: 380px; margin-bottom: 20px;">Graded <br /> Hammer-action Keys</p>
+  <p style="font-size: 20px; color: #fff; margin-left: 380px;">The best weighted keyboard available in the <br /> market, with scaled graded hammer action <br /> to make playing much like a premium <br /> acoustic piano.</p>
+</div>
+<div class="tok_ten tok"></div>
+<div class="tok_eleven0 tok">
+  <div class="eleven0_word">
+    <p style="font-size: 52px; color: #000; font-weight: bold; margin-top: 140px; margin-bottom: 20px;">Metal Foot <br /> Pedals</p>
+    <p style="font-size: 20px; color: #000; margin-bottom: 120px;">Three foot-operated levers at the base of a piano give <br /> you the full range of control of instrument's sound. <br /> Includes the soft pedal, the sostenuto pedal, and the <br /> sustaining pedal.</p>
+  </div>
+</div>
+<div class="tok_twelve tok" align="center">
+  <div class="twelve_word">
+    <p style="font-size: 52px; color: #fff; font-weight: bold; margin-top: 140px; margin-bottom: 20px;">Endless Possibilities</p>
+    <p style="font-size: 20px; color: #fff;">Whatever your goal for music is, The ONE Smart Piano can get you there. Expanded <br /> features include but not limited to USB MIDI input and output, auxiliary out, microphone <br /> plug-in, pedal input, and so on. Whether it's home party, music writing or live jam <br /> sessions, it's all possible.</p>
+  </div>
+</div>
+<div class="tok_eleven tok">
+  <ul>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?9081035980650471108" alt="" /> <span>Free Shipping</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?9081035980650471108" alt="" /> <span>7-days Return</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?9081035980650471108" alt="" /> <span>30-days Replacement</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?9081035980650471108" alt="" /> <span>1-year Warranty</span></li>
+  </ul>
+</div>
+<div class="tok_up" id="tok_up"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/upup.png?9081035980650471108" width="12" height="11" alt="" /></div>
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?9081035980650471108"></script><script src="https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.js?9081035980650471108"></script><script>// <![CDATA[
+var btn = ['', ''];
+var mySwiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  // autoplay:{
+  //     disableOnInteraction : false,
+  // },
+  // 如果需要分页器
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (btn[index]) + '</span>';
+    },
+  },
+})
+$('.swiper-pagination').css('bottom', '480px');
+$('#playled').click(function () {
+  $('#videoLED').css('display', 'flex');
+  $('#LEDvideo').get(0).play();
+  $('body').css('overflow','hidden');
+})
+$('#closeLED').click(function () {
+  $('#videoLED').css('display', 'none');
+  $('#LEDvideo').get(0).pause();
+  $('body').css('overflow','visible');
+})
+
+$('#playInt').click(function () {
+  $('#videoInt').css('display', 'flex');
+  $('#Intvideo').get(0).play();
+  $('body').css('overflow','hidden');
+})
+$('#closeInt').click(function () {
+  $('#videoInt').css('display', 'none');
+  $('#Intvideo').get(0).pause();
+  $('body').css('overflow','visible');
+})
+
+$('#playcra').click(function () {
+  $('#videoCra').css('display', 'flex');
+  $('#Cravideo').get(0).play();
+})
+$('#closeCra').click(function () {
+  $('#videoCra').css('display', 'none');
+  $('#Cravideo').get(0).pause();
+})
+$('#tok_up').click(function () {
+  if ($(window).scrollTop() > 100) {
+    $('body,html').animate({ scrollTop: 0 }, 1000);
+  }
+})
+// ]]></script>
