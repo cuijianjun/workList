@@ -5,6 +5,76 @@
   <title>app-Introduction-page</title>
 </head>
 <style>
+  @-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
   body{
     background-color: #fff;
   }
@@ -183,15 +253,16 @@
     cursor: pointer;
     border-radius: 50%;
   }
-  .app .content .slider span{
-    display: block;
-    width: 5px;
-    height: 5px;
-    background: red;
-    border-radius: 50%;
-  }
   .app .content .slider .blue{
     background: blue;
+  }
+  #slider-text{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 21.5%;
+    width: 715px;
   }
   /*轮播图2*/
   .app .content .slider1{
@@ -237,10 +308,12 @@
   .slider1 #box .next {
     background: url(./right.png) no-repeat;
     right: -10px;
-    /*opacity: .5;*/
-    /*filter: alpha(opacity=50);*/
   }
-
+  #text{
+    margin-top: 280px;
+    text-align: center;
+    font-size: 25px;
+  }
   .slider1 #box .prev {
     background: url(./left.png) no-repeat;
     left: -10px;
@@ -335,6 +408,7 @@
             </div>
           </div>
         </div>
+        <div id="text" class="animated fadeInLeft">Step by step crash course</div>
       </div>
       <div class="top" style="background: url('./03OnePianist.png') center center;">
         <div class="detail">
@@ -359,23 +433,26 @@
         <div class="box">
           <div class="list">
             <ul>
-              <li class="p4"><a href="#"><img  src="./1.png" ></a></li>
-              <li class="p3"><a href="#"><img  src="./2.png" ></a></li>
-              <li class="p2"><a href="#"><img  src="./3.png" ></a></li>
-              <li class="p1"><a href="#"><img  src="./4.png" ></a></li>
+              <li class="p4"><a href="#"><img  src="./4.png" ></a></li>
+              <li class="p3"><a href="#"><img  src="./3.png" ></a></li>
+              <li class="p2"><a href="#"><img  src="./2.png" ></a></li>
+              <li class="p1"><a href="#"><img  src="./1.png" ></a></li>
             </ul>
           </div>
-
-          <a href="javascript:;" class="prev btn"><</a>
-          <a href="javascript:;" class="next btn">></a>
-
-          <div class="buttons">
-            <a href="javascript:;"><span class="blue"></span></a>
-            <a href="javascript:;"><span></span></a>
-            <a href="javascript:;"><span></span></a>
-            <a href="javascript:;"><span></span></a>
+          <!--<a href="javascript:;" class="prev btn"><</a>-->
+          <!--<a href="javascript:;" class="next btn">></a>-->
+          <div id="slider-text">
+            <span>Fun and engaging curriculum designed for kids</span>
           </div>
+
+          <!--<div class="buttons">-->
+            <!--<a href="javascript:;"><span class="blue"></span></a>-->
+            <!--<a href="javascript:;"><span></span></a>-->
+            <!--<a href="javascript:;"><span></span></a>-->
+            <!--<a href="javascript:;"><span></span></a>-->
+          <!--</div>-->
         </div>
+
       </div>
       <div class="third">
         <div class="third-content">
@@ -404,9 +481,15 @@
 <script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
   $(function () {
-    var $a=$(".slider .buttons a");
-    var $s=$(".slider .buttons span");
+    // var $a=$(".slider .buttons a");
+    // var $s=$(".slider .buttons span");
     var cArr=["p4","p3","p2","p1"];
+    var ArrayT = {
+      4:"Detailed analysis score to help further improve",
+      1:"Fun and engaging curriculum designed for kids",
+      2:"Flowing Sheet Music with real time feedback",
+      3:"Staff game to make it more fun"
+    }
     var index=0;
     $(".next").click(
       function(){
@@ -432,7 +515,11 @@
       if (index<0) {
         index=3;
       }
-      show();
+      $("#slider-text").addClass("animated fadeInLeft").find("span").html(ArrayT[index+1])
+      //show();
+      setTimeout(function () {
+        $("#slider-text").removeClass()
+      },1000)
     }
 
     //下一张
@@ -446,11 +533,14 @@
       if (index>3) {
         index=0;
       }
-      show();
+      $("#slider-text").addClass("animated fadeInRight").find("span").html(ArrayT[index+1])
+      //show();
+      setTimeout(function () {
+        $("#slider-text").removeClass()
+      },1000)
     }
-
     //通过底下按钮点击切换
-    $a.each(function(){
+    /*$a.each(function(){
       $(this).click(function(){
         var myindex=$(this).index();
         var b=myindex-index;
@@ -458,13 +548,13 @@
           return;
         }
         else if(b>0) {
-          /*
+          /!*
            * splice(0,b)的意思是从索引0开始,取出数量为b的数组
            * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
            * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
            * 这时候原本的数组也将这部分数组进行移除了
            * 再把移除的数组添加的原本的数组的后面
-           */
+           *!/
           var newarr=cArr.splice(0,b);
           cArr=$.merge(cArr,newarr);
           $(".slider li").each(function(i,e){
@@ -474,13 +564,13 @@
           show();
         }
         else if(b<0){
-          /*
+          /!*
            * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
            * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
            * 也就是从原本的照片到需要点击的照片的数组
            * 然后将原本的数组跟取出的数组进行拼接
            * 再次倒序,使原本的倒序变为正序
-           */
+           *!/
           cArr.reverse();
           var oldarr=cArr.splice(0,-b)
           cArr=$.merge(cArr,oldarr);
@@ -492,12 +582,12 @@
           show();
         }
       })
-    })
+    })*/
 
     //改变底下按钮的背景色
-    function show(){
+    /*function show(){
       $($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
-    }
+    }*/
 
     //点击class为p2的元素触发上一张照片的函数
     $(document).on("click",".slider .p1",function(){
@@ -578,7 +668,8 @@
         left: 50,
         opacity: 20,
         z: 2,
-        id: 1
+        id: 1,
+        text:"LED guided sheet music"
       },
       {  // 2
         width: 600,
@@ -586,7 +677,8 @@
         left: -50,
         opacity: 60,
         z: 3,
-        id: 2
+        id: 2,
+        text:"Interactive video tutorials"
       },
       {   // 3
         width: 800,
@@ -594,7 +686,8 @@
         left: 200,
         opacity: 100,
         z: 4,
-        id: 3
+        id: 3,
+        text:"Step by step crash course"
       },
       {  // 4
         width: 600,
@@ -602,7 +695,8 @@
         left: 650,
         opacity: 60,
         z: 3,
-        id: 4
+        id: 4,
+        text:"Fun games with real piano "
       },
       {   //5
         width: 400,
@@ -610,9 +704,13 @@
         left: 750,
         opacity: 20,
         z: 2,
-        id: 5
+        id: 5,
+        text:"LED guided sheet music"
       }
     ];
+    setTimeout(function () {
+      $("#text").removeClass()
+    },1000)
     box.addEventListener('mouseover', function () {
       clearInterval(timer);
       animate(arraw, {opacity: 100});
@@ -659,16 +757,21 @@
           flag = false;
           move(true);
         }
-      }, 500);
+      }, 5000);
     }
 
     function move(x) {
       if (x != undefined) {
         if (x) {
           json.push(json.shift());
+          $("#text").html(json[2].text).addClass("animated fadeInLeft")
         } else {
           json.unshift(json.pop());
+          $("#text").html(json[2].text).addClass("animated fadeInRight")
         };
+        setTimeout(function () {
+          $("#text").removeClass()
+        },1000)
       };
 
       for (var i = 0; i < json.length; i++) {
