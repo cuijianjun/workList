@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  body{
+    background-color: #fff;
+  }
+  @font-face {
+    font-family: "Avalon_Italic";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff?5501549469581235168") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.ttf?5501549469581235168") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.eot?5501549469581235168") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.svg?5501549469581235168") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold_Italic";
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.woff?16404743671803088182") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.ttf?16404743671803088182") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.eot?16404743671803088182") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.svg?16404743671803088182") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon_Bold";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff2?8612130786139656726") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff?8612130786139656726") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.ttf?8612130786139656726") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.eot?8612130786139656726") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.svg?8612130786139656726") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Avalon";
+    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff2?298629140359487415") format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff?298629140359487415") format("woff"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.ttf?298629140359487415") format("truetype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.eot?298629140359487415") format("embedded-opentype"),
+    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.svg?298629140359487415") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .clearfix{
+    *zoom:1;
+  }
+  .clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container{
+    padding: 100px 18% 0;
+  }
+  .container .title{
+    width: 100%;
+  }
+  .container .title .title-top {
+    text-align: center;
+    font-family: AvalonBold;
+    font-size: 58px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #161616;
+  }
+  .container .title .detail{
+    text-align: center;
+    font-family: AvalonPlain;
+    font-size: 26px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #535558;
+  }
+  .container .top{
+    margin-top: 30px;
+  }
+  .container .top .left{
+    width: 589px;
+    height: 560px;
+    border-radius: 8px;
+    background: url("./new1.png") center center;
+    float: left;
+    position: relative;
+  }
+  .container .top .left .left-title{
+    position: absolute;
+    bottom: 75px;
+    left: 30px;
+    font-family: AvalonBold;
+    font-size: 25px;
+    color: #535558;
+  }
+  .container .top .left .top-left-tips{
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    font-family: AvalonPlain;
+    font-size: 12px;
+    color: #3b9cff;
+  }
+  .container .top .right{
+    float: right;
+  }
+  .container .top .right .right-top{
+    width: 588px;
+    height: 268px;
+    border-radius: 8px;
+    background: url("./new2.png") center center;
+    position: relative;
+  }
+  .container .top .right .bottom {
+    width: 589px;
+    height: 269px;
+    border-radius: 8px;
+    background: url("./new3.png") center center;
+    margin-top: 24px;
+    position: relative;
+  }
+  .container .top .right .right-top .right-top-title{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 227px;
+    font-family: AvalonBold;
+    font-size: 25px;
+    color: #535558;
+  }
+  .container .top .right .right-top .right-top-tips{
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    font-family: AvalonPlain;
+    font-size: 12px;
+    color: #3b9cff;
+  }
+  .container .top .right .bottom .bottom-title{
+    position: absolute;
+    left: 25px;
+    top: 35px;
+    width: 231px;
+    font-family: AvalonBold;
+    font-size: 25px;
+    color: #535558;
+  }
+  .container .top .right .bottom .bottom-tips{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-family: AvalonPlain;
+    font-size: 12px;
+    color: #3b9cff;
+  }
+  .container .mediaLogo{
+    width: 1146px;
+    height: 259px;
+    background: url("./媒体logo.png") center center;
+    margin: 75px 25px;
+  }
+  .specificReports .one{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    float: left;
+    break-inside:avoid
+  }
+  .specificReports{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap:30px;
+  }
+
+  .specificReports .one .spc-content{
+    position: absolute;
+    left: 25px;
+    bottom: 80px;
+    font-family: AvalonPlain;
+    font-size: 16px;
+    color: #535558;
+  }
+  .specificReports .one .spc-tips{
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+    font-family: AvalonPlain;
+    font-size: 12px;
+    color: #3b9cff;
+  }
+  /*推荐页*/
+  .pro {
+    width: 100%;
+    height: 550px;
+    background: #ddd;
+    padding-top: 50px;
+  }
+
+  .pro_main {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  .pro_detail {
+    margin-top: 33px;
+  }
+
+  .pro_detail ul {
+    width: 1200px;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .pro_detail ul li {
+    width: 290px;
+    height: 400px;
+    list-style: none;
+    background: #fff;
+  }
+
+  .pro_detail ul li:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 4px -4px #cdcece;
+  }
+
+  .pro_detail ul li .li_img {
+    width: 290px;
+    height: 230px;
+  }
+
+  .pro_detail ul li .li_first {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/tok.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail ul li .li_second {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/top.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail ul li .li_third {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/toh_e6bede7b-6045-4c45-901c-0436393f94aa.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail ul li .li_forth {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/parts.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail .buy_now {
+    margin: 25px auto 0;
+    width: 180px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .pro_detail .buy_now:hover {
+    background: #019bff;
+    border-radius: 7px;
+    color: #fff;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="title">
+      <div class="title-top">
+        In the press
+      </div>
+      <div class="detail">
+        NEWSROOMALTITUDE
+      </div>
+    </div>
+    <div class="top clearfix">
+      <div class="left">
+        <div class="left-title">
+          Piano Hi-Lite: Gold Winner of Edison Award 2018!
+        </div>
+        <div class="top-left-tips">
+          Edison Award
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-top">
+          <div class="right-top-title">
+            A top quality keyboard product which "unlocks incredible possibilities"!
+          </div>
+          <div class="right-top-tips">
+            AppleInsider
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="bottom-title">
+            If you’re looking to learn, The ONE works.
+          </div>
+          <div class="bottom-tips">
+            Techcrunch
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mediaLogo"></div>
+    <div class="specificReports">
+      <div class="one">
+        <img src="./第二组1.png" alt="">
+        <div class="spc-content">
+          Mom’s Choice Awards Winner
+        </div>
+        <div class="spc-tips">
+          Awards Winner
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第二组4.png" alt="">
+        <div class="spc-content" style="bottom: 60px;">
+          [The ONE] is a patient instructor who is willing to let me proceed at my own pace.
+        </div>
+        <div class="spc-tips">
+          USA Today
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第三组1.png" alt="">
+        <div class="spc-content">
+          This smart keyboard will teach you how to play it.
+        </div>
+        <div class="spc-tips">
+          CNET
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第三组4.png" alt="">
+        <div class="spc-content" style="bottom: 60px;">
+          One of the Best Xmas Present The Washington Times
+        </div>
+        <div class="spc-tips">
+          The Washington Times
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第二组2.png" alt="">
+        <div class="spc-content">
+          Steve Wonder at The ONE CES Booth
+        </div>
+        <div class="spc-tips">
+          CES 2018
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第三组2.png" alt="">
+        <div class="spc-content" style="bottom: 60px;">
+          MIDI support also works with Garageband on iPad
+        </div>
+        <div class="spc-tips">
+          LON.TV
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第三组5.png" alt="">
+        <div class="spc-content">
+          A way to learn at your own pace!
+        </div>
+        <div class="spc-tips">
+          ABC News
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第二组3.png" alt="">
+        <div class="spc-content" style="bottom: 60px;">
+          Piano Hi-Lite “Helps You Pick Up a New Hobby”.
+        </div>
+        <div class="spc-tips">
+          Inc. Magazine
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第二组5.png" alt="">
+        <div class="spc-content" style="bottom: 60px;">
+          This gadget turns your old piano into an educational ‘smart’ piano.
+        </div>
+        <div class="spc-tips">
+          The Next Web
+        </div>
+      </div>
+      <div class="one">
+        <img src="./第三组3.png" alt="">
+        <div class="spc-content">
+          We are finally here in Europe!
+        </div>
+        <div class="spc-tips">
+          Muiskmesse 2018
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pro">
+    <div class="pro_main">
+    <span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;">
+      Recommend</span>
+      <div class="pro_detail">
+        <ul>
+          <li align="center">
+            <div class="li_img li_first"></div>
+            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
+            <p style="font-size: 12px;">
+              <a href="#" style="color: #019bff;">Explore &gt;</a>
+            </p>
+            <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
+          </li>
+          <li align="center">
+            <div class="li_img li_second"></div>
+            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
+            <p style="font-size: 12px;">
+              <a href="#" style="color: #019bff;">Explore &gt;</a>
+            </p>
+            <p class="buy_now" data-price="$ 1,499.99">$ 1,499.99</p>
+          </li>
+          <li align="center">
+            <div class="li_img li_third"></div>
+            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
+            <p style="font-size: 12px;">
+              <a href="#" style="color: #019bff;">Explore &gt;</a>
+            </p>
+            <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
+          </li>
+          <li align="center">
+            <div class="li_img li_forth"></div>
+            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
+            <p style="font-size: 12px;">
+              <a href="#" style="color: #019bff;">Explore &gt;</a>
+            </p>
+            <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+  $(function () {
+    //推荐
+    $('.buy_now').mouseover(function () {
+      $(this).text('Add to Cart');
+    });
+    $('.buy_now').mouseout(function () {
+      $(this).text($(this).data('price'));
+    });
+  })
+</script>
+</html>
