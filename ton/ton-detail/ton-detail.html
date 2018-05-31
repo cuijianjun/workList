@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
-<link rel="stylesheet" href="../../swiper-4.2.2.min.css">
+<script>
+  var head = document.getElementsByTagName('head')[0],
+    cssURL = 'https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.css?12687102929943583828',
+    linkTag = document.createElement('link');
+  linkTag.id = 'dynamic-style';
+  linkTag.href = cssURL;
+  linkTag.setAttribute('rel','stylesheet');
+  linkTag.setAttribute('media','all');
+  linkTag.setAttribute('type','text/css');
+  head.appendChild(linkTag);
+</script>
 <style>
   body{
     background-color: #fff;
+    line-height: normal !important;
   }
   *{
     margin: 0;
@@ -59,7 +70,7 @@
   .ton .ton-content .top{
     width: 100%;
     height: 900px;
-    background: url("./背景图1.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/1_b3bb6b59-1df9-4118-ab05-7160e77abf92.png?5118945988847581069") center center;
     position: relative;
   }
   .ton .ton-content .top .detail{
@@ -96,11 +107,11 @@
     height: 1060px;
   }
   .one .swiper-wrapper .slide1{
-    background: url('./黑色.png') center no-repeat;
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/8ee163965c752b4df31d594396825cee.png?5118945988847581069') center no-repeat;
     background-size:cover;
   }
   .one .swiper-wrapper .slide2{
-    background: url('./白色.png') center no-repeat;
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/1eae7ae6ce239862c44d09c80b59d31e.png?5118945988847581069') center no-repeat;
     background-size:cover;
   }
   .one span {
@@ -125,7 +136,7 @@
   .two{
     width: 100%;
     height: 1040px;
-    background: url("./背景图.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/2bfda3079c41ec83492919e87bb7d519.png?15432905380107427227") center center;
     position: relative;
   }
   .two .detail {
@@ -151,18 +162,18 @@
     color: #484848;
     margin-top: 20px;
   }
-  .three{
+  .third{
     width: 100%;
     height: 1040px;
-    background: url("./04免费app.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/04_app.png?3474213943760280921") center center;
     position: relative;
   }
-  .three .detail {
+  .third .detail {
     position: absolute;
     top: 180px;
     left: 400px;
   }
-  .three .detail .three-title {
+  .third .detail .third-title {
     width: 345px;
     font-family: AvalonBold;
     font-size: 52px;
@@ -170,7 +181,7 @@
     font-stretch: normal;
     color: #ffffff;
   }
-  .three .detail .three-detail {
+  .third .detail .third-detail {
     width: 382px;
     font-family: AvalonPlain;
     font-size: 20px;
@@ -178,17 +189,17 @@
     font-stretch: normal;
     color: #ffffff;
   }
-  .three .detail .img{
+  .third .detail .img{
     margin-top: 100px;
 
   }
-  .three .detail .img .left,.right{
+  .third .detail .img .left,.right{
     float: left;
   }
   .four{
     width: 100%;
     height: 1060px;
-    background: url("./背景图3.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/3_04494254-427f-4c84-ba53-63983a3a6f5d.png?13541133820246273156") center center;
     position: relative;
   }
   .four .detail {
@@ -215,7 +226,7 @@
   .five{
     width: 100%;
     height: 1060px;
-    background: url("./背景图4.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/4_eb9546ac-7329-4068-aa88-138f8341023a.png?8691975841308490530") center center;
     position: relative;
   }
   .five .detail {
@@ -244,7 +255,7 @@
   .six{
     width: 100%;
     height: 1060px;
-    background: url("./背景图5.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/5_79de4270-7b86-400a-b264-a9b504e07f04.png?11638713464909987105") center center;
     position: relative;
   }
   .six .detail {
@@ -272,7 +283,7 @@
   .seven{
     width: 100%;
     height: 1040px;
-    background: url("./08音量,音色一键调整.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/08.png?13707672130701710140") center center;
     position: relative;
   }
   .seven .detail {
@@ -300,7 +311,7 @@
   .eight{
     width: 100%;
     height: 1040px;
-    background: url("./09第三方app.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/09_app.png?15927387661629481990") center center;
     position: relative;
   }
   .eight .detail {
@@ -357,7 +368,6 @@
     margin-right: 20px;
   }
 </style>
-<body>
 <div class="ton">
   <div class="ton-content">
     <div class="top">
@@ -368,7 +378,7 @@
         <div class="top-detail">
           Unleashing the music instrument of the future.
         </div>
-        <img src="./矩形1拷贝.png" alt="">
+        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_d9ac378d-f67f-45b9-a962-1e55357becc4.png?6381524761189330648" alt="">
       </div>
     </div>
     <div class="one">
@@ -391,23 +401,23 @@
         </div>
       </div>
     </div>
-    <div class="three">
+    <div class="third">
       <div class="detail">
-        <div class="three-title">
+        <div class="third-title">
           Free iOS & Android Apps
         </div>
-        <div class="three-detail">
+        <div class="third-detail">
           Free apps provide various modes and let you learn in your preferred way.
         </div>
         <div class="img">
           <div class="left">
-            <img src="./OnePianist.png" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/OnePianist.png?12687102929943583828" alt="">
             <span class="txt">
               One Pianist
             </span>
           </div>
           <div class="right">
-            <img src="./TheONESmartPiano.png" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/TheONESmartPiano.png?12687102929943583828" alt="">
             <span class="txt">
               The ONE Smart Piano
             </span>
@@ -488,11 +498,11 @@
     </div>
   </div>
 </div>
-</body>
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.js?7174514192763789409"></script>
 <script>
   $(function () {
+    $($(".container.content")[1]).remove()
     var btn = ['', ''];
     var mySwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',

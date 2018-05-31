@@ -5,6 +5,15 @@
   <title>app-Introduction-page</title>
 </head>
 <style>
+  body{
+    line-height: normal !important;
+  }
+  li{
+    list-style: none;
+  }
+  .title{
+    text-transform: none !important;
+  }
   @-webkit-keyframes fadeInLeft {
     from {
       opacity: 0;
@@ -124,7 +133,7 @@
   .app .content .top{
     width: 100%;
     height: 900px;
-    background: url("./01TheONESmartPiano.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/01TheONESmartPiano.png?13479628261811198722") center center;
   }
   .app .content .top .detail{
     width: 1200px;
@@ -173,7 +182,7 @@
   .app .content .slider .box{
     margin-top: 80px;
     width: 100%;
-    height: 620px;
+    height: 650px;
     position: relative;
   }
   .app .content .slider .list{
@@ -238,27 +247,36 @@
     z-index: 2;
   }
   .app .content .slider .buttons{
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    bottom: 0;
-    text-align: center;
-    padding-top: 10px;
+    position: absolute !important;
+    width: 750px !important;
+    height: 30px !important;
+    bottom: -4px !important;
+    text-align: center !important;
+    padding-top: 10px !important;
+    margin-left: 20% !important;
   }
   .app .content .slider .buttons a{
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    padding-top: 4px;
-    cursor: pointer;
-    border-radius: 50%;
+
+    width: 5px !important;
+    height: 5px !important;
+
+
+    border-radius: 50% !important;
+  }
+  .app .content .slider span{
+    display: inline-block !important;
+    width: 5px !important;
+    height: 5px !important;
+    cursor: pointer !important;
+    background-color: #c1c1c1 !important;
+    border-radius: 50% !important;
   }
   .app .content .slider .blue{
-    background: blue;
+    background-color: #21baff !important;
   }
   #slider-text{
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     text-align: center;
     font-size: 25px;
     margin-left: 21.5%;
@@ -266,7 +284,7 @@
   }
   /*轮播图2*/
   .app .content .slider1{
-    margin: 100px 0 220px;
+    margin: 100px 0 100px;
    }
   .slider1 #box {
     width: 1200px;
@@ -306,8 +324,8 @@
     z-index: 999;
   }
   .slider1 #box .next {
-    background: url(./right.png) no-repeat;
-    right: -10px;
+    background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/right_6d52ab8b-fc57-48c1-b1a4-8988722b235b.png?5217660188725984792) no-repeat;
+    right: -170px;
   }
   #text{
     margin-top: 280px;
@@ -315,14 +333,14 @@
     font-size: 25px;
   }
   .slider1 #box .prev {
-    background: url(./left.png) no-repeat;
-    left: -10px;
+    background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/left_594b95a8-4a89-4d6a-a9b0-366b7606a41d.png?5217660188725984792) no-repeat;
+    left: -170px;
   }
   /*third*/
   .app .content .third{
     width: 100%;
     height: 900px;
-    background: url("./05拓展app.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/05_app.png?17847019586250689222") center center;
   }
   .app .content .third .third-content{
     color: #fff;
@@ -334,6 +352,7 @@
     font-size: 52px;
     font-weight: normal;
     font-stretch: normal;
+    color: #ffffff;
   }
   .app .content .third .third-content .third-detail {
     width: 806px;
@@ -347,7 +366,7 @@
   .app .content .fourth{
     width: 100%;
     height: 900px;
-    background: url("./4led灯.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/4led.png?253414549071366178") center center;
     margin-top: 50px;
   }
   .app .content .fourth .fourth-content{
@@ -369,24 +388,102 @@
     font-stretch: normal;
     color: #151515;
   }
+  /*推荐页*/
+  .pro {
+    width: 100%;
+    height: 550px;
+    background: #ddd;
+    padding-top: 50px;
+  }
+
+  .pro_main {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  .pro_detail {
+    margin-top: 33px;
+  }
+
+  .pro_detail ul {
+    width: 1200px;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .pro_detail ul li {
+    width: 290px;
+    height: 400px;
+    list-style: none;
+    background: #fff;
+  }
+
+  .pro_detail ul li:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 4px -4px #cdcece;
+  }
+
+  .pro_detail ul li .li_img {
+    width: 290px;
+    height: 230px;
+  }
+
+  .pro_detail ul li .li_first {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/tok.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail ul li .li_second {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/top.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail ul li .li_third {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/toh_e6bede7b-6045-4c45-901c-0436393f94aa.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail ul li .li_forth {
+    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/parts.png?5658618421159846973') center no-repeat;
+    background-size: cover;
+  }
+
+  .pro_detail .buy_now {
+    margin: 25px auto 0;
+    width: 180px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .pro_detail .buy_now:hover {
+    background: #019bff;
+    border-radius: 7px;
+    color: #fff;
+  }
 </style>
-<body>
-  <div class="app">
+<div class="app">
     <div class="content">
       <div class="top">
         <div class="detail">
           <div class="left">
-            <img src="./icon.png" width="176" height="176">
+            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/icon_778ffff6-ad0c-466a-b99a-d87c0507eee0.png?182996916133024878" width="176" height="176">
           </div>
           <div class="right">
             <div class="title">The ONE Smart Piano</div>
             <div class="content_detail">Award winning app to learn in your preferred way</div>
             <div class="download">
               <a href="#">
-                <img src="./App-Store.png" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/App-Store.png?2245986623202007619" alt="">
               </a>
               <a href="#">
-                <img style="margin-left: 10px" src="./2000px-Get_it_on_Google_play.svg.png" alt="">
+                <img style="margin-left: 10px" src="https://cdn.shopify.com/s/files/1/1017/9603/files/2000px-Get_it_on_Google_play.svg_f8675641-e1e0-41de-8bee-532967a6a4f4.png?5478191593510976319" alt="">
               </a>
             </div>
           </div>
@@ -396,11 +493,11 @@
         <div id="box">
           <div class="slide">
             <ul>
-              <li class="p5"><a href="#"><img  src="./44.png" ></a></li>
-              <li class="p4"><a href="#"><img  src="./11.png" ></a></li>
-              <li class="p3"><a href="#"><img  src="./22.png" ></a></li>
-              <li class="p2"><a href="#"><img  src="./33.png" ></a></li>
-              <li class="p1"><a href="#"><img  src="./44.png" ></a></li>
+              <li class="p5"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/44.png?14451309194875935372" ></a></li>
+              <li class="p4"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/11.png?14451309194875935372" ></a></li>
+              <li class="p3"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/22.png?14451309194875935372" ></a></li>
+              <li class="p2"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/33.png?14451309194875935372" ></a></li>
+              <li class="p1"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/44.png?14451309194875935372" ></a></li>
             </ul>
             <div class="arraw">
               <a href="javascript:;" class="next"></a>
@@ -410,20 +507,20 @@
         </div>
         <div id="text" class="animated fadeInLeft">Step by step crash course</div>
       </div>
-      <div class="top" style="background: url('./03OnePianist.png') center center;">
+      <div class="top" style="background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/03OnePianist.png?14417659569388484187') center center;">
         <div class="detail">
           <div class="left">
-            <img src="./512的副本拷贝.png" width="176" height="176">
+            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/512.png?13010153726654645044" width="176" height="176">
           </div>
           <div class="right">
             <div class="title">One Pianist</div>
             <div class="content_detail">Fun piano learning for kids, positive screen time for families!</div>
             <div class="download">
               <a href="#">
-                <img src="./App-Store.png" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/App-Store.png?13010153726654645044" alt="">
               </a>
               <a href="#">
-                <img style="margin-left: 10px" src="./2000px-Get_it_on_Google_play.svg.png" alt="">
+                <img style="margin-left: 10px" src="https://cdn.shopify.com/s/files/1/1017/9603/files/2000px-Get_it_on_Google_play.svg_f8675641-e1e0-41de-8bee-532967a6a4f4.png?13010153726654645044" alt="">
               </a>
             </div>
           </div>
@@ -433,24 +530,24 @@
         <div class="box">
           <div class="list">
             <ul>
-              <li class="p4"><a href="#"><img  src="./4.png" ></a></li>
-              <li class="p3"><a href="#"><img  src="./3.png" ></a></li>
-              <li class="p2"><a href="#"><img  src="./2.png" ></a></li>
-              <li class="p1"><a href="#"><img  src="./1.png" ></a></li>
+              <li class="p4"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_34ed7e55-0c8b-42da-85c7-c351539ac716.png?15058581080148892265" ></a></li>
+              <li class="p3"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_ac9dcbaf-eb0a-4d14-a743-f10dadd8ccd0.png?15058581080148892265" ></a></li>
+              <li class="p2"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_f24246f4-aebd-42e5-8c76-cb4da6288692.png?15058581080148892265" ></a></li>
+              <li class="p1"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_a2fafafc-a74d-4928-a3e4-979c826e1a7f.png?15058581080148892265" ></a></li>
             </ul>
           </div>
           <!--<a href="javascript:;" class="prev btn"><</a>-->
           <!--<a href="javascript:;" class="next btn">></a>-->
           <div id="slider-text">
-            <span>Fun and engaging curriculum designed for kids</span>
+            <div>Fun and engaging curriculum designed for kids</div>
           </div>
 
-          <!--<div class="buttons">-->
-            <!--<a href="javascript:;"><span class="blue"></span></a>-->
-            <!--<a href="javascript:;"><span></span></a>-->
-            <!--<a href="javascript:;"><span></span></a>-->
-            <!--<a href="javascript:;"><span></span></a>-->
-          <!--</div>-->
+          <div class="buttons">
+            <span class="blue"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
       </div>
@@ -476,20 +573,63 @@
       </div>
     </div>
   </div>
-</body>
-</html>
-<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+<div class="pro">
+  <div class="pro_main">
+    <span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;">
+      Recommend</span>
+    <div class="pro_detail">
+      <ul>
+        <li align="center">
+          <div class="li_img li_first"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_second"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 1,499.99">$ 1,499.99</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_third"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
+        </li>
+        <li align="center">
+          <div class="li_img li_forth"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
+          <p style="font-size: 12px;">
+            <a href="#" style="color: #019bff;">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
 <script type="text/javascript">
   $(function () {
-    // var $a=$(".slider .buttons a");
-    // var $s=$(".slider .buttons span");
+    clearInterval(timer1);
+    //			进入页面自动开始定时器
+    var timer1=setInterval(nextimg,3000);
+    var $a=$(".slider .buttons a");
+    var $s=$(".slider .buttons span");
     var cArr=["p4","p3","p2","p1"];
     var ArrayT = {
       4:"Detailed analysis score to help further improve",
       1:"Fun and engaging curriculum designed for kids",
       2:"Flowing Sheet Music with real time feedback",
       3:"Staff game to make it more fun"
-    }
+    };
     var index=0;
     $(".next").click(
       function(){
@@ -515,7 +655,7 @@
       if (index<0) {
         index=3;
       }
-      $("#slider-text").addClass("animated fadeInLeft").find("span").html(ArrayT[index+1])
+      $("#slider-text").addClass("animated fadeInLeft").find("div").html(ArrayT[index+1])
       //show();
       setTimeout(function () {
         $("#slider-text").removeClass()
@@ -533,14 +673,16 @@
       if (index>3) {
         index=0;
       }
-      $("#slider-text").addClass("animated fadeInRight").find("span").html(ArrayT[index+1])
-      //show();
+      console.log(index+1);
+      console.log(ArrayT[index+1]);
+      $("#slider-text").addClass("animated fadeInRight").find("div").html(ArrayT[index+1])
+      show();
       setTimeout(function () {
         $("#slider-text").removeClass()
       },1000)
     }
     //通过底下按钮点击切换
-    /*$a.each(function(){
+    $a.each(function(){
       $(this).click(function(){
         var myindex=$(this).index();
         var b=myindex-index;
@@ -548,13 +690,13 @@
           return;
         }
         else if(b>0) {
-          /!*
+          /*
            * splice(0,b)的意思是从索引0开始,取出数量为b的数组
            * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
            * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
            * 这时候原本的数组也将这部分数组进行移除了
            * 再把移除的数组添加的原本的数组的后面
-           *!/
+           */
           var newarr=cArr.splice(0,b);
           cArr=$.merge(cArr,newarr);
           $(".slider li").each(function(i,e){
@@ -564,13 +706,13 @@
           show();
         }
         else if(b<0){
-          /!*
+          /*
            * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
            * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
            * 也就是从原本的照片到需要点击的照片的数组
            * 然后将原本的数组跟取出的数组进行拼接
            * 再次倒序,使原本的倒序变为正序
-           *!/
+           */
           cArr.reverse();
           var oldarr=cArr.splice(0,-b)
           cArr=$.merge(cArr,oldarr);
@@ -582,12 +724,12 @@
           show();
         }
       })
-    })*/
+    })
 
     //改变底下按钮的背景色
-    /*function show(){
-      $($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
-    }*/
+    function show(){
+      $($s).eq(index).addClass("blue").siblings().removeClass("blue");
+    }
 
     //点击class为p2的元素触发上一张照片的函数
     $(document).on("click",".slider .p1",function(){
@@ -603,16 +745,22 @@
 
     //			鼠标移入box时清除定时器
     $(".slider .box").mouseover(function(){
-      clearInterval(timer);
+      clearInterval(timer1);
     })
 
     //			鼠标移出box时开始定时器
     $(".slider .box").mouseleave(function(){
-     var timer=setInterval(nextimg,4000);
+      clearInterval(timer1);
+      timer1=setInterval(nextimg,3000);
     })
 
-    //			进入页面自动开始定时器
-    var timer=setInterval(nextimg,4000);
+    //推荐
+    $('.buy_now').mouseover(function () {
+      $(this).text('Add to Cart');
+    });
+    $('.buy_now').mouseout(function () {
+      $(this).text($(this).data('price'));
+    });
   })
   $(function () {
     var box = document.querySelector('#box');
@@ -831,4 +979,5 @@
     };
   })
 </script>
+</html>
 
