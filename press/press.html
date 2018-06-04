@@ -5,8 +5,19 @@
   <title>Title</title>
 </head>
 <style>
-  body{
-    background-color: #fff;
+  body {
+    line-height: normal !important;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .title {
+    text-transform: none !important;
+  }
+  a{
+    color: #000;
   }
   @font-face {
     font-family: "Avalon_Italic";
@@ -50,24 +61,30 @@
     font-weight: normal;
     font-style: normal;
   }
-  *{
+
+  * {
     margin: 0;
     padding: 0;
   }
-  .clearfix{
-    *zoom:1;
+
+  .clearfix {
+    *zoom: 1;
   }
-  .clearfix:after{
+
+  .clearfix:after {
     content: "";
     display: block;
     clear: both;
   }
-  .container{
+
+  .container {
     padding: 100px 18% 0;
   }
-  .container .title{
+
+  .container .title {
     width: 100%;
   }
+
   .container .title .title-top {
     text-align: center;
     font-family: AvalonBold;
@@ -76,7 +93,8 @@
     font-stretch: normal;
     color: #161616;
   }
-  .container .title .detail{
+
+  .container .title .detail {
     text-align: center;
     font-family: AvalonPlain;
     font-size: 26px;
@@ -84,18 +102,21 @@
     font-stretch: normal;
     color: #535558;
   }
-  .container .top{
+
+  .container .top {
     margin-top: 30px;
   }
-  .container .top .left{
+
+  .container .top .left {
     width: 589px;
     height: 560px;
     border-radius: 8px;
-    background: url("./new1.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/new1_93d4a099-48f6-411e-8caf-a60adc47d1ac.png?1290123081317396354") center center;
     float: left;
     position: relative;
   }
-  .container .top .left .left-title{
+
+  .container .top .left .left-title {
     position: absolute;
     bottom: 75px;
     left: 30px;
@@ -103,7 +124,8 @@
     font-size: 25px;
     color: #535558;
   }
-  .container .top .left .top-left-tips{
+
+  .container .top .left .top-left-tips {
     position: absolute;
     bottom: 25px;
     left: 30px;
@@ -111,25 +133,29 @@
     font-size: 12px;
     color: #3b9cff;
   }
-  .container .top .right{
+
+  .container .top .right {
     float: right;
   }
-  .container .top .right .right-top{
+
+  .container .top .right .right-top {
     width: 588px;
     height: 268px;
     border-radius: 8px;
-    background: url("./new2.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/new2_19e573ef-5e01-4b9d-b961-13c32f470a00.png?7145437170338703233") center center;
     position: relative;
   }
+
   .container .top .right .bottom {
     width: 589px;
     height: 269px;
     border-radius: 8px;
-    background: url("./new3.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/new3_31727bf3-bcdb-47f2-a78b-d78a7316be9d.png?7145437170338703233") center center;
     margin-top: 24px;
     position: relative;
   }
-  .container .top .right .right-top .right-top-title{
+
+  .container .top .right .right-top .right-top-title {
     position: absolute;
     top: 20px;
     right: 40px;
@@ -138,7 +164,8 @@
     font-size: 25px;
     color: #535558;
   }
-  .container .top .right .right-top .right-top-tips{
+
+  .container .top .right .right-top .right-top-tips {
     position: absolute;
     bottom: 20px;
     right: 200px;
@@ -146,7 +173,8 @@
     font-size: 12px;
     color: #3b9cff;
   }
-  .container .top .right .bottom .bottom-title{
+
+  .container .top .right .bottom .bottom-title {
     position: absolute;
     left: 25px;
     top: 35px;
@@ -155,7 +183,8 @@
     font-size: 25px;
     color: #535558;
   }
-  .container .top .right .bottom .bottom-tips{
+
+  .container .top .right .bottom .bottom-tips {
     position: absolute;
     bottom: 25px;
     left: 25px;
@@ -163,27 +192,30 @@
     font-size: 12px;
     color: #3b9cff;
   }
-  .container .mediaLogo{
+
+  .container .mediaLogo {
     width: 1146px;
     height: 259px;
-    background: url("./媒体logo.png") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/logo_5a5e6224-54d8-4f3e-97a9-be2b96aef666.png?668246663048113029") center center;
     margin: 75px 25px;
   }
-  .specificReports .one{
+
+  .specificReports .one {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
     float: left;
-    break-inside:avoid
+    break-inside: avoid
   }
-  .specificReports{
+
+  .specificReports {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    column-gap:30px;
+    column-gap: 30px;
   }
 
-  .specificReports .one .spc-content{
+  .specificReports .one .spc-content {
     position: absolute;
     left: 25px;
     bottom: 80px;
@@ -191,7 +223,8 @@
     font-size: 16px;
     color: #535558;
   }
-  .specificReports .one .spc-tips{
+
+  .specificReports .one .spc-tips {
     position: absolute;
     left: 25px;
     bottom: 20px;
@@ -199,6 +232,7 @@
     font-size: 12px;
     color: #3b9cff;
   }
+
   /*推荐页*/
   .pro {
     width: 100%;
@@ -279,191 +313,210 @@
     color: #fff;
   }
 </style>
-<body>
-  <div class="container">
-    <div class="title">
-      <div class="title-top">
-        In the press
+<div class="container">
+  <div class="title">
+    <div class="title-top">
+      In the press
+    </div>
+    <div class="detail">
+      NEWSROOMALTITUDE
+    </div>
+  </div>
+  <div class="top clearfix">
+    <div class="left">
+      <div class="left-title">
+        Piano Hi-Lite: Gold Winner of Edison Award 2018!
       </div>
-      <div class="detail">
-        NEWSROOMALTITUDE
+      <div class="top-left-tips">
+        Edison Award
       </div>
     </div>
-    <div class="top clearfix">
-      <div class="left">
-        <div class="left-title">
-          Piano Hi-Lite: Gold Winner of Edison Award 2018!
+    <div class="right">
+      <div class="right-top">
+        <div class="right-top-title">
+          A top quality keyboard product which "unlocks incredible possibilities"!
         </div>
-        <div class="top-left-tips">
-          Edison Award
-        </div>
-      </div>
-      <div class="right">
-        <div class="right-top">
-          <div class="right-top-title">
-            A top quality keyboard product which "unlocks incredible possibilities"!
-          </div>
-          <div class="right-top-tips">
-            AppleInsider
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="bottom-title">
-            If you’re looking to learn, The ONE works.
-          </div>
-          <div class="bottom-tips">
-            Techcrunch
-          </div>
+        <div class="right-top-tips">
+          AppleInsider
         </div>
       </div>
-    </div>
-    <div class="mediaLogo"></div>
-    <div class="specificReports">
-      <div class="one">
-        <img src="./第二组1.png" alt="">
-        <div class="spc-content">
-          Mom’s Choice Awards Winner
+      <div class="bottom">
+        <div class="bottom-title">
+          If you’re looking to learn, The ONE works.
         </div>
-        <div class="spc-tips">
-          Awards Winner
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第二组4.png" alt="">
-        <div class="spc-content" style="bottom: 60px;">
-          [The ONE] is a patient instructor who is willing to let me proceed at my own pace.
-        </div>
-        <div class="spc-tips">
-          USA Today
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第三组1.png" alt="">
-        <div class="spc-content">
-          This smart keyboard will teach you how to play it.
-        </div>
-        <div class="spc-tips">
-          CNET
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第三组4.png" alt="">
-        <div class="spc-content" style="bottom: 60px;">
-          One of the Best Xmas Present The Washington Times
-        </div>
-        <div class="spc-tips">
-          The Washington Times
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第二组2.png" alt="">
-        <div class="spc-content">
-          Steve Wonder at The ONE CES Booth
-        </div>
-        <div class="spc-tips">
-          CES 2018
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第三组2.png" alt="">
-        <div class="spc-content" style="bottom: 60px;">
-          MIDI support also works with Garageband on iPad
-        </div>
-        <div class="spc-tips">
-          LON.TV
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第三组5.png" alt="">
-        <div class="spc-content">
-          A way to learn at your own pace!
-        </div>
-        <div class="spc-tips">
-          ABC News
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第二组3.png" alt="">
-        <div class="spc-content" style="bottom: 60px;">
-          Piano Hi-Lite “Helps You Pick Up a New Hobby”.
-        </div>
-        <div class="spc-tips">
-          Inc. Magazine
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第二组5.png" alt="">
-        <div class="spc-content" style="bottom: 60px;">
-          This gadget turns your old piano into an educational ‘smart’ piano.
-        </div>
-        <div class="spc-tips">
-          The Next Web
-        </div>
-      </div>
-      <div class="one">
-        <img src="./第三组3.png" alt="">
-        <div class="spc-content">
-          We are finally here in Europe!
-        </div>
-        <div class="spc-tips">
-          Muiskmesse 2018
+        <div class="bottom-tips">
+          Techcrunch
         </div>
       </div>
     </div>
   </div>
-  <div class="pro">
-    <div class="pro_main">
-    <span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;">
-      Recommend</span>
-      <div class="pro_detail">
-        <ul>
-          <li align="center">
-            <div class="li_img li_first"></div>
-            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
-            <p style="font-size: 12px;">
-              <a href="#" style="color: #019bff;">Explore &gt;</a>
-            </p>
-            <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
-          </li>
-          <li align="center">
-            <div class="li_img li_second"></div>
-            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
-            <p style="font-size: 12px;">
-              <a href="#" style="color: #019bff;">Explore &gt;</a>
-            </p>
-            <p class="buy_now" data-price="$ 1,499.99">$ 1,499.99</p>
-          </li>
-          <li align="center">
-            <div class="li_img li_third"></div>
-            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
-            <p style="font-size: 12px;">
-              <a href="#" style="color: #019bff;">Explore &gt;</a>
-            </p>
-            <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
-          </li>
-          <li align="center">
-            <div class="li_img li_forth"></div>
-            <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
-            <p style="font-size: 12px;">
-              <a href="#" style="color: #019bff;">Explore &gt;</a>
-            </p>
-            <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
-          </li>
-        </ul>
+  <div class="mediaLogo"></div>
+  <div class="specificReports">
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_cd952d95-1f6b-416b-8f6f-5d6608eed6b8.png?11743589259568830038"
+          alt="">
+      <div class="spc-content">
+        Mom’s Choice Awards Winner
+      </div>
+      <div class="spc-tips">
+        Awards Winner
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_3d5d69c6-3150-4781-982d-cf719e0106a4.png?11585395650881088447"
+          alt="">
+      <div class="spc-content" style="bottom: 60px;">
+        [The ONE] is a patient instructor who is willing to let me proceed at my own pace.
+      </div>
+      <div class="spc-tips">
+        USA Today
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_73988171-f27b-478b-90c8-2819597bee44.png?1164329450606921706"
+          alt="">
+      <div class="spc-content">
+        This smart keyboard will teach you how to play it.
+      </div>
+      <div class="spc-tips">
+        CNET
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_cd042ee6-bad6-403c-9fc5-f5dd2ba8bbbe.png?11977900981875205597"
+          alt="">
+      <div class="spc-content" style="bottom: 60px;">
+        One of the Best Xmas Present The Washington Times
+      </div>
+      <div class="spc-tips">
+        The Washington Times
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_b6960e4c-474f-4356-a24a-636bf87b4100.png?7922597850251080772"
+          alt="">
+      <div class="spc-content">
+        Steve Wonder at The ONE CES Booth
+      </div>
+      <div class="spc-tips">
+        CES 2018
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_4f4a385c-9feb-4b96-86af-e0396f6a1a29.png?605032694142988530"
+          alt="">
+      <div class="spc-content" style="bottom: 60px;">
+        MIDI support also works with Garageband on iPad
+      </div>
+      <div class="spc-tips">
+        LON.TV
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_7f9d531d-306e-427c-a994-7a0fecbb8a71.png?10313202496253379428"
+          alt="">
+      <div class="spc-content">
+        A way to learn at your own pace!
+      </div>
+      <div class="spc-tips">
+        ABC News
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_8fae113d-a316-4288-8c7d-90779fd0d94c.png?12070654923880549951"
+          alt="">
+      <div class="spc-content" style="bottom: 60px;">
+        Piano Hi-Lite “Helps You Pick Up a New Hobby”.
+      </div>
+      <div class="spc-tips">
+        Inc. Magazine
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_e82ff3d3-0f55-4f99-b936-28a111c79939.png?18064346786202708114"
+          alt="">
+      <div class="spc-content" style="bottom: 60px;">
+        This gadget turns your old piano into an educational ‘smart’ piano.
+      </div>
+      <div class="spc-tips">
+        The Next Web
+      </div>
+    </div>
+    <div class="one">
+      <img
+          src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_a307032f-b6c3-4a28-9b50-60ad740b9ff3.png?17451774233299164010"
+          alt="">
+      <div class="spc-content">
+        We are finally here in Europe!
+      </div>
+      <div class="spc-tips">
+        Muiskmesse 2018
       </div>
     </div>
   </div>
-</body>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</div>
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
 <script>
   $(function () {
     //推荐
-    $('.buy_now').mouseover(function () {
+    $('body').on("mouseover", ".buy_now", function () {
       $(this).text('Add to Cart');
     });
-    $('.buy_now').mouseout(function () {
+    $('body').on("mouseout", ".buy_now", function () {
       $(this).text($(this).data('price'));
     });
+    $(".container.main.content").after(`
+    <div class="pro">
+  <div class="pro_main">
+  <span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;">
+    Recommend</span>
+    <div class="pro_detail">
+      <ul>
+        <li align="center">
+          <div class="li_img li_first"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
+          <p style="font-size: 12px;">
+            <a target="_blank" href="#" style="color: #019bff;outline: none">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 759.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-keyboard-pro-88-keys-portable-piano">$ 759.00</a></p>
+        </li>
+        <li align="center">
+          <div class="li_img li_second"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
+          <p style="font-size: 12px;">
+            <a target="_blank" href="https://www.smartpiano.com/pages/smart-piano-1" style="color: #019bff;outline: none">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano-1?variant=12103129563238">$ 1,499.99</a></p>
+        </li>
+        <li align="center">
+          <div class="li_img li_third"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
+          <p style="font-size: 12px;">
+            <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 269.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.00</a></p>
+        </li>
+        <li align="center">
+          <div class="li_img li_forth"></div>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
+          <p style="font-size: 12px;">
+            <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="color: #019bff;outline: none">Explore &gt;</a>
+          </p>
+          <p class="buy_now" data-price="$ 39.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 39.99 - $ 79.99</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>`)
   })
 </script>
 </html>
