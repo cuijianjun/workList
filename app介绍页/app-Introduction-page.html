@@ -5,11 +5,15 @@
   <title>app-Introduction-page</title>
 </head>
 <style>
+
   body{
     line-height: normal !important;
   }
   li{
     list-style: none;
+  }
+  .pro_detail li{
+    text-align: center;
   }
   .title{
     text-transform: none !important;
@@ -190,23 +194,29 @@
     height: 532px;
     overflow: hidden;
     position: absolute;
-    /*left: 50%;*/
-    /*margin-left: -600px;*/
+
+  }
+  .app .content .slider .list li img{
+    cursor: auto;
+  }
+  #slider-text,.app .content .slider .buttons{
+    cursor: auto;
   }
   .app .content .slider .btn{
     position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    width: 60px;
-    height: 100px;
+    z-index: 9999;
+    top: 25%;
+    margin-top: -44px;
+    width: 20%;
+    height: 300px;
     line-height: 100px;
     font-size: 30px;
     color: white;
     text-decoration: none;
     text-align: center;
-    background: rgba(0,255,0,.5);
+    background: rgba(0,255,0,0);
     cursor: pointer;
-    display: none;
+    list-style: none;
   }
   .app .content .slider .next{
     right: 0;
@@ -322,6 +332,7 @@
     top: 50%;
     margin-top: -55px;
     z-index: 999;
+    cursor: pointer;
   }
   .slider1 #box .next {
     background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/right_6d52ab8b-fc57-48c1-b1a4-8988722b235b.png?5217660188725984792) no-repeat;
@@ -467,6 +478,14 @@
     border-radius: 7px;
     color: #fff;
   }
+  /*推荐页链接*/
+  .buy_now a{
+    color: #000000;
+    outline:none;
+  }
+  .buy_now:hover a{
+    color: #fff;
+  }
 </style>
 <div class="app">
     <div class="content">
@@ -479,10 +498,10 @@
             <div class="title">The ONE Smart Piano</div>
             <div class="content_detail">Award winning app to learn in your preferred way</div>
             <div class="download">
-              <a href="#">
+              <a href="https://itunes.apple.com/us/app/the-one-smart-piano-by-the-one/id1267703721?mt=8" target="_blank">
                 <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/App-Store.png?2245986623202007619" alt="">
               </a>
-              <a href="#">
+              <a href="https://play.google.com/store/apps/details?id=com.theonepiano.oversea.smartpiano&hl=zh" target="_blank">
                 <img style="margin-left: 10px" src="https://cdn.shopify.com/s/files/1/1017/9603/files/2000px-Get_it_on_Google_play.svg_f8675641-e1e0-41de-8bee-532967a6a4f4.png?5478191593510976319" alt="">
               </a>
             </div>
@@ -493,11 +512,11 @@
         <div id="box">
           <div class="slide">
             <ul>
-              <li class="p5"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/44.png?14451309194875935372" ></a></li>
-              <li class="p4"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/11.png?14451309194875935372" ></a></li>
-              <li class="p3"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/22.png?14451309194875935372" ></a></li>
-              <li class="p2"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/33.png?14451309194875935372" ></a></li>
-              <li class="p1"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/44.png?14451309194875935372" ></a></li>
+              <li class="p5"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/44.png?14451309194875935372" ></li>
+              <li class="p4"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/11.png?14451309194875935372" ></li>
+              <li class="p3"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/22.png?14451309194875935372" ></li>
+              <li class="p2"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/33.png?14451309194875935372" ></li>
+              <li class="p1"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/44.png?14451309194875935372" ></li>
             </ul>
             <div class="arraw">
               <a href="javascript:;" class="next"></a>
@@ -516,10 +535,10 @@
             <div class="title">One Pianist</div>
             <div class="content_detail">Fun piano learning for kids, positive screen time for families!</div>
             <div class="download">
-              <a href="#">
+              <a href="https://itunes.apple.com/us/app/one-pianist-by-the-one/id1255389741?mt=8" target="_blank">
                 <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/App-Store.png?13010153726654645044" alt="">
               </a>
-              <a href="#">
+              <a href="https://play.google.com/store/apps/details?id=com.theonepiano.pianist&hl=en_US" target="_blank">
                 <img style="margin-left: 10px" src="https://cdn.shopify.com/s/files/1/1017/9603/files/2000px-Get_it_on_Google_play.svg_f8675641-e1e0-41de-8bee-532967a6a4f4.png?13010153726654645044" alt="">
               </a>
             </div>
@@ -530,18 +549,17 @@
         <div class="box">
           <div class="list">
             <ul>
-              <li class="p4"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_34ed7e55-0c8b-42da-85c7-c351539ac716.png?15058581080148892265" ></a></li>
-              <li class="p3"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_ac9dcbaf-eb0a-4d14-a743-f10dadd8ccd0.png?15058581080148892265" ></a></li>
-              <li class="p2"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_f24246f4-aebd-42e5-8c76-cb4da6288692.png?15058581080148892265" ></a></li>
-              <li class="p1"><a href="#"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_a2fafafc-a74d-4928-a3e4-979c826e1a7f.png?15058581080148892265" ></a></li>
+              <li class="p4"><a href="" onclick="return false"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_34ed7e55-0c8b-42da-85c7-c351539ac716.png?15058581080148892265" ></a></li>
+              <li class="p3"><a href="" onclick="return false"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_ac9dcbaf-eb0a-4d14-a743-f10dadd8ccd0.png?15058581080148892265" ></a></li>
+              <li class="p2"><a href="" onclick="return false"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_f24246f4-aebd-42e5-8c76-cb4da6288692.png?15058581080148892265" ></a></li>
+              <li class="p1"><a href="" onclick="return false"><img  src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_a2fafafc-a74d-4928-a3e4-979c826e1a7f.png?15058581080148892265" ></a></li>
             </ul>
           </div>
-          <!--<a href="javascript:;" class="prev btn"><</a>-->
-          <!--<a href="javascript:;" class="next btn">></a>-->
+          <a href="javascript:;" class="prev btn"><</a>
+          <a href="javascript:;" class="next btn">></a>
           <div id="slider-text">
             <div>Fun and engaging curriculum designed for kids</div>
           </div>
-
           <div class="buttons">
             <span class="blue"></span>
             <span></span>
@@ -549,7 +567,6 @@
             <span></span>
           </div>
         </div>
-
       </div>
       <div class="third">
         <div class="third-content">
@@ -580,36 +597,38 @@
     <div class="pro_detail">
       <ul>
         <li align="center">
+          <!--ton-->
           <div class="li_img li_first"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="#" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 759.00">$ 759.00</p>
+          <p class="buy_now" data-price="$ 759.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-keyboard-pro-88-keys-portable-piano">$ 759.00</a></p>
         </li>
         <li align="center">
           <div class="li_img li_second"></div>
+          <!--top-->
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/pages/smart-piano-1" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 1,499.99">$ 1,499.99</p>
+          <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano-1?variant=12103129563238">$ 1,499.99</a></p>
         </li>
         <li align="center">
           <div class="li_img li_third"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 269.00">$ 269.00</p>
+          <p class="buy_now" data-price="$ 269.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.00</a></p>
         </li>
         <li align="center">
           <div class="li_img li_forth"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
           <p style="font-size: 12px;">
-            <a href="#" style="color: #019bff;">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none;color: #019bff;">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 39.99 - $ 79.99">$ 39.99 - $ 79.99</p>
+          <p class="buy_now" data-price="$ 39.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 39.99 - $ 79.99</a></p>
         </li>
       </ul>
     </div>
@@ -621,7 +640,7 @@
     clearInterval(timer1);
     //			进入页面自动开始定时器
     var timer1=setInterval(nextimg,3000);
-    var $a=$(".slider .buttons a");
+    var $a=$(".slider .buttons span");
     var $s=$(".slider .buttons span");
     var cArr=["p4","p3","p2","p1"];
     var ArrayT = {
@@ -753,14 +772,6 @@
       clearInterval(timer1);
       timer1=setInterval(nextimg,3000);
     })
-
-    //推荐
-    $('.buy_now').mouseover(function () {
-      $(this).text('Add to Cart');
-    });
-    $('.buy_now').mouseout(function () {
-      $(this).text($(this).data('price'));
-    });
   })
   $(function () {
     var box = document.querySelector('#box');
@@ -977,6 +988,15 @@
         return window.getComputedStyle(obj, null)[attr];
       };
     };
+  })
+  $(function () {
+    //推荐
+    $('.buy_now').mouseenter(function () {
+      $(this).find("a").html(`Buy Now`);
+    });
+    $('.buy_now').mouseleave(function () {
+      $(this).find("a").text($(this).data('price'));
+    });
   })
 </script>
 </html>

@@ -13,7 +13,7 @@ ul {
 }
 
 .tok_top {
-  z-index:99;
+  z-index:2;
   position: fixed;
   margin-top: 60px;
   height: 50px;
@@ -95,16 +95,39 @@ ul {
   height: 1000px;
 }
 .tok_three .swiper-wrapper .slide1{
-  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/black_new.jpg?18019930854759509705') center no-repeat;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/black_new.png?2800659026628408362') center no-repeat;
   background-size:cover;
 }
 .tok_three .swiper-wrapper .slide2{
-  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/goldwhite.png?16090967557313199992') center no-repeat;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/goldwhite_6e234bee-35c5-468b-ada2-9301968bba97.png?2800659026628408362') center no-repeat;
   background-size:cover;
 }
 .tok_three .swiper-wrapper .slide3{
-  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink_472f614c-8fd6-4957-a977-b92336dcb840.png?16090967557313199992') center no-repeat;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink_65ee4e5b-3099-4a21-b9d7-6199a0911120.png?2800659026628408362') center no-repeat;
   background-size:cover;
+}
+.tok_three span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.tok_three span:first-child{
+  background: #313131;
+  margin-left: 20px !important;
+}
+.tok_three span:nth-child(2){
+  background: #b39b88;
+  margin-left: 20px !important;
+}
+.tok_three span:last-child {
+  background: #e7b3b9;
+  margin-left: 20px !important;
+}
+
+.tok_three .swiper-pagination-bullet-active {
+  border: 2px solid #ffffff;
 }
 
 .tok_three .three_word {
@@ -258,7 +281,7 @@ ul {
 }
 
 .video_close {
-  z-index: 9;
+  z-index: 5;
   display: block;
   width: 50px;
   height: 30px;
@@ -298,7 +321,7 @@ ul {
   <p style="font-size: 52px; color: #fff; margin-bottom: 20px; margin-top: 350px;">Play Piano in 3 Minutes</p>
   <div><img id="playInt" class="video_play" src="https://cdn.shopify.com/s/files/1/1017/9603/files/play.png?11449960023002009309" alt="" /></div>
   <div id="videoInt" class="video_div">
-    <div style="z-index: 9999; width: 1300px; height: 800px; margin: 0 auto; margin-top: 100px; display: flex; justify-content: center; position: relative;"><span id="closeInt" class="video_close">X</span> <video id="Intvideo" class="video_video" controls="controls" src="https://cdn.shopify.com/s/files/1/1017/9603/files/intro_video1.mp4?9292735374815948380"></video></div>
+    <div style="z-index: 5; width: 1300px; height: 800px; margin: 0 auto; margin-top: 100px; display: flex; justify-content: center; position: relative;"><span id="closeInt" class="video_close">X</span> <video id="Intvideo" class="video_video" controls="controls" src="https://cdn.shopify.com/s/files/1/1017/9603/files/intro_video1.mp4?9292735374815948380"></video></div>
   </div>
 </div>
 <div class="tok_one tok">
@@ -352,26 +375,29 @@ ul {
   </ul>
 </div>
 <div class="tok_up" id="tok_up"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/upup.png?11385509594722347866" width="12" height="11" alt="" /></div>
-<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script><script src="https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.js?7174514192763789409"></script><script>// <![CDATA[
-var btn = ['Onyx Black','White Gold','Sakura Pink'];
-var mySwiper = new Swiper ('.swiper-container', {
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.js?7174514192763789409"></script><script>// <![CDATA[
+var btn = ['', '',''];
+var mySwiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: true,
-  autoplay:{
-    disableOnInteraction : false,
-  },
+  autoplay:true,
   // 如果需要分页器
   pagination: {
     el: '.swiper-pagination',
-    clickable :true,
+    clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + (btn[index]) + '</span>';
     },
   },
 })
-$('.swiper-pagination').css('bottom','300px');
-$('.swiper-pagination-bullet').css('backgroundColor','transparent');
-$('.swiper-pagination-bullet').css('width','120px');
+mySwiper.el.onmouseover = function(){
+  mySwiper.autoplay.stop();
+}
+mySwiper.el.onmouseout = function(){
+  mySwiper.autoplay.start();
+}
+$('.swiper-pagination').css('bottom', '290px');
 $('#tok_up').click(function(){
   if($(window).scrollTop()>100){
     $('body,html').animate({scrollTop:0},1000);

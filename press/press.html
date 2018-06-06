@@ -16,9 +16,7 @@
   .title {
     text-transform: none !important;
   }
-  a{
-    color: #000;
-  }
+
   @font-face {
     font-family: "Avalon_Italic";
     src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
@@ -78,7 +76,7 @@
   }
 
   .container {
-    padding: 100px 18% 0;
+    padding: 50px 0 0;
   }
 
   .container .title {
@@ -312,6 +310,16 @@
     border-radius: 7px;
     color: #fff;
   }
+
+  /*推荐页链接*/
+  .buy_now a {
+    color: #000000;
+    outline: none;
+  }
+
+  .buy_now:hover a {
+    color: #fff;
+  }
 </style>
 <div class="container">
   <div class="title">
@@ -468,11 +476,11 @@
 <script>
   $(function () {
     //推荐
-    $('body').on("mouseover", ".buy_now", function () {
-      $(this).text('Add to Cart');
+    $('body').on("mouseenter", ".buy_now", function () {
+      $(this).find("a").html(`Buy Now`);
     });
-    $('body').on("mouseout", ".buy_now", function () {
-      $(this).text($(this).data('price'));
+    $('body').on("mouseleave", ".buy_now", function () {
+      $(this).find("a").text($(this).data('price'));
     });
     $(".container.main.content").after(`
     <div class="pro">
@@ -482,6 +490,7 @@
     <div class="pro_detail">
       <ul>
         <li align="center">
+          <!--ton-->
           <div class="li_img li_first"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
           <p style="font-size: 12px;">
@@ -491,6 +500,7 @@
         </li>
         <li align="center">
           <div class="li_img li_second"></div>
+          <!--top-->
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/pages/smart-piano-1" style="color: #019bff;outline: none">Explore &gt;</a>
@@ -509,7 +519,7 @@
           <div class="li_img li_forth"></div>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
           <p style="font-size: 12px;">
-            <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="color: #019bff;outline: none">Explore &gt;</a>
+            <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none;color: #019bff;">Explore &gt;</a>
           </p>
           <p class="buy_now" data-price="$ 39.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 39.99 - $ 79.99</a></p>
         </li>
