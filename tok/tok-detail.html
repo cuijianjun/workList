@@ -391,93 +391,93 @@ ul {
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.js?7174514192763789409"></script>
 <script>
-var btn = ['', '',''];
-var mySwiper = new Swiper('.swiper-container', {
-  direction: 'horizontal',
-  loop: true,
-  autoplay:true,
-  // 如果需要分页器
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (btn[index]) + '</span>';
+  var btn = ['', '',''];
+  var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay:true,
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (btn[index]) + '</span>';
+      },
     },
-  },
-})
-$(".container.content").remove();
-mySwiper.el.onmouseover = function(){
-  mySwiper.autoplay.stop();
-}
-mySwiper.el.onmouseout = function(){
-  mySwiper.autoplay.start();
-}
-$('.swiper-pagination').css('bottom', '340px');
-$('#tok_up').click(function(){
-  if($(window).scrollTop()>100){
-    $('body,html').animate({scrollTop:0},1000);
+  })
+  $(".container.content").remove();
+  mySwiper.el.onmouseover = function(){
+    mySwiper.autoplay.stop();
   }
-})
-$('#playInt').click(function () {
-  $('#videoInt').css('display', 'flex');
-  $('#Intvideo').get(0).play();
-  $('body').css('overflow','hidden');
-})
-$('#closeInt').click(function () {
-  $('#videoInt').css('display', 'none');
-  $('#Intvideo').get(0).pause();
-  $('body').css('overflow','visible');
-})
-$('#playLight').click(function () {
-  $('#videoLight').css('display', 'flex');
-  $('#Lightvideo').get(0).play();
-  $('body').css('overflow','hidden');
-})
-$('#closeLight').click(function () {
-  $('#videoLight').css('display', 'none');
-  $('#Lightvideo').get(0).pause();
-  $('body').css('overflow','visible');
-})
-$('#playCra').click(function () {
-  $('#videoCra').css('display', 'flex');
-  $('#Cravideo').get(0).play();
-  $('body').css('overflow','hidden');
-})
-$('#closeCra').click(function () {
-  $('#videoCra').css('display', 'none');
-  $('#Cravideo').get(0).pause();
-  $('body').css('overflow','visible');
-})
-$('#three_black').mouseenter(function () {
-  $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/black.png?11449960023002009309')");
-})
-$('#three_gold').mouseenter(function () {
-  $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/gold.png?11449960023002009309')");
-  $('#three_gold').mouseover(function () {
-    $('#three_gold').css('color', '#af9d8f');
-  });
-  $('#three_gold').mouseout(function () {
-    $('#three_gold').css('color', '#626262');
-  });
-})
-$('#three_pink').mouseenter(function () {
-  $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink.png?11449960023002009309')");
-  $('#three_pink').mouseover(function () {
-    $('#three_pink').css('color', '#e7b3b9');
-  });
-  $('#three_pink').mouseout(function () {
-    $('#three_pink').css('color', '#626262');
-  });
-})
-$('.eight_button').on('click', 'span', function () {
-  $(this).css({ 'color': '#fff', 'background': '#000' }).siblings().css({ 'color': '#000', 'background': '#e5e5e5' });
-  var temp = $(this).data('src');
-  var w = $(this).data('width');
-  var h = $(this).data('height');
-  $('.eight_img').css({
-    'backgroundImage': "url(" + temp + ")",
-    'width': w,
-    'height':h
-  });
-})
+  mySwiper.el.onmouseout = function(){
+    mySwiper.autoplay.start();
+  }
+  $('.swiper-pagination').css('bottom', '340px');
+  $('#tok_up').click(function(){
+    if($(window).scrollTop()>100){
+      $('body,html').animate({scrollTop:0},1000);
+    }
+  })
+  $('#playInt').click(function () {
+    $('#videoInt').css('display', 'flex');
+    $('#Intvideo').get(0).play();
+    $('body').css('overflow','hidden');
+  })
+  $('#closeInt').click(function () {
+    $('#videoInt').css('display', 'none');
+    $('#Intvideo').get(0).pause();
+    $('body').css('overflow','visible');
+  })
+  $('#playLight').click(function () {
+    $('#videoLight').css('display', 'flex');
+    $('#Lightvideo').get(0).play();
+    $('body').css('overflow','hidden');
+  })
+  $('#closeLight').click(function () {
+    $('#videoLight').css('display', 'none');
+    $('#Lightvideo').get(0).pause();
+    $('body').css('overflow','visible');
+  })
+  $('#playCra').click(function () {
+    $('#videoCra').css('display', 'flex');
+    $('#Cravideo').get(0).play();
+    $('body').css('overflow','hidden');
+  })
+  $('#closeCra').click(function () {
+    $('#videoCra').css('display', 'none');
+    $('#Cravideo').get(0).pause();
+    $('body').css('overflow','visible');
+  })
+  $('#three_black').mouseenter(function () {
+    $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/black.png?11449960023002009309')");
+  })
+  $('#three_gold').mouseenter(function () {
+    $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/gold.png?11449960023002009309')");
+    $('#three_gold').mouseover(function () {
+      $('#three_gold').css('color', '#af9d8f');
+    });
+    $('#three_gold').mouseout(function () {
+      $('#three_gold').css('color', '#626262');
+    });
+  })
+  $('#three_pink').mouseenter(function () {
+    $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink.png?11449960023002009309')");
+    $('#three_pink').mouseover(function () {
+      $('#three_pink').css('color', '#e7b3b9');
+    });
+    $('#three_pink').mouseout(function () {
+      $('#three_pink').css('color', '#626262');
+    });
+  })
+  $('.eight_button').on('click', 'span', function () {
+    $(this).css({ 'color': '#fff', 'background': '#000' }).siblings().css({ 'color': '#000', 'background': '#e5e5e5' });
+    var temp = $(this).data('src');
+    var w = $(this).data('width');
+    var h = $(this).data('height');
+    $('.eight_img').css({
+      'backgroundImage': "url(" + temp + ")",
+      'width': w,
+      'height':h
+    });
+  })
 </script>
