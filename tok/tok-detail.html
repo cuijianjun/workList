@@ -17,6 +17,7 @@ ul {
   position: fixed;
   height: 50px;
   width: 100%;
+  top: 60px;
   background: #000;
 }
 
@@ -84,7 +85,7 @@ ul {
 
 .tok_three {
   max-width: 1920px;
-  height: 1100px;
+  height: 1050px;
   font-size: 18px;
   color: #626262;
   padding-top: 50px;
@@ -94,15 +95,15 @@ ul {
   height: 1000px;
 }
 .tok_three .swiper-wrapper .slide1{
-  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/black_a48b0f69-4349-4acc-8768-f49350b68f87.png?2484992532769626041') center no-repeat;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/black_9daa3acc-3b2c-49c5-8847-b136ba9625a6.png?9980332638063977314') center no-repeat;
   background-size:cover;
 }
 .tok_three .swiper-wrapper .slide2{
-  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/white.png?2484992532769626041') center no-repeat;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/white.png?9980332638063977314') center no-repeat;
   background-size:cover;
 }
 .tok_three .swiper-wrapper .slide3{
-  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink_8e7143e3-e3a8-4654-beff-ea4f4d859f45.png?2484992532769626041') center no-repeat;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink_387fa636-fb4e-4c52-ae39-45aae9e22b5f.png?9980332638063977314') center no-repeat;
   background-size:cover;
 }
 .tok_three span {
@@ -391,93 +392,111 @@ ul {
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/swiper-4.2.0.min.js?7174514192763789409"></script>
 <script>
-  var btn = ['', '',''];
-  var mySwiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    loop: true,
-    autoplay:true,
-    // 如果需要分页器
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (btn[index]) + '</span>';
+  $(function(){
+    var btn = ['', '',''];
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      autoplay:true,
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (btn[index]) + '</span>';
+        },
       },
-    },
-  })
-  $(".container.content").remove();
-  mySwiper.el.onmouseover = function(){
-    mySwiper.autoplay.stop();
-  }
-  mySwiper.el.onmouseout = function(){
-    mySwiper.autoplay.start();
-  }
-  $('.swiper-pagination').css('bottom', '340px');
-  $('#tok_up').click(function(){
-    if($(window).scrollTop()>100){
-      $('body,html').animate({scrollTop:0},1000);
+    })
+    $(".container.content").remove();
+    mySwiper.el.onmouseover = function(){
+      mySwiper.autoplay.stop();
     }
-  })
-  $('#playInt').click(function () {
-    $('#videoInt').css('display', 'flex');
-    $('#Intvideo').get(0).play();
-    $('body').css('overflow','hidden');
-  })
-  $('#closeInt').click(function () {
-    $('#videoInt').css('display', 'none');
-    $('#Intvideo').get(0).pause();
-    $('body').css('overflow','visible');
-  })
-  $('#playLight').click(function () {
-    $('#videoLight').css('display', 'flex');
-    $('#Lightvideo').get(0).play();
-    $('body').css('overflow','hidden');
-  })
-  $('#closeLight').click(function () {
-    $('#videoLight').css('display', 'none');
-    $('#Lightvideo').get(0).pause();
-    $('body').css('overflow','visible');
-  })
-  $('#playCra').click(function () {
-    $('#videoCra').css('display', 'flex');
-    $('#Cravideo').get(0).play();
-    $('body').css('overflow','hidden');
-  })
-  $('#closeCra').click(function () {
-    $('#videoCra').css('display', 'none');
-    $('#Cravideo').get(0).pause();
-    $('body').css('overflow','visible');
-  })
-  $('#three_black').mouseenter(function () {
-    $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/black.png?11449960023002009309')");
-  })
-  $('#three_gold').mouseenter(function () {
-    $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/gold.png?11449960023002009309')");
-    $('#three_gold').mouseover(function () {
-      $('#three_gold').css('color', '#af9d8f');
-    });
-    $('#three_gold').mouseout(function () {
-      $('#three_gold').css('color', '#626262');
-    });
-  })
-  $('#three_pink').mouseenter(function () {
-    $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink.png?11449960023002009309')");
-    $('#three_pink').mouseover(function () {
-      $('#three_pink').css('color', '#e7b3b9');
-    });
-    $('#three_pink').mouseout(function () {
-      $('#three_pink').css('color', '#626262');
-    });
-  })
-  $('.eight_button').on('click', 'span', function () {
-    $(this).css({ 'color': '#fff', 'background': '#000' }).siblings().css({ 'color': '#000', 'background': '#e5e5e5' });
-    var temp = $(this).data('src');
-    var w = $(this).data('width');
-    var h = $(this).data('height');
-    $('.eight_img').css({
-      'backgroundImage': "url(" + temp + ")",
-      'width': w,
-      'height':h
-    });
+    mySwiper.el.onmouseout = function(){
+      mySwiper.autoplay.start();
+    }
+    $('.swiper-pagination').css('bottom', '340px');
+    $('#tok_up').click(function(){
+      if($(window).scrollTop()>100){
+        $('body,html').animate({scrollTop:0},1000);
+      }
+    })
+    $('#playInt').click(function () {
+      $('#videoInt').css('display', 'flex');
+      $('#Intvideo').get(0).play();
+      $('body').css('overflow','hidden');
+    })
+    $('#closeInt').click(function () {
+      $('#videoInt').css('display', 'none');
+      $('#Intvideo').get(0).pause();
+      $('body').css('overflow','visible');
+    })
+    $('#playLight').click(function () {
+      $('#videoLight').css('display', 'flex');
+      $('#Lightvideo').get(0).play();
+      $('body').css('overflow','hidden');
+    })
+    $('#closeLight').click(function () {
+      $('#videoLight').css('display', 'none');
+      $('#Lightvideo').get(0).pause();
+      $('body').css('overflow','visible');
+    })
+    $('#playCra').click(function () {
+      $('#videoCra').css('display', 'flex');
+      $('#Cravideo').get(0).play();
+      $('body').css('overflow','hidden');
+    })
+    $('#closeCra').click(function () {
+      $('#videoCra').css('display', 'none');
+      $('#Cravideo').get(0).pause();
+      $('body').css('overflow','visible');
+    })
+    $('#three_black').mouseenter(function () {
+      $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/black.png?11449960023002009309')");
+    })
+    $('#three_gold').mouseenter(function () {
+      $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/gold.png?11449960023002009309')");
+      $('#three_gold').mouseover(function () {
+        $('#three_gold').css('color', '#af9d8f');
+      });
+      $('#three_gold').mouseout(function () {
+        $('#three_gold').css('color', '#626262');
+      });
+    })
+    $('#three_pink').mouseenter(function () {
+      $('.tok_three').css('backgroundImage', "url('https://cdn.shopify.com/s/files/1/1017/9603/files/pink.png?11449960023002009309')");
+      $('#three_pink').mouseover(function () {
+        $('#three_pink').css('color', '#e7b3b9');
+      });
+      $('#three_pink').mouseout(function () {
+        $('#three_pink').css('color', '#626262');
+      });
+    })
+    $('.eight_button').on('click', 'span', function () {
+      $(this).css({ 'color': '#fff', 'background': '#000' }).siblings().css({ 'color': '#000', 'background': '#e5e5e5' });
+      var temp = $(this).data('src');
+      var w = $(this).data('width');
+      var h = $(this).data('height');
+      $('.eight_img').css({
+        'backgroundImage': "url(" + temp + ")",
+        'width': w,
+        'height':h
+      });
+    })
+    //页面截断
+    $(".container.main.content").css("padding-top","45px")
+
   })
 </script>
+
+
+
+<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script><script>// <![CDATA[
+$(function(){
+  var url = window.location.pathname
+  if(url  === "/search"){
+    $($(".container")[0]).css("padding-top","100px")
+  }else{
+    $($(".container")[0]).css("padding-top","25px")
+  }
+})
+// ]]></script>

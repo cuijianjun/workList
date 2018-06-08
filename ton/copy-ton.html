@@ -215,7 +215,6 @@
   /*定位居中*/
   .img{
     position: relative;
-    cursor: pointer;
   }
   .img .positionBlock{
     position: absolute;
@@ -361,6 +360,12 @@
     opacity: 1;
     transition: all 1s;
   }
+  /*问答*/
+  #tab4 .FAQ-content span.F-detail{
+    font-family: AvalonBold;
+    font-weight: normal;
+    text-transform: none;
+  }
   /*推荐页链接*/
   .buy_now a{
     color: #000000;
@@ -382,6 +387,7 @@
   <li><a href="#tab3">Reviews</a></li>
   <li><a href="#tab4">FAQ‘s</a></li>
 </ul>
+<a href="http://www.smartpiano.com.au/" style="color: #76b0e2;" target="_blank" title="Smart Piano Australia " rel="noopener noreferrer"> http://www.smartpiano.com.au/</a>
 <!--Start tab content-->
 <ul class="tabs-content">
   <ul class="tabs-content">
@@ -568,7 +574,13 @@
           <div class="main_word"><span>Sustain pedal </span></div>
         </div>
         <div class="main_tok main_twive"><span class="main_span">Supported devices</span>
-          <div class="main_word"><span style="line-height: 28px">iOS 9.0 +<br>iPad 2/4, iPad mini, iPad mini 2, iPad Air, New iPad<br>iPhone 4/4s/5/5c/6/6 plus/6s/6s plus/7/7 plus/8/X<br>Android 4.4+ with USB Host/OTG<br></span>
+          <div class="main_word">
+            <span style="line-height: 28px">
+              iOS 9.0 +<br>
+              iPad 2/4, New Pad, iPad mini1/2/3/4, iPad Air1/2, iPad Pro<br>
+              iPhone 5s/6/6 plus/6s/6s plus/7/7 plus/8/X<br>
+              Android 4.4+ with USB Host/OTG<br>
+            </span>
           </div>
         </div>
         <div class="main_tok main_nine"><span class="main_span">Headphones</span>
@@ -732,7 +744,7 @@
             <span class="Q">Q:</span>
             <span class="F-detail">Can I plug the keyboard into a computer?</span>
           </div>
-          <div class="answer">Definitely!
+          <div class="answer">Definitely!<br>
             You can connect the keyboard to computer by using a USB cable, and then it becomes a MIDI keyboard!<br>
             Get the cable here: <a style="color: #019bff;!important;" href="https://www.smartpiano.com/collections/accessories/products/apple-ios-cables">https://www.smartpiano.com/collections/accessories/products/apple-ios-cables</a>
           </div>
@@ -863,6 +875,8 @@
       e.stopPropagation()
       $(this).find(".positionBlock").animate({opacity:'1'},"slow")
     })
+    //页面截断
+    $(".container.main.content").css("padding-top","45px")
   })
 </script>
 </body>

@@ -229,7 +229,6 @@ ul.tabs li a.active {
 /*定位居中*/
 .img {
   position: relative;
-  cursor: pointer;
 }
 
 .img .positionBlock {
@@ -517,7 +516,12 @@ ul.tabs li a.active {
 .d-left .slide-control-next {
   right: 0;
 }
-
+/*问答*/
+#tab4 .FAQ-content span.F-detail{
+  font-family: AvalonBold;
+  font-weight: normal;
+  text-transform: none;
+}
 /*推荐页链接*/
 .buy_now a {
   color: #000000;
@@ -727,7 +731,13 @@ ul.tabs li a.active {
         <div class="main_word"><span>Note sustain function</span></div>
       </div>
       <div class="main_tok main_nine"><span class="main_span">Device / Connection</span>
-        <div class="main_word"><span>ios 9.0 +<br/>iPad 2/4, iPad mini, iPad mini 2, iPad Air, New iPad<br/>iPhone 4/4s/5/5c/6/6 plus/6s/6s plus/7/7 plus/8<br/>Android 4.4+ with USB Host/OTG</span>
+        <div class="main_word">
+            <span style="line-height: 28px">
+              iOS 9.0 +<br>
+              iPad 2/4, New Pad, iPad mini1/2/3/4, iPad Air1/2, iPad Pro<br>
+              iPhone 5s/6/6 plus/6s/6s plus/7/7 plus/8/X<br>
+              Android 4.4+ with USB Host/OTG<br>
+            </span>
         </div>
       </div>
       <div class="main_tok main_thirteen"><span class="main_span">Audio sockrt</span>
@@ -831,7 +841,8 @@ ul.tabs li a.active {
       <div class="item">
         <div class="title"><span class="Q">Q:</span> <span
             class="F-detail">Can I plug the keyboard into a computer?</span></div>
-        <div class="answer">Definitely! You can connect the keyboard to computer by using a USB cable, and then it
+        <div class="answer">Definitely! <br>
+          You can connect the keyboard to computer by using a USB cable, and then it
           becomes a MIDI keyboard!<br/> Get the cable here: <a style="color: #019bff;"
                                                                href="https://www.smartpiano.com/collections/accessories/products/apple-ios-cables">https://www.smartpiano.com/collections/accessories/products/apple-ios-cables</a>
         </div>
@@ -945,6 +956,8 @@ $(function (e) {
   //  删掉related
   $(".container.related-products--grid").remove()
   $(".related-products__title").parents(".container").remove()
+  //页面截断
+  $(".container.main.content").css("padding-top","45px")
 
   //动画
   $(".detail>.img").mouseenter(function (e) {

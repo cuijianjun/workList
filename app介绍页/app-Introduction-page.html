@@ -137,7 +137,7 @@
   .app .content .top{
     width: 100%;
     height: 900px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/01TheONESmartPiano.png?13479628261811198722") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/01TheONESmartPiano.png?13479628261811198722") center no-repeat;
   }
   .app .content .top .detail{
     width: 1200px;
@@ -181,7 +181,8 @@
     padding: 0;
   }
   .app .content .slider{
-    margin: 100px 0;
+    margin: 100px auto;
+    width: 1920px;
   }
   .app .content .slider .box{
     margin-top: 80px;
@@ -351,7 +352,7 @@
   .app .content .third{
     width: 100%;
     height: 900px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/05_app.png?17847019586250689222") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/05_app.png?17847019586250689222") center no-repeat;
   }
   .app .content .third .third-content{
     color: #fff;
@@ -377,7 +378,7 @@
   .app .content .fourth{
     width: 100%;
     height: 900px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/4led.png?253414549071366178") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/4led.png?253414549071366178") center no-repeat;
     margin-top: 50px;
   }
   .app .content .fourth .fourth-content{
@@ -529,7 +530,7 @@
         </div>
         <div id="text" class="animated fadeInLeft">Step by step crash course</div>
       </div>
-      <div class="top" style="background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/03OnePianist.png?14417659569388484187') center center;">
+      <div class="top" style="background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/03OnePianist.png?14417659569388484187') center no-repeat;">
         <div class="detail">
           <div class="left">
             <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/512.png?13010153726654645044" width="176" height="176">
@@ -1000,6 +1001,8 @@
     $('.buy_now').mouseleave(function () {
       $(this).find("a").text($(this).data('price'));
     });
+    //页面截断
+    $(".container.main.content").css("padding-top","45px")
   })
 </script>
 </html>
