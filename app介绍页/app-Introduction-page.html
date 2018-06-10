@@ -156,8 +156,8 @@
     margin-left: 20px;
   }
   .app .content .top .detail .right .title{
-    width: 297px;
-    font-family: AvalonBold;
+    width: 325px;
+    font-family: Avalon_Bold;
     font-size: 52px;
     font-weight: normal;
     font-stretch: normal;
@@ -167,7 +167,7 @@
   .app .content .top .detail .right .content_detail {
     margin-top: 10px;
     width: 306px;
-    font-family: AvalonPlain;
+    font-family: Avalon;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -351,6 +351,9 @@
     background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/left_594b95a8-4a89-4d6a-a9b0-366b7606a41d.png?5217660188725984792) no-repeat;
     left: -170px;
   }
+  #slider-text,#text{
+    font-family: Avalon;
+  }
   /*third*/
   .app .content .third{
     width: 100%;
@@ -363,7 +366,7 @@
     text-align: center;
   }
   .app .content .third .third-content .title {
-    font-family: AvalonBold;
+    font-family: Avalon_Bold;
     font-size: 52px;
     font-weight: normal;
     font-stretch: normal;
@@ -371,7 +374,8 @@
   }
   .app .content .third .third-content .third-detail {
     width: 806px;
-    font-family: AvalonPlain;
+    margin-top: 10px;
+    font-family: Avalon;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -390,7 +394,7 @@
     text-align: center;
   }
   .app .content .fourth .fourth-content .title {
-    font-family: AvalonBold;
+    font-family: Avalon_Bold;
     font-size: 52px;
     font-weight: normal;
     font-stretch: normal;
@@ -398,7 +402,8 @@
   }
   .app .content .fourth .fourth-content .fourth-detail {
     width: 806px;
-    font-family: AvalonPlain;
+    margin-top: 10px;
+    font-family: Avalon;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -408,8 +413,8 @@
   /*推荐页*/
   .pro {
     width: 100%;
-    height: 550px;
-    background: #ddd;
+    height: 610px;
+    background: #f7f8fa;
     padding-top: 50px;
   }
 
@@ -501,6 +506,39 @@
   .buy_now:hover a{
     color: #fff;
   }
+  /*底部*/
+  .tok {
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .tok_eleven {
+    height: 130px;
+    background: #7829a2;
+  }
+
+  .tok_eleven ul {
+    width: 1200px;
+    height: 74px;
+    margin: 28px auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tok_eleven ul li {
+    height: 74px;
+    line-height: 74px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+  }
+
+  .tok_eleven ul li img {
+    width: 74px;
+    height: 74px;
+    margin-right: 20px;
+  }
 </style>
 <div class="app">
     <div class="content">
@@ -510,7 +548,7 @@
             <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/icon_778ffff6-ad0c-466a-b99a-d87c0507eee0.png?182996916133024878" width="176" height="176">
           </div>
           <div class="right">
-            <div class="title">The ONE Smart Piano</div>
+            <div class="title">The ONE <br>Smart Piano</div>
             <div class="content_detail">Award winning app to learn in your preferred way</div>
             <div class="download">
               <a href="https://itunes.apple.com/us/app/the-one-smart-piano-by-the-one/id1267703721?mt=8" target="_blank">
@@ -648,6 +686,26 @@
       </ul>
     </div>
   </div>
+</div>
+<div class="tok_eleven tok">
+  <ul>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">
+      <span>Free Shipping</span>
+    </li>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">
+      <span>7-days Return</span>
+    </li>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">
+      <span>30-days Replacement</span>
+    </li>
+    <li>
+      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">
+      <span>1-year Warranty</span>
+    </li>
+  </ul>
 </div>
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
 <script type="text/javascript">
