@@ -5,6 +5,28 @@
   <title>Title</title>
 </head>
 <style>
+  a:focus {
+    outline:none !important;
+    -moz-outline:none !important;
+  }
+  .cl:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+  }
+a{
+  list-style: none;
+}
+  .cl {
+    zoom: 1
+  }
+
+  .cl {
+    clear: both;
+  }
+
   body {
     line-height: normal !important;
   }
@@ -206,11 +228,18 @@
     break-inside: avoid
   }
 
-  .specificReports {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    column-gap: 30px;
+  .specificReports .specificReports-left, .specificReports .specificReports-center, .specificReports .specificReports-right {
+    float: left;
+    width: 380px;
+  }
+
+  .specificReports .specificReports-top, .specificReports .specificReports-bottom {
+    width: 1200px;
+    height: 750px;
+  }
+
+  .specificReports-bottom {
+    margin-top: 30px;
   }
 
   .specificReports .one .spc-content {
@@ -251,17 +280,9 @@
 
   .pro_detail ul {
     width: 1200px;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: flex;
     padding: 0;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .pro_detail ul li {
@@ -274,7 +295,6 @@
   }
 
   .pro_detail ul li:hover {
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 8px 4px -4px #cdcece;
   }
@@ -282,6 +302,13 @@
   .pro_detail ul li .li_img {
     width: 290px;
     height: 230px;
+    cursor: pointer;
+    display: block;
+  }
+  .pro_detail p{
+    cursor: auto;
+  }
+  .pro_detail p a{
     cursor: pointer;
   }
 
@@ -331,6 +358,14 @@
   .buy_now:hover a {
     color: #fff;
   }
+
+  .specificReports-top .specificReports-left .one, .specificReports-top .specificReports-right .one {
+    float: left;
+  }
+
+  .specificReports-bottom .specificReports-left .one, .specificReports-bottom .specificReports-center .one {
+    float: left;
+  }
 </style>
 <div class="container">
   <div class="title">
@@ -371,114 +406,130 @@
   </div>
   <div class="mediaLogo"></div>
   <div class="specificReports">
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_cd952d95-1f6b-416b-8f6f-5d6608eed6b8.png?11743589259568830038"
-          alt="">
-      <div class="spc-content">
-        Mom’s Choice Awards Winner
+    <div class="specificReports-top cl">
+      <div class="specificReports-left">
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_cd952d95-1f6b-416b-8f6f-5d6608eed6b8.png?11743589259568830038"
+              alt="">
+          <div class="spc-content">
+            Mom’s Choice Awards Winner
+          </div>
+          <div class="spc-tips">
+            Awards Winner
+          </div>
+        </div>
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_3d5d69c6-3150-4781-982d-cf719e0106a4.png?11585395650881088447"
+              alt="">
+          <div class="spc-content" style="bottom: 60px;">
+            [The ONE] is a patient instructor who is willing to let me proceed at my own pace.
+          </div>
+          <div class="spc-tips">
+            USA Today
+          </div>
+        </div>
       </div>
-      <div class="spc-tips">
-        Awards Winner
+      <div class="specificReports-center" style="margin-left: 30px">
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_b6960e4c-474f-4356-a24a-636bf87b4100.png?7922597850251080772"
+              alt="">
+          <div class="spc-content">
+            Steve Wonder at The ONE CES Booth
+          </div>
+          <div class="spc-tips">
+            CES 2018
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_3d5d69c6-3150-4781-982d-cf719e0106a4.png?11585395650881088447"
-          alt="">
-      <div class="spc-content" style="bottom: 60px;">
-        [The ONE] is a patient instructor who is willing to let me proceed at my own pace.
-      </div>
-      <div class="spc-tips">
-        USA Today
-      </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_73988171-f27b-478b-90c8-2819597bee44.png?1164329450606921706"
-          alt="">
-      <div class="spc-content">
-        This smart keyboard will teach you how to play it.
-      </div>
-      <div class="spc-tips">
-        CNET
-      </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_cd042ee6-bad6-403c-9fc5-f5dd2ba8bbbe.png?11977900981875205597"
-          alt="">
-      <div class="spc-content" style="bottom: 60px;">
-        One of the Best Xmas Present The Washington Times
-      </div>
-      <div class="spc-tips">
-        The Washington Times
-      </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_b6960e4c-474f-4356-a24a-636bf87b4100.png?7922597850251080772"
-          alt="">
-      <div class="spc-content">
-        Steve Wonder at The ONE CES Booth
-      </div>
-      <div class="spc-tips">
-        CES 2018
-      </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_4f4a385c-9feb-4b96-86af-e0396f6a1a29.png?605032694142988530"
-          alt="">
-      <div class="spc-content" style="bottom: 60px;">
-        MIDI support also works with Garageband on iPad
-      </div>
-      <div class="spc-tips">
-        LON.TV
+      <div class="specificReports-right" style="margin-left: 30px">
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_8fae113d-a316-4288-8c7d-90779fd0d94c.png?12070654923880549951"
+              alt="">
+          <div class="spc-content" style="bottom: 60px;">
+            Piano Hi-Lite “Helps You Pick Up a New Hobby”.
+          </div>
+          <div class="spc-tips">
+            Inc. Magazine
+          </div>
+        </div>
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_e82ff3d3-0f55-4f99-b936-28a111c79939.png?18064346786202708114"
+              alt="">
+          <div class="spc-content" style="bottom: 60px;">
+            This gadget turns your old piano into an educational ‘smart’ piano.
+          </div>
+          <div class="spc-tips">
+            The Next Web
+          </div>
+        </div>
       </div>
     </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_7f9d531d-306e-427c-a994-7a0fecbb8a71.png?10313202496253379428"
-          alt="">
-      <div class="spc-content">
-        A way to learn at your own pace!
+    <div class="specificReports-bottom cl">
+      <div class="specificReports-left">
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_73988171-f27b-478b-90c8-2819597bee44.png?1164329450606921706"
+              alt="">
+          <div class="spc-content" style="bottom: 55px">
+            This smart keyboard will teach you how to play it.
+          </div>
+          <div class="spc-tips">
+            CNET
+          </div>
+        </div>
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_cd042ee6-bad6-403c-9fc5-f5dd2ba8bbbe.png?11977900981875205597"
+              alt="">
+          <div class="spc-content" style="bottom: 60px;">
+            One of the Best Xmas Present The Washington Times
+          </div>
+          <div class="spc-tips">
+            The Washington Times
+          </div>
+        </div>
       </div>
-      <div class="spc-tips">
-        ABC News
+      <div class="specificReports-center" style="margin-left: 30px">
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_4f4a385c-9feb-4b96-86af-e0396f6a1a29.png?605032694142988530"
+              alt="">
+          <div class="spc-content" style="bottom: 60px;">
+            MIDI support also works with Garageband on iPad
+          </div>
+          <div class="spc-tips">
+            LON.TV
+          </div>
+        </div>
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_7f9d531d-306e-427c-a994-7a0fecbb8a71.png?10313202496253379428"
+              alt="">
+          <div class="spc-content">
+            A way to learn at your own pace!
+          </div>
+          <div class="spc-tips">
+            ABC News
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_8fae113d-a316-4288-8c7d-90779fd0d94c.png?12070654923880549951"
-          alt="">
-      <div class="spc-content" style="bottom: 60px;">
-        Piano Hi-Lite “Helps You Pick Up a New Hobby”.
-      </div>
-      <div class="spc-tips">
-        Inc. Magazine
-      </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_e82ff3d3-0f55-4f99-b936-28a111c79939.png?18064346786202708114"
-          alt="">
-      <div class="spc-content" style="bottom: 60px;">
-        This gadget turns your old piano into an educational ‘smart’ piano.
-      </div>
-      <div class="spc-tips">
-        The Next Web
-      </div>
-    </div>
-    <div class="one">
-      <img
-          src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_a307032f-b6c3-4a28-9b50-60ad740b9ff3.png?17451774233299164010"
-          alt="">
-      <div class="spc-content">
-        We are finally here in Europe!
-      </div>
-      <div class="spc-tips">
-        Muiskmesse 2018
+      <div class="specificReports-right" style="margin-left: 30px">
+        <div class="one">
+          <img
+              src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_a307032f-b6c3-4a28-9b50-60ad740b9ff3.png?17451774233299164010"
+              alt="">
+          <div class="spc-content">
+            We are finally here in Europe!
+          </div>
+          <div class="spc-tips">
+            Muiskmesse 2018
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -502,7 +553,7 @@
       <ul>
         <li align="center">
         <!--ton-->
-    <div class="li_img li_first"><a href="https://www.smartpiano.com/pages/keyboard-pro-1" target="_blank"></a></div>
+        <a href="https://www.smartpiano.com/pages/keyboard-pro-1" target="_blank" class="li_img li_first"></a>
     <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
     <p style="font-size: 12px;">
     <a target="_blank" href="https://www.smartpiano.com/pages/keyboard-pro-1" style="color: #019bff;outline: none">Explore &gt;</a>
@@ -510,7 +561,7 @@
     <p class="buy_now" data-price="$ 759.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-keyboard-pro-88-keys-portable-piano">$ 759.00</a></p>
     </li>
         <li align="center">
-          <div class="li_img li_second"><a href="https://www.smartpiano.com/pages/smart-piano-1" target="_blank"></a></div>
+          <a class="li_img li_second" href="https://www.smartpiano.com/pages/smart-piano-1" target="_blank"></a>
           <!--top-->
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
           <p style="font-size: 12px;">
@@ -519,7 +570,7 @@
           <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano-1?variant=12103129563238">$ 1,499.99</a></p>
         </li>
         <li align="center">
-          <div class="li_img li_third"><a href="https://www.smartpiano.com/products/the-one-piano-hi-lite" target="_blank"></a></div>
+          <a class="li_img li_third" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" target="_blank"></a>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
@@ -527,7 +578,7 @@
           <p class="buy_now" data-price="$ 269.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.00</a></p>
         </li>
         <li align="center">
-          <div class="li_img li_forth"><a href="https://www.smartpiano.com/collections/accessories" target="_blank"></a></div>
+          <a class="li_img li_forth" href="https://www.smartpiano.com/collections/accessories" target="_blank"></a>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none;color: #019bff;">Explore &gt;</a>
@@ -539,7 +590,7 @@
   </div>
 </div>`)
     //页面截断
-    $(".container.main.content").css("padding-top","45px")
+    $(".container.main.content").css("padding-top", "45px")
   })
 </script>
 </html>

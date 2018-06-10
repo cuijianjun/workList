@@ -5,7 +5,10 @@
   <title>app-Introduction-page</title>
 </head>
 <style>
-
+  a:focus {
+    outline:none !important;
+    -moz-outline:none !important;
+  }
   body{
     line-height: normal !important;
   }
@@ -373,6 +376,7 @@
     font-weight: normal;
     font-stretch: normal;
     color: #b9b9b9;
+    display: inline-block;
   }
   /*fourth*/
   .app .content .fourth{
@@ -399,6 +403,7 @@
     font-weight: normal;
     font-stretch: normal;
     color: #151515;
+    display: inline-block;
   }
   /*推荐页*/
   .pro {
@@ -435,15 +440,21 @@
   }
 
   .pro_detail ul li:hover {
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 8px 4px -4px #cdcece;
+  }
+  .pro_detail p{
+    cursor: auto;
+  }
+  .pro_detail p a{
+    cursor: pointer;
   }
 
   .pro_detail ul li .li_img {
     width: 290px;
     height: 230px;
     cursor: pointer;
+    display: block;
   }
 
   .pro_detail ul li .li_first {
@@ -602,7 +613,7 @@
       <ul>
         <li align="center">
           <!--ton-->
-          <div class="li_img li_first"><a href="https://www.smartpiano.com/pages/keyboard-pro-1" target="_blank"></a></div>
+          <a href="https://www.smartpiano.com/pages/keyboard-pro-1" target="_blank" class="li_img li_first"></a>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/pages/keyboard-pro-1" style="color: #019bff;outline: none">Explore &gt;</a>
@@ -610,7 +621,7 @@
           <p class="buy_now" data-price="$ 759.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-keyboard-pro-88-keys-portable-piano">$ 759.00</a></p>
         </li>
         <li align="center">
-          <div class="li_img li_second"><a href="https://www.smartpiano.com/pages/smart-piano-1" target="_blank"></a></div>
+          <a class="li_img li_second" href="https://www.smartpiano.com/pages/smart-piano-1" target="_blank"></a>
           <!--top-->
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
           <p style="font-size: 12px;">
@@ -619,7 +630,7 @@
           <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano-1?variant=12103129563238">$ 1,499.99</a></p>
         </li>
         <li align="center">
-          <div class="li_img li_third"><a href="https://www.smartpiano.com/products/the-one-piano-hi-lite" target="_blank"></a></div>
+          <a class="li_img li_third" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" target="_blank"></a>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
@@ -627,7 +638,7 @@
           <p class="buy_now" data-price="$ 269.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.00</a></p>
         </li>
         <li align="center">
-          <div class="li_img li_forth"><a href="https://www.smartpiano.com/collections/accessories" target="_blank"></a></div>
+          <a class="li_img li_forth" href="https://www.smartpiano.com/collections/accessories" target="_blank"></a>
           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none;color: #019bff;">Explore &gt;</a>

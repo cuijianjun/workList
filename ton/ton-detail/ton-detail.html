@@ -24,6 +24,53 @@
     margin: 0;
     padding: 0;
   }
+  .tok_top {
+    z-index: 2;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 60px;
+    background: #000;
+  }
+
+  .tok_top .top_word {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 50px;
+  }
+
+  .tok_top .top_word .word_left {
+    float: left;
+    color: #a6a6a6;
+  }
+
+  .tok_top .top_word .word_right {
+    float: right;
+    width: 123px;
+    height: 30px;
+  }
+
+  .tok_top .top_word .right0 {
+    color: #949494;
+  }
+
+  .tok_top .top_word .right1 {
+    color: #4b4a4a;
+  }
+
+  .tok_top .top_word .right2 {
+    background: #019bff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .tok_top .top_word .right2 a {
+    color: #fff;
+  }
   @font-face {
     font-family: "Avalon_Italic";
     src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
@@ -70,7 +117,7 @@
   .ton .ton-content .top{
     width: 100%;
     height: 900px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/1_b3bb6b59-1df9-4118-ab05-7160e77abf92.png?5118945988847581069") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/1_b3bb6b59-1df9-4118-ab05-7160e77abf92.png?5118945988847581069") center no-repeat;
     position: relative;
   }
   .ton .ton-content .top .detail{
@@ -108,11 +155,9 @@
   }
   .one .swiper-wrapper .slide1{
     background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/8ee163965c752b4df31d594396825cee.png?5118945988847581069') center no-repeat;
-    background-size:cover;
   }
   .one .swiper-wrapper .slide2{
     background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/1eae7ae6ce239862c44d09c80b59d31e.png?5118945988847581069') center no-repeat;
-    background-size:cover;
   }
   .one span {
     display: inline-block;
@@ -136,7 +181,7 @@
   .two{
     width: 100%;
     height: 1040px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/2bfda3079c41ec83492919e87bb7d519.png?15432905380107427227") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/2bfda3079c41ec83492919e87bb7d519.png?15432905380107427227") center no-repeat;
     position: relative;
   }
   .two .detail {
@@ -165,7 +210,7 @@
   .third{
     width: 100%;
     height: 1040px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/04_app.png?3474213943760280921") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/04_app.png?3474213943760280921") center no-repeat;
     position: relative;
   }
   .third .detail {
@@ -199,7 +244,7 @@
   .four{
     width: 100%;
     height: 1060px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/3_04494254-427f-4c84-ba53-63983a3a6f5d.png?13541133820246273156") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/3_04494254-427f-4c84-ba53-63983a3a6f5d.png?13541133820246273156") center no-repeat;
     position: relative;
   }
   .four .detail {
@@ -208,7 +253,6 @@
     left: 600px;
   }
   .four .detail  .four-title{
-    width: 732px;
     font-family: AvalonBold;
     font-size: 52px;
     font-weight: normal;
@@ -216,7 +260,6 @@
     color: #202020;
   }
   .four .detail .four-content{
-    width: 754px;
     font-family: AvalonPlain;
     font-size: 20px;
     font-weight: normal;
@@ -225,8 +268,8 @@
   }
   .five{
     width: 100%;
-    height: 1060px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/4_eb9546ac-7329-4068-aa88-138f8341023a.png?8691975841308490530") center center;
+    height: 1000px;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/4_eb9546ac-7329-4068-aa88-138f8341023a.png?8691975841308490530") center no-repeat;
     position: relative;
   }
   .five .detail {
@@ -254,8 +297,8 @@
   }
   .six{
     width: 100%;
-    height: 1060px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/5_79de4270-7b86-400a-b264-a9b504e07f04.png?11638713464909987105") center center;
+    height: 1040px;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/5_79de4270-7b86-400a-b264-a9b504e07f04.png?11638713464909987105") center no-repeat;
     position: relative;
   }
   .six .detail {
@@ -283,16 +326,16 @@
   .seven{
     width: 100%;
     height: 1040px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/08.png?13707672130701710140") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/08.png?13707672130701710140") center no-repeat;
     position: relative;
   }
   .seven .detail {
     position: absolute;
     top: 200px;
-    left: 380px;
+    left: 20%;
   }
   .seven .detail  .seven-title{
-    width: 430px;
+    width: 44%;
     font-family: AvalonBold;
     font-size: 52px;
     font-weight: normal;
@@ -300,7 +343,7 @@
     color: #303030;
   }
   .seven .detail .seven-content{
-    width: 403px;
+    width: 72%;
     font-family: AvalonPlain;
     font-size: 20px;
     font-weight: normal;
@@ -311,7 +354,7 @@
   .eight{
     width: 100%;
     height: 1040px;
-    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/09_app.png?15927387661629481990") center center;
+    background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/09_app.png?15927387661629481990") center no-repeat;
     position: relative;
   }
   .eight .detail {
@@ -368,8 +411,13 @@
     margin-right: 20px;
   }
 </style>
+<div class="tok_top">
+  <div class="top_word">
+    <span color="#a6a6a6" style="color: #a6a6a6;">Smart Piano</span>
+    <span class="word_right right2"> <a href="https://www.smartpiano.com/products/the-one-smart-piano-1?variant=12103129563238" target="_blank" rel="noopener noreferrer">Buy Now</a> </span> <span class="word_right right0">Overview</span></div>
+</div>
 <div class="ton">
-  <div class="ton-content">
+  <div class="ton-content" style="padding-top: 110px;">
     <div class="top">
       <div class="detail">
         <div class="top-title">
@@ -412,15 +460,9 @@
         <div class="img">
           <div class="left">
             <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/OnePianist.png?12687102929943583828" alt="">
-            <span class="txt">
-              One Pianist
-            </span>
           </div>
-          <div class="right">
+          <div class="right" style="margin-left: 50px">
             <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/TheONESmartPiano.png?12687102929943583828" alt="">
-            <span class="txt">
-              The ONE Smart Piano
-            </span>
           </div>
         </div>
       </div>
@@ -524,9 +566,10 @@
     mySwiper.el.onmouseout = function(){
       mySwiper.autoplay.start();
     }
+    $('.container.content').remove();
+    //页面截断
+    $(".container.main.content").css("padding-top","45px")
   })
-  $('.container.content').remove();
-  //页面截断
-  $(".container.main.content").css("padding-top","45px")
+
 </script>
 </html>
