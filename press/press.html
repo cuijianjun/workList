@@ -5,6 +5,11 @@
   <title>Title</title>
 </head>
 <style>
+  #menu_ul>li:nth-child(4)>a{
+    color: #000 !important;
+    cursor: default;
+    font-weight: 700;
+  }
   a:focus {
     outline:none !important;
     -moz-outline:none !important;
@@ -16,9 +21,9 @@
     visibility: hidden;
     height: 0;
   }
-a{
-  list-style: none;
-}
+  a{
+    list-style: none;
+  }
   .cl {
     zoom: 1
   }
@@ -553,7 +558,7 @@ a{
       <ul>
         <li align="center">
         <!--ton-->
-        <a href="https://www.smartpiano.com/pages/keyboard-pro-1" target="_blank" class="li_img li_first"></a>
+         <a href="https://www.smartpiano.com/pages/keyboard-pro-1" target="_blank" class="li_img li_first"></a>
     <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Keyboard Pro</p>
     <p style="font-size: 12px;">
     <a target="_blank" href="https://www.smartpiano.com/pages/keyboard-pro-1" style="color: #019bff;outline: none">Explore &gt;</a>
@@ -590,7 +595,8 @@ a{
   </div>
 </div>`)
     //页面截断
-    $(".container.main.content").css("padding-top", "45px")
+    $(".container.main.content").css("padding-top", "45px");
+    $("#menu_ul>li:nth-child(4)>a").attr({"href":"#","target":""})
   })
 </script>
 </html>
