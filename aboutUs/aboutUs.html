@@ -21,9 +21,35 @@
   }
 
   .about_top {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+  }
+  .about_top>div{
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+  .about_top>div img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .about_top .one{
+    margin-left: 0;
+    width: 10.833%;
+  }
+  .about_top .two{
+    width: 13.85%;
+  }
+  .about_top .three{
+    width: 13.80%;
+  }
+  .about_top .four{
+    width: 28.43%;
+  }
+  .about_top .five{
+    width: 19.68%;
+  }
+  .about_top .six{
+    width: 10.833%;
   }
 
   .about_bottom {
@@ -41,7 +67,7 @@
   }
 
   .top_title {
-    width: 1191px;
+    width: 62%;
     font-family: Avalon;
     font-size: 14px;
     font-weight: normal;
@@ -60,13 +86,13 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .ourStory-right {
-    width: 468px;
+  .ourStory-right{
+    margin-left: 60px;
+    width: 43%;
   }
-
   .ourStory-right span {
     margin-top: 40px;
+    width: 468px;
     display: inline-block;
     font-family: Avalon;
     font-size: 14px;
@@ -79,7 +105,9 @@
     display: flex;
     justify-content: space-between;
   }
-
+  .ourProgress-left{
+    width: 40%;
+  }
   .ourProgress-left span {
     display: inline-block;
     margin-top: 35px;
@@ -243,7 +271,7 @@ Since then, The ONE has taught more than 200,000 people how to play piano, guidi
     </li>
   </ul>
 </div>
-    `)
+    `).css("padding-top","10px");
     $("#menu_ul>li:nth-child(6)>a").attr({"href":"#","target":""})
 
   })
