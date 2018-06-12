@@ -6,6 +6,12 @@
 </head>
 <body>
 <style>
+  div.swatch_options .swatch[data-option-index='1'] input:checked+.swatch-element {
+    border-color: #019bff;
+  }
+  .omega .action_button:hover{
+    background-color: rgba(1,155,255,1) !important;
+  }
   a:focus {
     outline:none !important;
     -moz-outline:none !important;
@@ -792,7 +798,7 @@
         <li align="center">
           <a class="li_img li_first" href="https://www.smartpiano.com/pages/light-keyboard-1" target="_blank"></a>
           <!--tok-->
-          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Light Keyboard</p>
+           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Light Keyboard</p>
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/pages/light-keyboard-1" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
@@ -883,7 +889,75 @@
       $(this).find(".positionBlock").animate({opacity:'1'},"slow")
     })
     //页面截断
-    $(".container.main.content").css("padding-top","45px")
+    $(".container.main.content").css("padding-top","45px");
+    //上半部分UI的改变
+    $(".omega .product_name").css({
+      "font-family":"Avalon_Bold",
+      "text-transform": "capitalize"
+    });
+    $(".omega .current_price").css({
+      "color":"#019bff"
+    })
+    $(".omega .sale_banner_product").css({
+      "font-family":"Avalon",
+      "text-transform":"capitalize"
+    })
+
+    $(".omega .description").css({
+      "font-family":"Avalon"
+    })
+    $(".omega .available.color").css({
+      "border-radius":"50%"
+    })
+    $(".omega .available.color>label").css({
+      "border-radius":"50%"
+    })
+    $(".omega .soldout.color").css({
+      "border-radius":"50%"
+    })
+    $(".omega .soldout.color>label").css({
+      "border-radius":"50%"
+    })
+    $(".omega .soldout.color>label span").css({
+      "border-radius":"50%"
+    })
+    $(".omega .piano-swatch.available").css({
+      "border-radius":"5px"
+    })
+    $(".omega .swatch_options .option_title").css({
+      "text-transform":"capitalize"
+    })
+    $(".omega .piano-swatch.available label").css({
+      "font-family":"Avalon",
+      "text-transform":"capitalize"
+    })
+    $(".omega .standard-pack-swatch.available").css({
+      "border-radius":"5px"
+    })
+    $(".omega .standard-pack-swatch.available label").css({
+      "font-family":"Avalon",
+      "text-transform":"capitalize"
+    })
+    $(".omega .ss-icon.product-minus.js-change-quantity").css({
+      "border-radius":"5px 0 0 5px"
+    })
+    $(".omega .ss-icon.product-plus.js-change-quantity").css({
+      "border-radius":"0 5px 5px 0"
+    })
+    $(".omega .action_button").css({
+      "background":"rgba(1,155,255,.7)",
+      "border":"none",
+      "border-radius":"5px",
+      "text-transform":"capitalize"
+    })
+    $("#contact_form>p>label").css({
+      "text-transform":"capitalize",
+      "font-family":"Avalon",
+    })
+    $("#contact_form>p>input.action_button").css({
+      "text-transform":"capitalize",
+      "font-family":"Avalon",
+    })
   })
 </script>
 </body>
