@@ -1,4 +1,6 @@
 <style><!--
+.g-sec{position: relative;} .g-sec .m-textpart{position: absolute; top: 70px; left: 0; right: 0; width: 715px; margin: 0 auto;} @media only screen and (max-width: 768px){.g-sec .m-textpart{position: static; width: 100%; margin: 0 auto;}}
+-->
 /*推荐页 方案2*/
 .pro {
   width: 100%;
@@ -99,34 +101,33 @@
   border-radius: 7px;
   color: #fff;
 }
+/*回到顶部*/
+.tok_up {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  z-index: 9999;
+  bottom: 50px;
+  right: 55px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tok_up:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .6);
+}
 --></style>
-<p><span><strong>Features:</strong></span></p>
-<ul>
-  <li><span>Durable Clear Adhesive - The stickers are printed on transparent vinyl and coated with a long lasting adhesive material that will not damage your keyboard.</span></li>
-  <li><span>Eye-catching Design - The labels are especially designed to keep your eyes on the notes while you play. It makes learning the notes easy and speeds memory of the keys.</span></li>
-  <li><span>Works on Every Keyboard - The pack contains 52 pieces of stickers, which is enough for any keyboard or piano WHITE KEYS (49, 61, 76, or 88 keys).</span></li>
-  <li><span>Easy to Install - Comes with a detailed user guide with easy instructions and application stick to help you install them within minutes. The application stick can prevent your fingerprint left on the stickers when installing.</span></li>
-  <li><span>Double Layer Coated - Printed underneath the top layer to prevent ink from fading</span></li>
-  <li><span>Removable Sticker - Leaves No Residue behind on highest quality sticker paper</span></li>
-</ul>
-<p> </p>
-<p><span><strong>Specifications:</strong></span></p>
-<ul>
-  <li><span>Color: Transparent</span></li>
-  <li><span>Material: Plastic</span></li>
-  <li><span>Sticker size: 50*9mm / 1.97*0.35in</span></li>
-  <li><span>Package size: 230*150*10mm / 9.1*5.9*0.4in</span></li>
-  <li><span>Package weight: 25g / 0.88oz</span></li>
-</ul>
-<p><br /><span><strong>What are included:</strong></span></p>
-<ul>
-  <li><span>1 * Keyboard Sticker</span></li>
-  <li><span>1 * Instruction (English)</span></li>
-  <li><span>1 * Application Stick</span></li>
-</ul>
+<h4 style="text-align: center;"><span style="color: #741b47;"><strong>These cables are for customer that lost their original one!</strong></span></h4>
+<h4 style="text-align: center;"><span style="color: #741b47;"><strong>Keyboard/Piano original package include Apple 30-pin, Apple lightning, Android Cable!</strong></span></h4>
+<ul class="a-vertical a-spacing-none"></ul>
 <script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script><script>// <![CDATA[
 $(function(){
-  $(".container.main.content").css("padding-top","70px")
+  $($(".clearfix.breadcrumb-collection")[0]).remove()
+  $(".container.main.content").css("padding-top","45px")
   $($(".container")[2]).remove();
   $($(".container")[1]).remove();
   $("#shopify-section-product-template").append(`<div class="pro">
@@ -175,21 +176,6 @@ $(function(){
     </div>
     </div>
     </div>`)
-    //回到顶部
-    $('#tok_up').click(function () {
-    if ($(window).scrollTop() > 100) {
-    $('body,html').animate({scrollTop: 0}, 1000);
-    }
-    });
-    /*当滚动条的垂直位置大于浏览器所能看到的页面的那部分的高度时，回到顶部按钮就显示 */
-    $(window).on('scroll', function () {
-    if ($(window).scrollTop() > $(window).height())
-    $('#tok_up').fadeIn(1000);
-    else
-    $('#tok_up').fadeOut(1000);
-    });
-    $(window).trigger('scroll');/*触发滚动事件，避免刷新的时候显示回到顶部按钮*/
-
     //推荐页
     $('.buy_now').mouseenter(function () {
     $(this).find("a").html(`Buy Now`);

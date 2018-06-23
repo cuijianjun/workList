@@ -750,12 +750,14 @@
       $(".slider li").each(function(i,e){
         $(e).removeClass().addClass(cArr[i]);
       })
-      index++;
+      index--;
       if (index<0) {
         index=3;
       }
+      console.log(index+1);
+      console.log(ArrayT[index+1]);
       $("#slider-text").addClass("animated fadeInLeft").find("div").html(ArrayT[index+1])
-      //show();
+      show();
       setTimeout(function () {
         $("#slider-text").removeClass()
       },1000)
@@ -772,8 +774,6 @@
       if (index>3) {
         index=0;
       }
-      console.log(index+1);
-      console.log(ArrayT[index+1]);
       $("#slider-text").addClass("animated fadeInRight").find("div").html(ArrayT[index+1])
       show();
       setTimeout(function () {
