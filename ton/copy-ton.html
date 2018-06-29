@@ -77,7 +77,8 @@
 
   .tok_up:hover {
     cursor: pointer;
-    background: #fff;
+    background: rgba(0, 0, 0, .5);
+    transition: all 0.5s;
   }
 
   #tab1 > div.tab1-detail > .detail {
@@ -802,7 +803,7 @@
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/pages/light-keyboard" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 299.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-light-keyboard">$ 299.00</a></p>
+          <p class="buy_now" data-price="$ 299.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-light-keyboard">$ 299.99</a></p>
         </li>
         <li align="center">
           <a class="li_img li_second" href="https://www.smartpiano.com/pages/smart-piano" target="_blank"></a>
@@ -819,7 +820,7 @@
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 269.00"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.00</a></p>
+          <p class="buy_now" data-price="$ 269.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.99</a></p>
         </li>
         <li align="center">
           <a class="li_img li_forth" href="https://www.smartpiano.com/collections/accessories" target="_blank"></a>
@@ -827,7 +828,7 @@
           <p style="font-size: 12px;">
             <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none;color: #019bff;">Explore &gt;</a>
           </p>
-          <p class="buy_now" data-price="$ 39.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 39.99 - $ 79.99</a></p>
+          <p class="buy_now" data-price="$ 9.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 9.99 - $ 79.99</a></p>
         </li>
       </ul>
     </div>
@@ -958,6 +959,21 @@
       "text-transform":"capitalize",
       "font-family":"Avalon",
     })
+    //回到顶部
+    $('#tok_up').click(function () {
+      if ($(window).scrollTop() > 100) {
+        $('body,html').animate({scrollTop: 0}, 1000);
+      }
+    });
+    /*当滚动条的垂直位置大于浏览器所能看到的页面的那部分的高度时，回到顶部按钮就显示 */
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > $(window).height())
+        $('#tok_up').fadeIn(1000);
+      else
+        $('#tok_up').fadeOut(1000);
+    });
+    $(window).trigger('scroll');/*触发滚动事件，避免刷新的时候显示回到顶部按钮*/
+
   })
 </script>
 </body>
