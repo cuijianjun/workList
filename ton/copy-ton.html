@@ -5,400 +5,400 @@
   <title>Title</title>
 </head>
 <body>
-<style>
-  div.swatch_options .swatch[data-option-index='1'] input:checked+.swatch-element {
-    border-color: #019bff;
-  }
-  .omega .action_button:hover{
-    background-color: rgba(1,155,255,1) !important;
-  }
-  a:focus {
-    outline:none !important;
-    -moz-outline:none !important;
-  }
-  body{
-    background-color: #fff;
-  }
-  @font-face {
-    font-family: "Avalon_Italic";
-    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff?5501549469581235168") format("woff"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.ttf?5501549469581235168") format("truetype"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.eot?5501549469581235168") format("embedded-opentype"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.svg?5501549469581235168") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
+<style><!--
+div.swatch_options .swatch[data-option-index='1'] input:checked+.swatch-element {
+  border-color: #019bff;
+}
+.omega .action_button:hover{
+  background-color: rgba(1,155,255,1) !important;
+}
+a:focus {
+  outline:none !important;
+  -moz-outline:none !important;
+}
+body{
+  background-color: #fff;
+}
+@font-face {
+  font-family: "Avalon_Italic";
+  src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff?5501549469581235168") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.ttf?5501549469581235168") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.eot?5501549469581235168") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.svg?5501549469581235168") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Avalon_Bold_Italic";
-  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.woff?16404743671803088182") format("woff"),
-  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.ttf?16404743671803088182") format("truetype"),
-  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.eot?16404743671803088182") format("embedded-opentype"),
-  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.svg?16404743671803088182") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Avalon_Bold_Italic";
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.woff?16404743671803088182") format("woff"),
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.ttf?16404743671803088182") format("truetype"),
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.eot?16404743671803088182") format("embedded-opentype"),
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.svg?16404743671803088182") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Avalon_Bold";
-    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff2?8612130786139656726") format("woff2"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff?8612130786139656726") format("woff"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.ttf?8612130786139656726") format("truetype"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.eot?8612130786139656726") format("embedded-opentype"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.svg?8612130786139656726") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Avalon_Bold";
+  src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff2?8612130786139656726") format("woff2"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff?8612130786139656726") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.ttf?8612130786139656726") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.eot?8612130786139656726") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.svg?8612130786139656726") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "Avalon";
-    src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff2?298629140359487415") format("woff2"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff?298629140359487415") format("woff"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.ttf?298629140359487415") format("truetype"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.eot?298629140359487415") format("embedded-opentype"),
-    url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.svg?298629140359487415") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-  /*向上滚动*/
-  .tok_up {
-    position: fixed;
-    width: 48px;
-    height: 48px;
-    bottom: 50px;
-    right: 55px;
-    background: rgba(0, 0, 0, .4);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@font-face {
+  font-family: "Avalon";
+  src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff2?298629140359487415") format("woff2"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff?298629140359487415") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.ttf?298629140359487415") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.eot?298629140359487415") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.svg?298629140359487415") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*向上滚动*/
+.tok_up {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 50px;
+  right: 55px;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .tok_up:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, .5);
-    transition: all 0.5s;
-  }
+.tok_up:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .5);
+  transition: all 0.5s;
+}
 
-  #tab1 > div.tab1-detail > .detail {
-    width: 48.5%;
-    padding-bottom: 40px;
-  }
+#tab1 > div.tab1-detail > .detail {
+  width: 48.5%;
+  padding-bottom: 40px;
+}
 
-  #tab1 > div.tab1-detail > .detail span {
-    line-height: 20px;
-    display: inline-block;
-    margin-top: 22px;
-  }
-  ul.tabs li{
-    width: 24% !important;
-    text-align: center;
-    text-transform: uppercase !important;
-  }
-  ul.tabs li a{
-    width: 100% !important;
-    color:#333;
-  }
-  ul.tabs li a.active{
-    border-bottom: 2px solid #019bff !important;
-    color: #019bff;
-  }
+#tab1 > div.tab1-detail > .detail span {
+  line-height: 20px;
+  display: inline-block;
+  margin-top: 22px;
+}
+ul.tabs li{
+  width: 24% !important;
+  text-align: center;
+  text-transform: uppercase !important;
+}
+ul.tabs li a{
+  width: 100% !important;
+  color:#333;
+}
+ul.tabs li a.active{
+  border-bottom: 2px solid #019bff !important;
+  color: #019bff;
+}
 
-  .advantage .content .sure {
-    display: inline-block;
-    height: 18px;
-    position: absolute;
-    width: 18px;
-    background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/eb40b96d88eb9b9c001ebcaa9dcb0fdd.png?6392826104128110571) 0 0 no-repeat;
-    top: 4px;
-  }
+.advantage .content .sure {
+  display: inline-block;
+  height: 18px;
+  position: absolute;
+  width: 18px;
+  background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/eb40b96d88eb9b9c001ebcaa9dcb0fdd.png?6392826104128110571) 0 0 no-repeat;
+  top: 4px;
+}
 
-  #tab1 > div.keyBoard > div.tips > div.advantage > div.content {
-    margin-top: 18px;
-    line-height: 22px;
-    padding:0;
-    position: relative;
-    font-size: 13px;
-  }
+#tab1 > div.keyBoard > div.tips > div.advantage > div.content {
+  margin-top: 18px;
+  line-height: 22px;
+  padding:0;
+  position: relative;
+  font-size: 13px;
+}
 
-  #tab1 > div.piano-detail > .content {
-    background-color: #f6f9f9;
-    width: 32%;
-    padding: 0;
-  }
+#tab1 > div.piano-detail > .content {
+  background-color: #f6f9f9;
+  width: 32%;
+  padding: 0;
+}
 
-  /*规格*/
-  .detail_main {
-    width: 100%;
-    margin: 0 auto;
-    color: #4c4849;
-  }
+/*规格*/
+.detail_main {
+  width: 100%;
+  margin: 0 auto;
+  color: #4c4849;
+}
 
-  .detail_main .main_tok .main_span {
-    display: inline-block;
-    width: 29%;
-    font-size: 18px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    vertical-align: top;
-  }
+.detail_main .main_tok .main_span {
+  display: inline-block;
+  width: 29%;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
 
-  .detail_main .main_tok .main_word {
-    display: inline-block;
-    width: 69.1%;
-    border-bottom: 1px solid #dcdcdc;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+.detail_main .main_tok .main_word {
+  display: inline-block;
+  width: 69.1%;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-  .detail_main .main_two .word_two {
-    box-sizing: content-box;
-    height: 540px;
-    background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/bcc364c9c6a0e68a9370a321f733ee5f.png?5671330189073109754) center no-repeat;
-    background-size: contain;
-    margin-top: 30px;
-    border: none;
-    margin-bottom: 70px;
-  }
+.detail_main .main_two .word_two {
+  box-sizing: content-box;
+  height: 540px;
+  background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/bcc364c9c6a0e68a9370a321f733ee5f.png?5671330189073109754) center no-repeat;
+  background-size: contain;
+  margin-top: 30px;
+  border: none;
+  margin-bottom: 70px;
+}
 
-  .word_fourteen {
-    box-sizing: content-box;
-    height: 1040px;
-    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/4260d1ffb58745ed3bac3b3c9291bac3_24de3a37-4b10-43ae-bedb-a4008aaceece.png?5671330189073109754') center no-repeat;
-    background-size: contain;
-    margin-top: -9px;
-    border: none;
-  }
-  /*评论页*/
-  #tab3 .title{
-    height: 200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #tab3 .switch .s-btn{
-    width: 163px;
-    height: 42px;
-    float: left;
-    line-height: 42px;
-    text-align: center;
-    background-color: #ddd;
-    cursor: pointer;
-  }
-  #tab3 .switch .s-btn.active{
-    color: #fff;
-    background-color: #019bff;
-  }
-  #tab3 .switch .s-btn.left{
-    -webkit-border-radius: 3px 0 0 3px;
-    -moz-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
-  }
-  #tab3 .switch .s-btn.right{
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
-  }
-  /*top问答页面*/
-  .FAQ-content{
-    padding: 20px 50px;
-    margin-bottom: 20px;
-  }
-  .FAQ-content .item{
-    padding: 35px 0;
-    border-bottom: 1px solid #dddddd;
-  }
-  .FAQ-content .item .title{
-    font-size: 19px;
-    line-height: 34px;
-    margin-bottom: 15px;
-  }
-  .FAQ-content .item .title .Q{
-    color: #019bff;
-  }
-  .FAQ-content .item .answer{
-    font-size: 14px;
-    line-height: 24px;
-  }
+.word_fourteen {
+  box-sizing: content-box;
+  height: 1040px;
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/4260d1ffb58745ed3bac3b3c9291bac3_24de3a37-4b10-43ae-bedb-a4008aaceece.png?5671330189073109754') center no-repeat;
+  background-size: contain;
+  margin-top: -9px;
+  border: none;
+}
+/*评论页*/
+#tab3 .title{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tab3 .switch .s-btn{
+  width: 163px;
+  height: 42px;
+  float: left;
+  line-height: 42px;
+  text-align: center;
+  background-color: #ddd;
+  cursor: pointer;
+}
+#tab3 .switch .s-btn.active{
+  color: #fff;
+  background-color: #019bff;
+}
+#tab3 .switch .s-btn.left{
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+#tab3 .switch .s-btn.right{
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+/*top问答页面*/
+.FAQ-content{
+  padding: 20px 50px;
+  margin-bottom: 20px;
+}
+.FAQ-content .item{
+  padding: 35px 0;
+  border-bottom: 1px solid #dddddd;
+}
+.FAQ-content .item .title{
+  font-size: 19px;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+.FAQ-content .item .title .Q{
+  color: #019bff;
+}
+.FAQ-content .item .answer{
+  font-size: 14px;
+  line-height: 24px;
+}
 
-  /*定位居中*/
-  .img{
-    position: relative;
-  }
-  .img .positionBlock{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    -webkit-transform:translate(-50%,-50%);
-  }
-  .img:hover .positionBlock{
-  }
+/*定位居中*/
+.img{
+  position: relative;
+}
+.img .positionBlock{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+}
+.img:hover .positionBlock{
+}
 
-  /*推荐页*/
-  .pro {
-    width: 100%;
-    height: 550px;
-    background: #f6f9f9;
-    padding-top: 50px;
-  }
+/*推荐页*/
+.pro {
+  width: 100%;
+  height: 550px;
+  background: #f6f9f9;
+  padding-top: 50px;
+}
 
-  .pro_main {
-    width: 1200px;
-    height: 600px;
-    margin: 0 auto;
-  }
+.pro_main {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
 
-  .pro_detail {
-    margin-top: 33px;
-  }
+.pro_detail {
+  margin-top: 33px;
+}
 
-  .pro_detail ul {
-    width: 1200px;
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-  }
+.pro_detail ul {
+  width: 1200px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
 
-  .pro_detail ul li {
-    width: 290px;
-    height: 400px;
-    list-style: none;
-    background: #fff;
-    text-align: center;
-    cursor: auto;
-  }
+.pro_detail ul li {
+  width: 290px;
+  height: 400px;
+  list-style: none;
+  background: #fff;
+  text-align: center;
+  cursor: auto;
+}
 
-  .pro_detail ul li:hover {
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 8px 4px -4px #cdcece;
-  }
+.pro_detail ul li:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 4px -4px #cdcece;
+}
 
-  .pro_detail ul li .li_img {
-    width: 290px;
-    height: 230px;
-    cursor: pointer;
-    display: block;
-  }
+.pro_detail ul li .li_img {
+  width: 290px;
+  height: 230px;
+  cursor: pointer;
+  display: block;
+}
 
-  .pro_detail ul li .li_first {
-    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/pic_11.png?17520978319174041741') center no-repeat;
-    background-size: cover;
-  }
+.pro_detail ul li .li_first {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/pic_11.png?17520978319174041741') center no-repeat;
+  background-size: cover;
+}
 
-  .pro_detail ul li .li_second {
-    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/top.png?6392826104128110571') center no-repeat;
-    background-size: cover;
-  }
+.pro_detail ul li .li_second {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/top.png?6392826104128110571') center no-repeat;
+  background-size: cover;
+}
 
-  .pro_detail ul li .li_third {
-    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/toh_e6bede7b-6045-4c45-901c-0436393f94aa.png?5658618421159846973') center no-repeat;
-    background-size: cover;
-  }
+.pro_detail ul li .li_third {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/toh_e6bede7b-6045-4c45-901c-0436393f94aa.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
 
-  .pro_detail ul li .li_forth {
-    background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/parts.png?5658618421159846973') center no-repeat;
-    background-size: cover;
-  }
+.pro_detail ul li .li_forth {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/parts.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
 
-  .pro_detail .buy_now {
-    margin: 25px auto 0;
-    width: 180px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    font-size: 18px;
-    color: #000;
-    font-weight: bold;
-  }
-  .pro_detail p{
-    cursor: auto;
-  }
-  .pro_detail p a{
-    cursor: pointer;
-  }
+.pro_detail .buy_now {
+  margin: 25px auto 0;
+  width: 180px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.pro_detail p{
+  cursor: auto;
+}
+.pro_detail p a{
+  cursor: pointer;
+}
 
-  .pro_detail .buy_now:hover {
-    background: #019bff;
-    border-radius: 7px;
-    color: #fff;
-  }
+.pro_detail .buy_now:hover {
+  background: #019bff;
+  border-radius: 7px;
+  color: #fff;
+}
 
-  /*底部*/
-  .tok {
-    width: 100%;
-    background-size: cover;
-    overflow: hidden;
-  }
+/*底部*/
+.tok {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
 
-  .tok_eleven {
-    height: 130px;
-    background: #7829a2;
-  }
+.tok_eleven {
+  height: 130px;
+  background: #7829a2;
+}
 
-  .tok_eleven ul {
-    width: 1200px;
-    height: 74px;
-    margin: 28px auto 0;
-    display: flex;
-    justify-content: space-between;
-  }
+.tok_eleven ul {
+  width: 1200px;
+  height: 74px;
+  margin: 28px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .tok_eleven ul li {
-    height: 74px;
-    line-height: 74px;
-    color: #fff;
-    font-size: 14px;
-    display: flex;
-  }
+.tok_eleven ul li {
+  height: 74px;
+  line-height: 74px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+}
 
-  .tok_eleven ul li img {
-    width: 74px;
-    height: 74px;
-    margin-right: 20px;
-  }
-  /*tab3*/
-  .s-tab1 div.content{
-    padding: 0;
-  }
-  .s-tab1 div.content img{
-    width: 386px;
-    height: 338px;
-  }
-  .s-tab1 div.content:hover .img {
-    height: 358px;
-  }
-  .s-tab1 div.content .img img:nth-child(2){
-    opacity: 0;
-  }
-  .s-tab1 div.content:hover .img img:nth-child(2){
-    opacity: 1;
-    transition: all 1s;
-  }
-  /*问答*/
-  #tab4 .FAQ-content span.F-detail{
-    font-family: AvalonBold;
-    font-weight: normal;
-    text-transform: none;
-  }
-  /*推荐页链接*/
-  .buy_now a{
-    color: #000000;
-    outline:none;
-  }
-  .buy_now:hover a{
-    color: #fff;
-  }
-</style>
+.tok_eleven ul li img {
+  width: 74px;
+  height: 74px;
+  margin-right: 20px;
+}
+/*tab3*/
+.s-tab1 div.content{
+  padding: 0;
+}
+.s-tab1 div.content img{
+  width: 386px;
+  height: 338px;
+}
+.s-tab1 div.content:hover .img {
+  height: 358px;
+}
+.s-tab1 div.content .img img:nth-child(2){
+  opacity: 0;
+}
+.s-tab1 div.content:hover .img img:nth-child(2){
+  opacity: 1;
+  transition: all 1s;
+}
+/*问答*/
+#tab4 .FAQ-content span.F-detail{
+  font-family: AvalonBold;
+  font-weight: normal;
+  text-transform: none;
+}
+/*推荐页链接*/
+.buy_now a{
+  color: #000000;
+  outline:none;
+}
+.buy_now:hover a{
+  color: #fff;
+}
+--></style>
 <h3></h3>
 <meta charset="utf-8" />
 <p><span>Introducing the world¹s first Apple MFi-certified Smart Piano. The ONE Smart Piano is a new and easy way to learn music without paying for private instruction right off the bat. When you attach your smart device the Smart Piano, you can use the app to browse interactive video lessons, LED light-guided sheet music, and piano games. Following the lights, you can start playing your first song in as little as a few minutes.</span></p>
 <br />
 <p>Standard Pack includes the Piano + Piano Bench</p>
 <!-- split --> <!--Start tab labels-->
-<ul class="tabs" style="text-transform:none">
+<ul class="tabs" style="text-transform: none;">
   <li><a class="active" href="#tab1">Features</a></li>
   <li><a href="#tab2">Tech Specs</a></li>
   <li><a href="#tab3">Reviews</a></li>
@@ -408,163 +408,83 @@
 <ul class="tabs-content">
   <ul class="tabs-content">
     <li id="tab1" class="active">
-      <div class="keyBoard" style="position: relative;margin-top: 40px">
-        <div class="light-keyBoard" style="width: 100%;height: 500px;">
-          <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/558.png?5045451411097098020" width="100%">
-        </div>
-        <div class="tips"
-             style="width: 37.5%;height: 100%;background-color: #fff;position:absolute;right: 35px;bottom: -35px;box-shadow: 0 5px 4px #ddd;">
+      <div class="keyBoard" style="position: relative; margin-top: 40px;">
+        <div class="light-keyBoard" style="width: 100%; height: 500px;"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/558.png?5045451411097098020" width="100%" /></div>
+        <div class="tips" style="width: 37.5%; height: 100%; background-color: #fff; position: absolute; right: 35px; bottom: -35px; box-shadow: 0 5px 4px #ddd;">
           <div class="advantage" style="margin: 43px 50px;">
-            <div class="title" style="font: 28px Avalon_bold; line-height: 36px;margin-bottom: 12px;text-transform:none">
-              Keyboard Pro
-            </div>
-            <div class="content">
-              <i class="sure"></i>
-              <span class="detail-content" style="padding-left: 30px;display: inline-block;">88 light-up keys to guide you start in minutes</span>
-            </div>
-            <div class="content">
-              <i class="sure"></i>
-              <span class="detail-content" style="padding-left: 30px;display: inline-block;">Free iOS & Android app with crash course, 4000+ songs, tutorials & games</span>
-            </div>
-            <div class="content">
-              <i class="sure"></i>
-              <span class="detail-content" style="padding-left: 30px;display: inline-block;">Support both iOS and Android, phone and tablet</span>
-            </div>
-            <div class="content">
-              <i class="sure"></i>
-              <span class="detail-content" style="padding-left: 30px;display: inline-block;">MIDI output and recording (please refer to user manual for setup guideline)</span>
-            </div>
-            <div class="content">
-              <i class="sure"></i>
-              <span class="detail-content" style="padding-left: 30px;display: inline-block;">High-Grade piano with hammer action keys & stereo sound with 128 note max polyphony</span>
-            </div>
+            <div class="title" style="font: 28px Avalon_bold; line-height: 36px; margin-bottom: 12px; text-transform: none;">Keyboard Pro</div>
+            <div class="content"><i class="sure"></i> <span class="detail-content" style="padding-left: 30px; display: inline-block;">88 light-up keys to guide you start in minutes</span></div>
+            <div class="content"><i class="sure"></i> <span class="detail-content" style="padding-left: 30px; display: inline-block;">Free iOS &amp; Android app with crash course, 4000+ songs, tutorials &amp; games</span></div>
+            <div class="content"><i class="sure"></i> <span class="detail-content" style="padding-left: 30px; display: inline-block;">Support both iOS and Android, phone and tablet</span></div>
+            <div class="content"><i class="sure"></i> <span class="detail-content" style="padding-left: 30px; display: inline-block;">MIDI output and recording (please refer to user manual for setup guideline)</span></div>
+            <div class="content"><i class="sure"></i> <span class="detail-content" style="padding-left: 30px; display: inline-block;">High-Grade piano with hammer action keys &amp; stereo sound with 128 note max polyphony</span></div>
           </div>
-          <div class="small-tips"
-               style="position: absolute;width: 83px;height: 8px;background-color: #7829a2;bottom: 0;right: 0;"></div>
+          <div class="small-tips" style="position: absolute; width: 83px; height: 8px; background-color: #7829a2; bottom: 0; right: 0;"></div>
         </div>
       </div>
-      <div class="tab1-detail"
-           style="width: 100%;height: 800px;margin-top:108px;display: flex;flex-wrap:wrap;justify-content: space-between">
+      <div class="tab1-detail" style="width: 100%; height: 800px; margin-top: 108px; display: flex; flex-wrap: wrap; justify-content: space-between;">
         <div class="detail">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-01.png?10139469033512100096" width="100%">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_c46dc38f-f36f-415b-b16a-2ac3fcc06e58.png?14712864505310773350" class="positionBlock">
-          </div>
-          <span style="font-family: Avalon">Choose from thousands of sheet music to learn, from classical to pop, jazz & blues and much more. Use 'auto-play' to learn the melody, or 'A-B repeats' to focus and practice. You can also record and share on Facebook anytime.</span>
-        </div>
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-01.png?10139469033512100096" width="100%" /> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_c46dc38f-f36f-415b-b16a-2ac3fcc06e58.png?14712864505310773350" class="positionBlock" /></div>
+          <span style="font-family: Avalon;">Choose from thousands of sheet music to learn, from classical to pop, jazz &amp; blues and much more. Use 'auto-play' to learn the melody, or 'A-B repeats' to focus and practice. You can also record and share on Facebook anytime.</span></div>
         <div class="detail">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-02.png?4624088886897489724" width="100%">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_dd5fb214-b1ff-4610-9b9c-3843a9e64ca6.png?14712864505310773350" class="positionBlock">
-          </div>
-          <span style="font-family: Avalon">A fast track for beginners to learn a song in a few hours. Just follow the well-designed learning steps with hand gesture videos and section exercise, you can learn to play 'Happy Birthday' in 2 hours, 'Fur Elise' in 1 day and much more.</span>
-        </div>
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/d-02.png?4624088886897489724" width="100%" /> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_dd5fb214-b1ff-4610-9b9c-3843a9e64ca6.png?14712864505310773350" class="positionBlock" /></div>
+          <span style="font-family: Avalon;">A fast track for beginners to learn a song in a few hours. Just follow the well-designed learning steps with hand gesture videos and section exercise, you can learn to play 'Happy Birthday' in 2 hours, 'Fur Elise' in 1 day and much more.</span></div>
         <div class="detail">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/556.png?961615379745462861" width="100%">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_ff2f7b30-7a8f-4d2d-8831-0c394bceb088.png?14712864505310773350" class="positionBlock">
-          </div>
-          <span style="font-family: Avalon">Over 100 free video lessons integrated with lights help you learn everything from the basics of a piano to more advanced topics. Pause, rewind or slow down any lesson to take things at your own pace.
-</span>
-        </div>
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/556.png?961615379745462861" width="100%" /> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_ff2f7b30-7a8f-4d2d-8831-0c394bceb088.png?14712864505310773350" class="positionBlock" /></div>
+          <span style="font-family: Avalon;">Over 100 free video lessons integrated with lights help you learn everything from the basics of a piano to more advanced topics. Pause, rewind or slow down any lesson to take things at your own pace. </span></div>
         <div class="detail">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/557.png?961615379745462861" width="100%">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4.png?14712864505310773350" class="positionBlock">
-          </div>
-          <span style="font-family: Avalon">Learning piano doesn’t equal to endless practicing. It can also be fun with games. Experience the real-time Guitar Hero. Challenge yourself and score higher points by hitting light-up keys in rhythm to match accompaniment music.</span>
-        </div>
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/557.png?961615379745462861" width="100%" /> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4.png?14712864505310773350" class="positionBlock" /></div>
+          <span style="font-family: Avalon;">Learning piano doesn’t equal to endless practicing. It can also be fun with games. Experience the real-time Guitar Hero. Challenge yourself and score higher points by hitting light-up keys in rhythm to match accompaniment music.</span></div>
       </div>
-      <div class="topPiano" style="text-align: center;margin-top: 80px;border-top: 1px solid #ddd;">
-            <span class="quality"
-                  style="border-top: 8px solid #7829a2;font-size: 32px;width: 194px;font-family: Avalon_Bold;line-height: 36px;display: inline-block;padding-top: 22px;"></span>
-      </div>
-      <div class="piano-detail" style="display: flex;margin-top:70px;justify-content:space-between">
+      <div class="topPiano" style="text-align: center; margin-top: 80px; border-top: 1px solid #ddd;"><span class="quality" style="border-top: 8px solid #7829a2; font-size: 32px; width: 194px; font-family: Avalon_Bold; line-height: 36px; display: inline-block; padding-top: 22px;"></span></div>
+      <div class="piano-detail" style="display: flex; margin-top: 70px; justify-content: space-between;">
         <div class="content">
-          <div class="show">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_8cb7909a-d787-4bc4-a874-0723f7a3c3cd.png?6392826104128110571" width="100%">
-          </div>
+          <div class="show"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_8cb7909a-d787-4bc4-a874-0723f7a3c3cd.png?6392826104128110571" width="100%" /></div>
           <div class="bottom" style="margin: 50px 30px 30px;">
-            <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
-            <div style="font-size: 20px;line-height: 30px;font-family: Avalon_Bold;">Unique Design</div>
-            <span style="margin-top: 24px;font-family: Avalon;display: inline-block;font-size: 13px;line-height: 22px">Turn the black button for adjusting volume easily and change 128 instrument sound freely by pressing. Multi-functional button makes you use the smart piano more conveniently.</span>
-          </div>
+            <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px;"></div>
+            <div style="font-size: 20px; line-height: 30px; font-family: Avalon_Bold;">Unique Design</div>
+            <span style="margin-top: 24px; font-family: Avalon; display: inline-block; font-size: 13px; line-height: 22px;">Turn the black button for adjusting volume easily and change 128 instrument sound freely by pressing. Multi-functional button makes you use the smart piano more conveniently.</span></div>
         </div>
         <div class="content">
-          <div class="show">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_9f71c131-3510-4817-851d-994de0c9e565.png?6392826104128110571" width="100%">
-          </div>
+          <div class="show"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_9f71c131-3510-4817-851d-994de0c9e565.png?6392826104128110571" width="100%" /></div>
           <div class="bottom" style="margin: 50px 30px 30px;">
-            <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
-            <div style="font-size: 20px;line-height: 30px;font-family: Avalon_Bold;">Hammer-Action Keys</div>
-            <span style="margin-top: 24px;display: inline-block;font-family: Avalon;font-size: 13px;line-height: 22px">88-key full-sized hammer action keys and premium piano sounds give you the real piano feel and multiple sound options. Plug in a headphone to enjoy silent practice.</span>
-          </div>
+            <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px;"></div>
+            <div style="font-size: 20px; line-height: 30px; font-family: Avalon_Bold;">Hammer-Action Keys</div>
+            <span style="margin-top: 24px; display: inline-block; font-family: Avalon; font-size: 13px; line-height: 22px;">88-key full-sized hammer action keys and premium piano sounds give you the real piano feel and multiple sound options. Plug in a headphone to enjoy silent practice.</span></div>
         </div>
         <div class="content">
-          <div class="show">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_42ef774c-6d24-4bab-aa7a-3ceb331819e1.png?6392826104128110571" width="100%">
-          </div>
+          <div class="show"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_42ef774c-6d24-4bab-aa7a-3ceb331819e1.png?6392826104128110571" width="100%" /></div>
           <div class="bottom" style="margin: 50px 30px 30px;">
-            <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px"></div>
-            <div style="font-size: 20px;line-height: 30px;font-family: Avalon_Bold;">Grand Piano Tone Sample</div>
-            <span style="margin-top: 24px;display: inline-block;font-family: Avalon;font-size: 13px;line-height: 22px">With 10 layers acoustic samples, 16 bits stereo sampling accuracy, high-grade instrument sound output and 128-note maximum polyphony, keyboard pro delivers the most realistic sound and great playing experience.</span>
-          </div>
+            <div class="left-tip" style="border-top: 6px solid #7829a2; width: 32px; margin-bottom: 35px;"></div>
+            <div style="font-size: 20px; line-height: 30px; font-family: Avalon_Bold;">Grand Piano Tone Sample</div>
+            <span style="margin-top: 24px; display: inline-block; font-family: Avalon; font-size: 13px; line-height: 22px;">With 10 layers acoustic samples, 16 bits stereo sampling accuracy, high-grade instrument sound output and 128-note maximum polyphony, keyboard pro delivers the most realistic sound and great playing experience.</span></div>
         </div>
       </div>
-      <div class="topPiano" style="text-align: center;margin-top: 80px;border-top: 1px solid #ddd;">
-            <span class="quality"
-                  style="border-top: 8px solid #7829a2;font-size: 32px;font-family: Avalon_Bold;line-height: 36px;display: inline-block;padding-top: 22px;">
-              IN THE NEWS
-            </span>
-      </div>
-      <div class="news" style="display: flex;margin-top: 73px; justify-content: space-between;">
-        <div class="content" style="position: relative;width: 24%;text-align: center">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new1.png?5001472808916019021" width="100%">
-          </div>
-          <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-            <span>“A fighting hero...Witness the rebirth of the classical piano.”</span>
-          </div>
+      <div class="topPiano" style="text-align: center; margin-top: 80px; border-top: 1px solid #ddd;"><span class="quality" style="border-top: 8px solid #7829a2; font-size: 32px; font-family: Avalon_Bold; line-height: 36px; display: inline-block; padding-top: 22px;"> IN THE NEWS </span></div>
+      <div class="news" style="display: flex; margin-top: 73px; justify-content: space-between;">
+        <div class="content" style="position: relative; width: 24%; text-align: center;">
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new1.png?5001472808916019021" width="100%" /></div>
+          <div class="detail" style="position: absolute; margin: 0 40px 0 50px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>“A fighting hero...Witness the rebirth of the classical piano.”</span></div>
         </div>
-        <div class="content" style="position: relative;width: 24%;text-align: center">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new2.png?5001472808916019021" width="100%">
-          </div>
-          <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-            <span>“A patient instructor who is willing to let me proceed at my own pace.  ” </span>
-          </div>
+        <div class="content" style="position: relative; width: 24%; text-align: center;">
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new2.png?5001472808916019021" width="100%" /></div>
+          <div class="detail" style="position: absolute; margin: 0 40px 0 50px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>“A patient instructor who is willing to let me proceed at my own pace. ” </span></div>
         </div>
-        <div class="content" style="position: relative;width: 24%;text-align: center">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new3.png?5001472808916019021" width="100%">
-          </div>
-          <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-            <span>“Bringing Reviving Mozart For The 21st Century.”</span>
-          </div>
+        <div class="content" style="position: relative; width: 24%; text-align: center;">
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new3.png?5001472808916019021" width="100%" /></div>
+          <div class="detail" style="position: absolute; margin: 0 40px 0 50px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>“Bringing Reviving Mozart For The 21st Century.”</span></div>
         </div>
-        <div class="content" style="position: relative;width: 24%;text-align: center">
-          <div class="img">
-            <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new4.png?5001472808916019021" width="100%">
-          </div>
-          <div class="detail" style="position: absolute;margin: 0 40px 0 50px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-            <span>“Fun and kid-friendly, with a good mix of music-minded features in the app.”</span>
-          </div>
+        <div class="content" style="position: relative; width: 24%; text-align: center;">
+          <div class="img"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/new4.png?5001472808916019021" width="100%" /></div>
+          <div class="detail" style="position: absolute; margin: 0 40px 0 50px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>“Fun and kid-friendly, with a good mix of music-minded features in the app.”</span></div>
         </div>
       </div>
-      <div class="guide" style="margin-top: 56px">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/logo_b93b2947-b7e7-4eac-aada-f208e26066c3.png?1866873735820222961" width="100%">
-      </div>
+      <div class="guide" style="margin-top: 56px;"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/logo_b93b2947-b7e7-4eac-aada-f208e26066c3.png?1866873735820222961" width="100%" /></div>
     </li>
     <li id="tab2">
       <div class="detail_main">
-        <div class="main_tok main_one">
-          <span class="main_span">Colour</span>
-          <div class="main_word">
-            <span style="display: inline-block; width: 20px; height: 20px; background: #000; border-radius: 50%;"></span>
-            <span style="display: inline-block; margin-right: 40px; vertical-align: super;">Black</span> <span
-              style="display: inline-block; width: 20px; height: 20px; background: #fff;border: 1px solid #333333; border-radius: 50%;"></span>
-            <span style="display: inline-block; margin-right: 40px; vertical-align: super;"> White</span>
-          </div>
+        <div class="main_tok main_one"><span class="main_span">Colour</span>
+          <div class="main_word"><span style="display: inline-block; width: 20px; height: 20px; background: #000; border-radius: 50%;"></span> <span style="display: inline-block; margin-right: 40px; vertical-align: super;">Black</span> <span style="display: inline-block; width: 20px; height: 20px; background: #fff; border: 1px solid #333333; border-radius: 50%;"></span> <span style="display: inline-block; margin-right: 40px; vertical-align: super;"> White</span></div>
         </div>
         <div class="main_tok main_two"><span class="main_span" style="width: 26.5%;">Size</span>
           <div class="main_word word_two"></div>
@@ -579,9 +499,7 @@
           <div class="main_word"><span>128 </span></div>
         </div>
         <div class="main_tok main_six"><span class="main_span">Timbres</span>
-          <div class="main_word"><span>88 preset timbres in the keyboard<br>
-691 timbres, 11 drum sets, 256 GM2 imbres can be selected when connected to "The One Smart Piano" App.</span>
-          </div>
+          <div class="main_word"><span>88 preset timbres in the keyboard<br /> 691 timbres, 11 drum sets, 256 GM2 imbres can be selected when connected to "The One Smart Piano" App.</span></div>
         </div>
         <div class="main_tok main_seven"><span class="main_span">LED</span>
           <div class="main_word"><span>88 full color LED lights</span></div>
@@ -590,18 +508,10 @@
           <div class="main_word"><span>Sustain pedal </span></div>
         </div>
         <div class="main_tok main_twive"><span class="main_span">Supported devices</span>
-          <div class="main_word">
-            <span style="line-height: 28px">
-              iOS 9.0 +<br>
-              iPad 2/4, New Pad, iPad mini1/2/3/4, iPad Air1/2, iPad Pro<br>
-              iPhone 5s/6/6 plus/6s/6s plus/7/7 plus/8/X<br>
-              Android 4.4+ with USB Host/OTG<br>
-            </span>
-          </div>
+          <div class="main_word"><span style="line-height: 28px;"> iOS 9.0 +<br /> iPad 2/4, New Pad, iPad mini1/2/3/4, iPad Air1/2, iPad Pro<br /> iPhone 5s/6/6 plus/6s/6s plus/7/7 plus/8/X<br /> Android 4.4+ with USB Host/OTG<br /> </span></div>
         </div>
         <div class="main_tok main_nine"><span class="main_span">Headphones</span>
-          <div class="main_word"><span>Two 3.5mm headphone jacks</span>
-          </div>
+          <div class="main_word"><span>Two 3.5mm headphone jacks</span></div>
         </div>
         <div class="main_tok main_ten"><span class="main_span">AUX IN</span>
           <div class="main_word"><span>6.35mm AUX IN jack </span></div>
@@ -609,54 +519,35 @@
         <div class="main_tok main_eleven"><span class="main_span">AUX OUT</span>
           <div class="main_word"><span>6.35mm AUX OUT jack</span></div>
         </div>
-
         <div class="main_tok main_thirteen"><span class="main_span">Pedals</span>
-          <div class="main_word"><span>Sustain (with half pedal), Sostenuto, Soft </span>
-          </div>
+          <div class="main_word"><span>Sustain (with half pedal), Sostenuto, Soft </span></div>
         </div>
-        <div class="main_tok main_fourteen">
-          <span class="main_span">Panel controls</span>
+        <div class="main_tok main_fourteen"><span class="main_span">Panel controls</span>
           <div class="main_word word_fourteen"></div>
         </div>
         <div class="main_tok main_seventeen"><span class="main_span">Download</span>
-          <div class="main_word">
-            <a target="_blank" href="https://cdn.shopify.com/s/files/1/1017/9603/files/The_ONE_Keyboard_Pro_User_Guide.pdf?1521623836171190413">
-              <p style="color: #019bff; height: 26px;margin-bottom: 0;">The ONE Keyboard Pro User Manual (English)
-                <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
-              </p>
-            </a>
-            <a href="#" style="display: none">
-              <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Keyboard Pro User Manual
-                (French)<span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
-              </p>
-            </a>
-            <a href="#" style="display: none">
-              <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Keyboard Pro User Manual  (Russian)
-                <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
-              </p>
-            </a>
-            <a href="#" style="display: none">
-              <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Keyboard Pro User Manual  (German)
-                <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px;cursor: pointer">PDF</span>
-              </p>
-            </a>
-          </div>
+          <div class="main_word"><a target="_blank" href="https://cdn.shopify.com/s/files/1/1017/9603/files/The_ONE_Keyboard_Pro_User_Guide.pdf?1521623836171190413" rel="noopener noreferrer">
+            <p style="color: #019bff; height: 26px; margin-bottom: 0;">The ONE Keyboard Pro User Manual (English) <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px; cursor: pointer;">PDF</span></p>
+          </a> <a href="#" style="display: none;">
+            <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Keyboard Pro User Manual (French)<span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px; cursor: pointer;">PDF</span></p>
+          </a> <a href="#" style="display: none;">
+            <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Keyboard Pro User Manual (Russian) <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px; cursor: pointer;">PDF</span></p>
+          </a> <a href="#" style="display: none;">
+            <p style="color: #019bff; height: 26px; margin-top: 20px;">The ONE Keyboard Pro User Manual (German) <span style="float: right; width: 50px; height: 24px; border-radius: 6px; background: #eeeeee; border: 1px solid #a0a0a0; text-align: center; color: #4c4849; line-height: 24px; cursor: pointer;">PDF</span></p>
+          </a></div>
         </div>
         <div class="main_tok main_eighteen"><span class="main_span">Care Instructions</span>
-          <div class="main_word" style="line-height: 28px">
-            <p>1. Clean only with a soft, dry cloth. </p>
+          <div class="main_word" style="line-height: 28px;">
+            <p>1. Clean only with a soft, dry cloth.</p>
             <p>2. Please do not use the cloth soaked with paint thinners, solvents, cleaning solutions or chemicals.</p>
             <p>3. Please do not use excessive force on the buttons or switches.</p>
             <p>4. The best environment for use is: Temperature: 15 °C ~ 35 °C Humidity: 75%</p>
           </div>
         </div>
-        <div class="main_tok main_nineteen" style="border-bottom: 1px solid #ddd;padding-bottom: 100px;"><span class="main_span">Components list</span>
-          <div class="main_word" style="border: none;">
-            <span style="line-height: 28px">Piano body<br>Power source DC 15V<br>Cables<br>User manual </span>
-          </div>
+        <div class="main_tok main_nineteen" style="border-bottom: 1px solid #ddd; padding-bottom: 100px;"><span class="main_span">Components list</span>
+          <div class="main_word" style="border: none;"><span style="line-height: 28px;">Piano body<br />Power source DC 15V<br />Cables<br />User manual </span></div>
         </div>
-        <p style="font-size: 12px; color: #a8a8a8; margin-top: 30px; margin-bottom: 30px;">Note: When specification
-          are subject to change, refer to the actual product.</p>
+        <p style="font-size: 12px; color: #a8a8a8; margin-top: 30px; margin-bottom: 30px;">Note: When specification are subject to change, refer to the actual product.</p>
       </div>
     </li>
     <li id="tab3">
@@ -667,314 +558,256 @@
         </div>
       </div>
       <div class="tab-container">
-        <div class="show s-tab1" id="s-tab1" style="margin-bottom: 40px" >
-          <div style="display: flex;height: 358px; justify-content: space-between;">
+        <div class="show s-tab1" id="s-tab1" style="margin-bottom: 40px;">
+          <div style="display: flex; height: 358px; justify-content: space-between;">
             <div class="content" style="position: relative;">
-              <div class="img" style="position: relative;">
-                <img style="position: absolute;top: 0;z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/apple-insdier_949e7756-4af0-4c29-99b9-36a6d55a8c93.png?9150240401160801338" width="100%">
-                <img style="height: 358px;z-index: 0;"  src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%">
-              </div>
-              <div class="detail" style="position: absolute;z-index:1;margin: 0 30px 0 30px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-                <span>The ONE Smart Keyboard Pro unlocks incredible possibilities by integrating with the iPad you already own.</span>
-              </div>
+              <div class="img" style="position: relative;"><img style="position: absolute; top: 0; z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/apple-insdier_949e7756-4af0-4c29-99b9-36a6d55a8c93.png?9150240401160801338" width="100%" /> <img style="height: 358px; z-index: 0;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%" /></div>
+              <div class="detail" style="position: absolute; z-index: 1; margin: 0 30px 0 30px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>The ONE Smart Keyboard Pro unlocks incredible possibilities by integrating with the iPad you already own.</span></div>
             </div>
             <div class="content" style="position: relative;">
-              <div class="img" style="position: relative;">
-                <img style="position: absolute;top: 0;z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/gadget.png?9150240401160801338" width="100%">
-                <img style="height: 358px;z-index: 0;"  src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%">
-              </div>
-              <div class="detail" style="position: absolute;z-index:1;margin: 0 30px 0 30px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-                <span>The ONE Smart Keyboard Pro: It seems like the best way to learn to play the piano in the modern age.</span>
-              </div>
+              <div class="img" style="position: relative;"><img style="position: absolute; top: 0; z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/gadget.png?9150240401160801338" width="100%" /> <img style="height: 358px; z-index: 0;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%" /></div>
+              <div class="detail" style="position: absolute; z-index: 1; margin: 0 30px 0 30px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>The ONE Smart Keyboard Pro: It seems like the best way to learn to play the piano in the modern age.</span></div>
             </div>
             <div class="content" style="position: relative;">
-              <div class="img" style="position: relative;">
-                <img  style="position: absolute;top: 0;z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/aol_52c5cbeb-7761-44e9-887c-c1ce743e088a.png?9150240401160801338" width="100%">
-                <img style="height: 358px;z-index: 0;"  src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%">
-              </div>
-              <div class="detail" style="position: absolute;z-index:1;margin: 0 30px 0 30px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-                <span>The ONE Smart Piano promises to teach you how to play without a teacher in the convenience of your own home. It works with your mobile phone or tablet.</span>
-              </div>
+              <div class="img" style="position: relative;"><img style="position: absolute; top: 0; z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/aol_52c5cbeb-7761-44e9-887c-c1ce743e088a.png?9150240401160801338" width="100%" /> <img style="height: 358px; z-index: 0;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%" /></div>
+              <div class="detail" style="position: absolute; z-index: 1; margin: 0 30px 0 30px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>The ONE Smart Piano promises to teach you how to play without a teacher in the convenience of your own home. It works with your mobile phone or tablet.</span></div>
             </div>
           </div>
-          <div style="display:flex;height: 358px;justify-content: space-between;">
+          <div style="display: flex; height: 358px; justify-content: space-between;">
             <div class="content" style="position: relative;">
-              <div class="img" style="position: relative;">
-                <img style="position: absolute;top: 0;z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/NoisePorn_fda0292b-177a-4645-9694-c88e0b518553.png?9150240401160801338" width="100%">
-                <img style="height: 358px;z-index: 0;"  src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%">
-              </div>
-              <div class="detail" style="position: absolute;z-index:1;margin: 0 30px 0 30px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-                <span>Learning to play the piano is easier than ever. Thanks to The ONE smart piano.</span>
-              </div>
+              <div class="img" style="position: relative;"><img style="position: absolute; top: 0; z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/NoisePorn_fda0292b-177a-4645-9694-c88e0b518553.png?9150240401160801338" width="100%" /> <img style="height: 358px; z-index: 0;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%" /></div>
+              <div class="detail" style="position: absolute; z-index: 1; margin: 0 30px 0 30px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>Learning to play the piano is easier than ever. Thanks to The ONE smart piano.</span></div>
             </div>
             <div class="content" style="position: relative;">
-              <div class="img" style="position: relative;">
-                <img style="position: absolute;top: 0;z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch.png?9150240401160801338" width="100%">
-                <img style="height: 358px;z-index: 0;"  src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%">
-              </div>
-              <div class="detail" style="position: absolute;z-index:1;margin: 0 30px 0 30px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-                <span>I found the entire system to be quite usable and my kids, once they figured out how to slow down the music, jumped right in learning little songs.</span>
-              </div>
+              <div class="img" style="position: relative;"><img style="position: absolute; top: 0; z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch.png?9150240401160801338" width="100%" /> <img style="height: 358px; z-index: 0;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%" /></div>
+              <div class="detail" style="position: absolute; z-index: 1; margin: 0 30px 0 30px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>I found the entire system to be quite usable and my kids, once they figured out how to slow down the music, jumped right in learning little songs.</span></div>
             </div>
             <div class="content" style="position: relative;">
-              <div class="img" style="position: relative;">
-                <img style="position: absolute;top: 0;z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/GoodHousekeeping_ff0b80d5-ab8f-4ee2-93ae-79b3be45575a.png?9150240401160801338" width="100%">
-                <img style="height: 358px;z-index: 0;"  src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%">
-              </div>
-              <div class="detail" style="position: absolute;z-index:1;margin: 0 30px 0 30px;top: 100px;line-height: 20px;font-family: TimesNewRoman;">
-                <span>The ONE Piano is targeted at new learners who want to learn how to play the piano with ease.</span>
-              </div>
+              <div class="img" style="position: relative;"><img style="position: absolute; top: 0; z-index: 1;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/GoodHousekeeping_ff0b80d5-ab8f-4ee2-93ae-79b3be45575a.png?9150240401160801338" width="100%" /> <img style="height: 358px; z-index: 0;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/techcrunch1.png?3847479113435229089" width="100%" /></div>
+              <div class="detail" style="position: absolute; z-index: 1; margin: 0 30px 0 30px; top: 100px; line-height: 20px; font-family: TimesNewRoman;"><span>The ONE Piano is targeted at new learners who want to learn how to play the piano with ease.</span></div>
             </div>
           </div>
         </div>
-        <div class="s-tab2" id="s-tab2">
-
-        </div>
+        <div class="s-tab2" id="s-tab2"></div>
       </div>
     </li>
     <li id="tab4">
       <div class="FAQ-content">
         <div class="item">
-          <div class="title">
-            <span class="Q">Q:</span>
-            <span class="F-detail">Where is the power cord?</span>
-          </div>
+          <div class="title"><span class="Q">Q:</span> <span class="F-detail">Where is the power cord?</span></div>
           <div class="answer">It's in the packing foam of one end, to ensure smooth delivery.</div>
         </div>
         <div class="item">
-          <div class="title">
-            <span class="Q">Q:</span>
-            <span class="F-detail">Why does the keyboard make no sound when playing?</span>
-          </div>
-          <div class="answer">It's very likely due to the volume setting. Please check the master volume control button on the keyboard main panel to ensure it's not set to minimum volume.  Please also ensure the tablet/smartphone connected to this keyboard is unmuted. Also, if you are using a headphone, please check if the headphone jack is inserted in.</div>
+          <div class="title"><span class="Q">Q:</span> <span class="F-detail">Why does the keyboard make no sound when playing?</span></div>
+          <div class="answer">It's very likely due to the volume setting. Please check the master volume control button on the keyboard main panel to ensure it's not set to minimum volume. Please also ensure the tablet/smartphone connected to this keyboard is unmuted. Also, if you are using a headphone, please check if the headphone jack is inserted in.</div>
         </div>
         <div class="item">
-          <div class="title">
-            <span class="Q">Q:</span>
-            <span class="F-detail">Is it normal to hear some noise when the piano is turned on or off?</span>
-          </div>
+          <div class="title"><span class="Q">Q:</span> <span class="F-detail">Is it normal to hear some noise when the piano is turned on or off?</span></div>
           <div class="answer">Yes, this is normal. It's an electronic device and electrical current can cause some small noise when turning on/off the keyboard.</div>
         </div>
         <div class="item">
-          <div class="title">
-            <span class="Q">Q:</span>
-            <span class="F-detail">Can I plug the keyboard into a computer?</span>
-          </div>
-          <div class="answer">Definitely!<br>
-            You can connect the keyboard to computer by using a USB cable, and then it becomes a MIDI keyboard!<br>
-            Get the cable here: <a style="color: #019bff;!important;" href="https://www.smartpiano.com/collections/accessories/products/apple-ios-cables">https://www.smartpiano.com/collections/accessories/products/apple-ios-cables</a>
-          </div>
+          <div class="title"><span class="Q">Q:</span> <span class="F-detail">Can I plug the keyboard into a computer?</span></div>
+          <div class="answer">Definitely!<br /> You can connect the keyboard to computer by using a USB cable, and then it becomes a MIDI keyboard!<br /> Get the cable here: <a style="color: #019bff;" href="https://www.smartpiano.com/collections/accessories/products/apple-ios-cables">https://www.smartpiano.com/collections/accessories/products/apple-ios-cables</a></div>
         </div>
         <div class="item">
-          <div class="title">
-            <span class="Q">Q:</span>
-            <span class="F-detail">Are there certain headphones that work with this?</span>
-          </div>
-          <div class="answer">No, it doesn't need certain headphones. It supports all standard 3.5mm jack headphones or external microphones, so that you can play even at night!
-          </div>
+          <div class="title"><span class="Q">Q:</span> <span class="F-detail">Are there certain headphones that work with this?</span></div>
+          <div class="answer">No, it doesn't need certain headphones. It supports all standard 3.5mm jack headphones or external microphones, so that you can play even at night!</div>
         </div>
         <div class="item" style="border: none;">
-          <div class="title">
-            <span class="Q">Q:</span>
-            <span class="F-detail">How do I register for The ONE Smart Piano app?</span>
-          </div>
-          <div class="answer">1. Download the app from the APP Store/Google Play.<br>
-            2. Once downloaded, open the app.<br>
-            3. Enter an email address and create a password!<br>
-          </div>
+          <div class="title"><span class="Q">Q:</span> <span class="F-detail">How do I register for The ONE Smart Piano app?</span></div>
+          <div class="answer">1. Download the app from the APP Store/Google Play.<br /> 2. Once downloaded, open the app.<br /> 3. Enter an email address and create a password!</div>
         </div>
       </div>
     </li>
   </ul>
 </ul>
-<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?4624088886897489724"></script>
 <script>
-  $(function (e) {
-    $("#shopify-section-product-template").append(`<div class="pro">
-  <div class="pro_main">
-    <span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;">
-      Recommend</span>
-    <div class="pro_detail">
-      <ul>
-        <li align="center">
-          <a class="li_img li_first" href="https://www.smartpiano.com/pages/light-keyboard" target="_blank"></a>
-          <!--tok-->
-           <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Light Keyboard</p>
-          <p style="font-size: 12px;">
-            <a target="_blank" href="https://www.smartpiano.com/pages/light-keyboard" style="color: #019bff;outline: none">Explore &gt;</a>
-          </p>
-          <p class="buy_now" data-price="$ 299.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-light-keyboard">$ 299.99</a></p>
-        </li>
-        <li align="center">
-          <a class="li_img li_second" href="https://www.smartpiano.com/pages/smart-piano" target="_blank"></a>
-          <!--top-->
-          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
-          <p style="font-size: 12px;">
-            <a target="_blank" href="https://www.smartpiano.com/pages/smart-piano" style="color: #019bff;outline: none">Explore &gt;</a>
-          </p>
-          <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano">$ 1,499.99</a></p>
-        </li>
-        <li align="center">
-          <a class="li_img li_third" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" target="_blank"></a>
-          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
-          <p style="font-size: 12px;">
-            <a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>
-          </p>
-          <p class="buy_now" data-price="$ 269.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.99</a></p>
-        </li>
-        <li align="center">
-          <a class="li_img li_forth" href="https://www.smartpiano.com/collections/accessories" target="_blank"></a>
-          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
-          <p style="font-size: 12px;">
-            <a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none;color: #019bff;">Explore &gt;</a>
-          </p>
-          <p class="buy_now" data-price="$ 9.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 9.99 - $ 79.99</a></p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="tok_eleven tok">
-  <ul>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">
-      <span>Free Shipping</span>
-    </li>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">
-      <span>7-days Return</span>
-    </li>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">
-      <span>30-days Replacement</span>
-    </li>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">
-      <span>1-year Warranty</span>
-    </li>
-  </ul>
-</div>
-<div class="tok_up" id="tok_up">
-  <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/upup.png?5658618421159846973" width="12" height="11"
-       alt="">
-</div>`)
-    $('#tok_up').click(function () {
-      if ($(window).scrollTop() > 100) {
-        $('body,html').animate({scrollTop: 0}, 1000);
-      }
-    });
-    $('.buy_now').mouseenter(function () {
-      $(this).find("a").html(`Buy Now`);
-    });
-    $('.buy_now').mouseleave(function () {
-      $(this).find("a").text($(this).data('price'));
-    });
-    //tab切换
-    $(".switch").on('click',".s-btn",function(e){
-      e.stopPropagation()
-      $(this).addClass("active").siblings(".s-btn").removeClass("active")
-      let val = $(this).attr("data-index")
-      $(val).show().siblings().hide()
-    })
-    //  删掉related
-    $(".container.related-products--grid").remove()
-    $(".related-products__title").parents(".container").remove()
-
-    //动画
-    $(".detail>.img").mouseenter(function (e) {
-      e.stopPropagation()
-      $(this).find(".positionBlock").animate({opacity:'0'},"slow")
-    })
-    $(".detail>.img").mouseleave(function (e) {
-      e.stopPropagation()
-      $(this).find(".positionBlock").animate({opacity:'1'},"slow")
-    })
-    //页面截断
-    $(".container.main.content").css("padding-top","60px");
-    //上半部分UI的改变
-    $(".omega .product_name").css({
-      "font-family":"Avalon_Bold",
-      "text-transform": "capitalize"
-    });
-    $(".omega .current_price").css({
-      "color":"#019bff"
-    })
-    $(".omega .sale_banner_product").css({
-      "font-family":"Avalon",
-      "text-transform":"capitalize"
-    })
-
-    $(".omega .description").css({
-      "font-family":"Avalon"
-    })
-    $(".omega .available.color").css({
-      "border-radius":"50%"
-    })
-    $(".omega .available.color>label").css({
-      "border-radius":"50%"
-    })
-    $(".omega .soldout.color").css({
-      "border-radius":"50%"
-    })
-    $(".omega .soldout.color>label").css({
-      "border-radius":"50%"
-    })
-    $(".omega .soldout.color>label span").css({
-      "border-radius":"50%"
-    })
-    $(".omega .piano-swatch.available").css({
-      "border-radius":"5px"
-    })
-    $(".omega .swatch_options .option_title").css({
-      "text-transform":"capitalize"
-    })
-    $(".omega .piano-swatch.available label").css({
-      "font-family":"Avalon",
-      "text-transform":"capitalize"
-    })
-    $(".omega .standard-pack-swatch.available").css({
-      "border-radius":"5px"
-    })
-    $(".omega .standard-pack-swatch.available label").css({
-      "font-family":"Avalon",
-      "text-transform":"capitalize"
-    })
-    $(".omega .ss-icon.product-minus.js-change-quantity").css({
-      "border-radius":"5px 0 0 5px"
-    })
-    $(".omega .ss-icon.product-plus.js-change-quantity").css({
-      "border-radius":"0 5px 5px 0"
-    })
-    $(".omega .action_button").css({
-      "background":"rgba(1,155,255,.7)",
-      "border":"none",
-      "border-radius":"5px",
-      "text-transform":"capitalize"
-    })
-    $("#contact_form>p>label").css({
-      "text-transform":"capitalize",
-      "font-family":"Avalon",
-    })
-    $("#contact_form>p>input.action_button").css({
-      "text-transform":"capitalize",
-      "font-family":"Avalon",
-    })
-    //回到顶部
-    $('#tok_up').click(function () {
-      if ($(window).scrollTop() > 100) {
-        $('body,html').animate({scrollTop: 0}, 1000);
-      }
-    });
-    /*当滚动条的垂直位置大于浏览器所能看到的页面的那部分的高度时，回到顶部按钮就显示 */
-    $(window).on('scroll', function () {
-      if ($(window).scrollTop() > $(window).height())
-        $('#tok_up').fadeIn(1000);
-      else
-        $('#tok_up').fadeOut(1000);
-    });
-    $(window).trigger('scroll');/*触发滚动事件，避免刷新的时候显示回到顶部按钮*/
-
+$(function (e) {
+  $("#shopify-section-product-template").append(
+    '<div class="pro">'
+    +'<div class="pro_main">'
+    +'<span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;">Recommend</span>'
+    +'<div class="pro_detail">'
+    +'<ul>'
+    +'<li align="center">'
+    +'<a class="li_img li_first" href="https://www.smartpiano.com/pages/light-keyboard" target="_blank"></a>'
+    +'<!--tok-->'
+    +'<p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Light Keyboard</p>'
+    +'<p style="font-size: 12px;">'
+    +'<a target="_blank" href="https://www.smartpiano.com/pages/light-keyboard" style="color: #019bff;outline: none">Explore &gt;</a>'
+    +'</p>'
+    +'<p class="buy_now" data-price="$ 299.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-light-keyboard">$ 299.99</a></p>'
+    +'</li>'
+    +'<li align="center">'
+    +'<a class="li_img li_second" href="https://www.smartpiano.com/pages/smart-piano" target="_blank"></a>'
+    +'<!--top-->'
+    +'<p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>'
+    +'<p style="font-size: 12px;">'
+    +'<a target="_blank" href="https://www.smartpiano.com/pages/smart-piano" style="color: #019bff;outline: none">Explore &gt;</a>'
+    +'</p>'
+    +'<p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano">$ 1,499.99</a></p>'
+    +'</li>'
+    +'<li align="center">'
+    +'<a class="li_img li_third" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" target="_blank"></a>'
+    +'<p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>'
+    +'<p style="font-size: 12px;">'
+    +'<a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff;outline: none">Explore &gt;</a>'
+    +'</p>'
+    +'<p class="buy_now" data-price="$ 269.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite">$ 269.99</a></p>'
+    +'</li>'
+    +'<li align="center">'
+    +'<a class="li_img li_forth" href="https://www.smartpiano.com/collections/accessories" target="_blank"></a>'
+    +'<p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>'
+    +'<p style="font-size: 12px;">'
+    +'<a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none;color: #019bff;">Explore &gt;</a>'
+    +'</p>'
+    +'<p class="buy_now" data-price="$ 9.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories">$ 9.99 - $ 79.99</a></p>'
+    +'</li>'
+    +'</ul>'
+    +'</div>'
+    +'</div>'
+    +'</div>'
+    +'<div class="tok_eleven tok">'
+    +'<ul>'
+    +'<li>'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">'
+    +'<span>Free Shipping</span>'
+    +'</li>'
+    +'<li>'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">'
+    +'<span>7-days Return</span>'
+    +'</li>'
+    +'<li>'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">'
+    +'<span>30-days Replacement</span>'
+    +'</li>'
+    +'<li>'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">'
+    +'<span>1-year Warranty</span>'
+    +'</li>'
+    +'</ul>'
+    +'</div>'
+    +'<div class="tok_up" id="tok_up">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/upup.png?5658618421159846973" width="12" height="11"  alt="">'
+    +'</div>'
+  )
+  $('#tok_up').click(function () {
+    if ($(window).scrollTop() > 100) {
+      $('body,html').animate({scrollTop: 0}, 1000);
+    }
+  });
+  $('.buy_now').mouseenter(function () {
+    $(this).find("a").html('Buy Now');
+  });
+  $('.buy_now').mouseleave(function () {
+    $(this).find("a").text($(this).data('price'));
+  });
+  //tab切换
+  $(".switch").on('click',".s-btn",function(e){
+    e.stopPropagation()
+    $(this).addClass("active").siblings(".s-btn").removeClass("active")
+    let val = $(this).attr("data-index")
+    $(val).show().siblings().hide()
   })
+  //  删掉related
+  $(".container.related-products--grid").remove()
+  $(".related-products__title").parents(".container").remove()
+
+  //动画
+  $(".detail>.img").mouseenter(function (e) {
+    e.stopPropagation()
+    $(this).find(".positionBlock").animate({opacity:'0'},"slow")
+  })
+  $(".detail>.img").mouseleave(function (e) {
+    e.stopPropagation()
+    $(this).find(".positionBlock").animate({opacity:'1'},"slow")
+  })
+  //页面截断
+  $(".container.main.content").css("padding-top","60px");
+  //上半部分UI的改变
+  $(".omega .product_name").css({
+    "font-family":"Avalon_Bold",
+    "text-transform": "capitalize"
+  });
+  $(".omega .current_price").css({
+    "color":"#019bff"
+  })
+  $(".omega .sale_banner_product").css({
+    "font-family":"Avalon",
+    "text-transform":"capitalize"
+  })
+
+  $(".omega .description").css({
+    "font-family":"Avalon"
+  })
+  $(".omega .available.color").css({
+    "border-radius":"50%"
+  })
+  $(".omega .available.color>label").css({
+    "border-radius":"50%"
+  })
+  $(".omega .soldout.color").css({
+    "border-radius":"50%"
+  })
+  $(".omega .soldout.color>label").css({
+    "border-radius":"50%"
+  })
+  $(".omega .soldout.color>label span").css({
+    "border-radius":"50%"
+  })
+  $(".omega .piano-swatch.available").css({
+    "border-radius":"5px"
+  })
+  $(".omega .swatch_options .option_title").css({
+    "text-transform":"capitalize"
+  })
+  $(".omega .piano-swatch.available label").css({
+    "font-family":"Avalon",
+    "text-transform":"capitalize"
+  })
+  $(".omega .standard-pack-swatch.available").css({
+    "border-radius":"5px"
+  })
+  $(".omega .standard-pack-swatch.available label").css({
+    "font-family":"Avalon",
+    "text-transform":"capitalize"
+  })
+  $(".omega .ss-icon.product-minus.js-change-quantity").css({
+    "border-radius":"5px 0 0 5px"
+  })
+  $(".omega .ss-icon.product-plus.js-change-quantity").css({
+    "border-radius":"0 5px 5px 0"
+  })
+  $(".omega .action_button").css({
+    "background":"rgba(1,155,255,.7)",
+    "border":"none",
+    "border-radius":"5px",
+    "text-transform":"capitalize"
+  })
+  $("#contact_form>p>label").css({
+    "text-transform":"capitalize",
+    "font-family":"Avalon",
+  })
+  $("#contact_form>p>input.action_button").css({
+    "text-transform":"capitalize",
+    "font-family":"Avalon",
+  })
+  //回到顶部
+  $('#tok_up').click(function () {
+    if ($(window).scrollTop() > 100) {
+      $('body,html').animate({scrollTop: 0}, 1000);
+    }
+  });
+  /*当滚动条的垂直位置大于浏览器所能看到的页面的那部分的高度时，回到顶部按钮就显示 */
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > $(window).height())
+      $('#tok_up').fadeIn(1000);
+    else
+      $('#tok_up').fadeOut(1000);
+  });
+  $(window).trigger('scroll');/*触发滚动事件，避免刷新的时候显示回到顶部按钮*/
+
+})
 </script>
 </body>
 </html>

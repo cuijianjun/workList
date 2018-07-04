@@ -5,275 +5,273 @@
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    background-color: #ffffff;
-  }
-  #menu_ul > li:nth-child(6) > a {
-    color: #000;
-    cursor: default;
-    font-weight: 700;
-  }
+<style><!--
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #ffffff;
+}
+#menu_ul > li:nth-child(6) > a {
+  color: #000;
+  cursor: default;
+  font-weight: 700;
+}
 
-  .about {
-    width: 100%;
-  }
+.about {
+  width: 100%;
+}
 
-  .about_top {
-    display: flex;
-  }
-  .about_top>div{
-    box-sizing: border-box;
-    margin-left: 20px;
-  }
-  .about_top>div img{
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .about_top .one{
-    margin-left: 0;
-    width: 10.833%;
-  }
-  .about_top .two{
-    width: 13.85%;
-  }
-  .about_top .three{
-    width: 13.80%;
-  }
-  .about_top .four{
-    width: 28.43%;
-  }
-  .about_top .five{
-    width: 19.68%;
-  }
-  .about_top .six{
-    width: 10.833%;
-  }
+.about_top {
+  display: flex;
+}
+.about_top>div{
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.about_top>div img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.about_top .one{
+  margin-left: 0;
+  width: 10.833%;
+}
+.about_top .two{
+  width: 13.85%;
+}
+.about_top .three{
+  width: 13.80%;
+}
+.about_top .four{
+  width: 28.43%;
+}
+.about_top .five{
+  width: 19.68%;
+}
+.about_top .six{
+  width: 10.833%;
+}
 
-  .about_bottom {
-    margin: 0 18%;
-  }
+.about_bottom {
+  margin: 0 18%;
+}
 
-  .left {
-    float: left;
-  }
+.left {
+  float: left;
+}
 
-  .top_bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.top_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .top_title {
-    font-family: Avalon;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    color: #313131;
-    margin: 90px 0 110px;
-  }
+.top_title {
+  font-family: Avalon;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #313131;
+  margin: 90px 0 110px;
+}
 
-  .divide {
-    height: 0;
-    border-bottom: 1px solid #cccccc;
-  }
+.divide {
+  height: 0;
+  border-bottom: 1px solid #cccccc;
+}
 
-  .ourStory {
-    padding: 80px 100px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .ourStory-right{
-    margin-left: 60px;
-    width: 43%;
-  }
-  .ourStory-right span {
-    margin-top: 40px;
-    width: 468px;
-    display: inline-block;
-    font-family: Avalon;
-    font-size: 14px;
-    line-height: 30px;
-    color: #313131;
-  }
+.ourStory {
+  padding: 80px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.ourStory-right{
+  margin-left: 60px;
+  width: 43%;
+}
+.ourStory-right span {
+  margin-top: 40px;
+  width: 468px;
+  display: inline-block;
+  font-family: Avalon;
+  font-size: 14px;
+  line-height: 30px;
+  color: #313131;
+}
 
-  .ourProgress {
-    padding: 80px 100px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .ourProgress-left span {
-    display: inline-block;
-    margin-top: 35px;
-    width: 467px;
-    font-family: Avalon;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    line-height: 30px;
-    letter-spacing: 0px;
-    color: #313131;
-  }
+.ourProgress {
+  padding: 80px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.ourProgress-left span {
+  display: inline-block;
+  margin-top: 35px;
+  width: 467px;
+  font-family: Avalon;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #313131;
+}
 
-  .map {
-    padding: 80px 0;
-    width: 1200px;
-    margin: 0 auto;
-  }
+.map {
+  padding: 80px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
 
-  .map-title {
-    font-family: Avalon;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    line-height: 30px;
-    letter-spacing: 0px;
-    color: #313131;
-    margin-bottom: 80px;
-  }
+.map-title {
+  font-family: Avalon;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #313131;
+  margin-bottom: 80px;
+}
 
-  /*底部*/
-  .tok {
-    width: 100%;
-    background-size: cover;
-    overflow: hidden;
-  }
+/*底部*/
+.tok {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
 
-  .tok_eleven {
-    height: 130px;
-    background: #7829a2;
-  }
+.tok_eleven {
+  height: 130px;
+  background: #7829a2;
+}
 
-  .tok_eleven ul {
-    width: 1200px;
-    height: 74px;
-    margin: 28px auto 0;
-    display: flex;
-    justify-content: space-between;
-  }
+.tok_eleven ul {
+  width: 1200px;
+  height: 74px;
+  margin: 28px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .tok_eleven ul li {
-    height: 74px;
-    line-height: 74px;
-    color: #fff;
-    font-size: 14px;
-    display: flex;
-  }
+.tok_eleven ul li {
+  height: 74px;
+  line-height: 74px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+}
 
-  .tok_eleven ul li img {
-    width: 74px;
-    height: 74px;
-    margin-right: 20px;
-  }
-</style>
-<script src="https://cdn.shopify.com/s/files/1/1017/9603/files/jquery.js?10467833334847454485"></script>
-<script>
-  $(function () {
-    $(".container.main.content").after(`
-    <div class="about">
-  <div class="about_top">
-    <div class="one left top_bottom">
-      <div class="one-top">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_5ca042ff-8321-4e6a-9313-23d3c4a7c916.png?3104339922117975747" alt="">
-      </div>
-      <div class="one-bottom">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_1d7d66e6-04e8-4774-8baf-f5d1f4d12cba.png?8647795438583345331" alt="">
-      </div>
-    </div>
-    <div class="two left">
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_9005b5e3-2528-4d43-80c8-63e08c0efaf4.png?10153941116880217011" alt="">
-    </div>
-    <div class="three left top_bottom">
-      <div class="three-top" style="margin-top: 20px">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/16.png?15046210261807766038" alt="">
-      </div>
-      <div class="three-bottom">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/10953.png?16795617294851108709" alt="">
-      </div>
-    </div>
-    <div class="four left">
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/112.png?14571640111835745326" alt="">
-    </div>
-    <div class="five left top_bottom">
-      <div class="five-top">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/10627.png?13017643074912714873" alt="">
-      </div>
-      <div class="five-bottom">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2E6A4637.png?17669313186068422590" alt="">
-      </div>
-    </div>
-    <div class="six left">
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2E6A4534_db9001a5-639e-46ee-92b5-35b3f113182a.png?10012957221487099565" alt="">
-    </div>
-  </div>
-  <div class="about_bottom">
-    <div class="top_title">
-      The ONE Music Group produces smart musical instruments incorporating digital technology to make music learning more enjoyable and affordable. Utilizing the latest in smart learning technology, our products are created for all ages and levels and offer a fun and enriching way to learn piano.
-    </div>
-    <div class="divide"></div>
-    <div class="ourStory">
-      <div class="ourStory-left left">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2E6A4688.png?11814852083914616787" alt="">
-      </div>
-      <div class="ourStory-right left">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ourStory.png?4295710499356134126" alt="">
-        <span>It was inspired by an 8 years old boy, Bob, who quit piano lessons shortly after starting. As Bob's father and serial software entrepreneur, Ben Ye couldn't find an existing solution to get his son excited about music learning, so he created a solution to make learning to play the piano as fun as playing an iPad game. The little boy was so excited and jumped on it, learned to play the song "Twinkle Twinkle Little Star" in just 20 minutes, all by himself using the smart piano prototype (which later evolved into world's first and only upright, Apple MFI-certified digital piano).
-<br>
-<br>
-Since then, The ONE has taught more than 200,000 people how to play piano, guiding them through the fun of music learning and bringing forth the most enjoyable musical experiences.
-</span>
-      </div>
-    </div>
-    <div class="divide"></div>
-    <div class="ourProgress">
-      <div class="ourProgress-left left" style="width:43%;">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ourProgress.png?4295710499356134126" alt="">
-        <span>
-        We've won multiple world tier awards as well, for our success in improving music education growth with its smart learning, technology-focused products, including but not limited to: 2018 iF Design Award Edison Award 2018 Gold in Music Instrument Innovation, Edison Award 2017 Silver in Talent Development, CES 2016 Innovation Award, NAMM 2016 Best Teaching Tool, National Parenting Product Awards Winner 2016.
-      </span>
-      </div>
-      <div class="ourProgress-right left" style="margin-left: 150px">
-        <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_bcf9bd82-85bf-4328-a246-47584e8bc670.png?18007993336126067001" alt="">
-      </div>
-    </div>
-    <div class="divide"></div>
-    <div class="map">
-      <div class="map-title">
-        We are headquartered in Silicon Valley, California, with lots of distribution centers around the world.<br>
-        Check out to find our region representative near you. Or follow us on Facebook and Twitter to explore the fun of modern music learning!
-      </div>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_691176c5-18ac-49e1-ba4c-083a6fb7f2f6.png?13701439477741881390" alt="">
-    </div>
-  </div>
-</div>
-<div class="tok_eleven tok">
-  <ul>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">
-      <span>Free Shipping</span>
-    </li>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">
-      <span>7-days Return</span>
-    </li>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">
-      <span>30-days Replacement</span>
-    </li>
-    <li>
-      <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">
-      <span>1-year Warranty</span>
-    </li>
-  </ul>
-</div>
-    `).css("padding-top","10px");
-    $("#menu_ul>li:nth-child(6)>a").attr({"href":"#","target":""})
+.tok_eleven ul li img {
+  width: 74px;
+  height: 74px;
+  margin-right: 20px;
+}
+--></style><script>// <![CDATA[
+$(function () {
+  $(".container.main.content").after(
+    '<div class="about">'
+    +'<div class="about_top">'
+    +'<div class="one left top_bottom">'
+    +'<div class="one-top">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_5ca042ff-8321-4e6a-9313-23d3c4a7c916.png?3104339922117975747" alt="">'
+    +'</div>'
+    +'<div class="one-bottom">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/5_1d7d66e6-04e8-4774-8baf-f5d1f4d12cba.png?8647795438583345331" alt="">'
+    +'</div>'
+    +'</div>'
+    +'<div class="two left">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_9005b5e3-2528-4d43-80c8-63e08c0efaf4.png?10153941116880217011" alt="">'
+    +'</div>'
+    +'<div class="three left top_bottom">'
+    +'<div class="three-top" style="margin-top: 20px">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/16.png?15046210261807766038" alt="">'
+    +'</div>'
+    +'<div class="three-bottom">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/10953.png?16795617294851108709" alt="">'
+    +'</div>'
+    +'</div>'
+    +'<div class="four left">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/112.png?14571640111835745326" alt="">'
+    +'</div>'
+    +'<div class="five left top_bottom">'
+    +'<div class="five-top">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/10627.png?13017643074912714873" alt="">'
+    +'</div>'
+    +'<div class="five-bottom">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2E6A4637.png?17669313186068422590" alt="">'
+    +'</div>'
+    +'</div>'
+    +'<div class="six left">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2E6A4534_db9001a5-639e-46ee-92b5-35b3f113182a.png?10012957221487099565" alt="">'
+    +'</div>'
+    +'</div>'
+    +'<div class="about_bottom">'
+    +'<div class="top_title">'
+    +'The ONE Music Group produces smart musical instruments incorporating digital technology to make music learning more enjoyable and affordable. Utilizing the latest in smart learning technology, our products are created for all ages and levels and offer a fun and enriching way to learn piano.'
+    +'</div>'
+    +'<div class="divide"></div>'
+    +'<div class="ourStory">'
+    +'<div class="ourStory-left left">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2E6A4688.png?11814852083914616787" alt="">'
+    +'</div>'
+    +'<div class="ourStory-right left">'
+    +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ourStory.png?4295710499356134126" alt="">'
+    +'<span>It was inspired by an 8 years old boy, Bob, who quit piano lessons shortly after starting. As Bob\'s father and serial software entrepreneur, Ben Ye couldn\'t find an existing solution to get his son excited about music learning, so he created a solution to make learning to play the piano as fun as playing an iPad game. The little boy was so excited and jumped on it, learned to play the song "Twinkle Twinkle Little Star" in just 20 minutes, all by himself using the smart piano prototype (which later evolved into world\'s first and only upright, Apple MFI-certified digital piano).'
+  +'<br>'
+  +'<br>'
+  +'Since then, The ONE has taught more than 200,000 people how to play piano, guiding them through the fun of music learning and bringing forth the most enjoyable musical experiences.'
+  +'</span>'
+  +'</div>'
+  +'</div>'
+  +'<div class="divide"></div>'
+  +'<div class="ourProgress">'
+  +'<div class="ourProgress-left left" style="width:43%;">'
+  +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/ourProgress.png?4295710499356134126" alt="">'
+  +'<span>'
+  +'We\'ve won multiple world tier awards as well, for our success in improving music education growth with its smart learning, technology-focused products, including but not limited to: 2018 iF Design Award Edison Award 2018 Gold in Music Instrument Innovation, Edison Award 2017 Silver in Talent Development, CES 2016 Innovation Award, NAMM 2016 Best Teaching Tool, National Parenting Product Awards Winner 2016.'
+  +'</span>'
+  +'</div>'
+  +'<div class="ourProgress-right left" style="margin-left: 150px">'
+  +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_bcf9bd82-85bf-4328-a246-47584e8bc670.png?18007993336126067001" alt="">'
+  +'</div>'
+  +'</div>'
+  +'<div class="divide"></div>'
+  +'<div class="map">'
+  +'<div class="map-title">'
+  +'We are headquartered in Silicon Valley, California, with lots of distribution centers around the world.<br>'
+  +'Check out to find our region representative near you. Or follow us on Facebook and Twitter to explore the fun of modern music learning!'
+  +'</div>'
+  +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_691176c5-18ac-49e1-ba4c-083a6fb7f2f6.png?13701439477741881390" alt="">'
+  +'</div>'
+  +'</div>'
+  +'</div>'
+  +'<div class="tok_eleven tok">'
+  +'<ul>'
+  +'<li>'
+  +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="">'
+  +'<span>Free Shipping</span>'
+  +'</li>'
+  +'<li>'
+  +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="">'
+  +'<span>7-days Return</span>'
+  +'</li>'
+  +'<li>'
+  +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="">'
+  +'<span>30-days Replacement</span>'
+  +'</li>'
+  +'<li>'
+  +'<img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="">'
+  +'<span>1-year Warranty</span>'
+  +'</li>'
+  +'</ul>'
+  +'</div>'
+    ).css("padding-top","10px");
+  $("#menu_ul>li:nth-child(6)>a").attr({"href":"#","target":""})
 
-  })
-</script>
+})
+// ]]></script>
 </html>
