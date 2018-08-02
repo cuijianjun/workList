@@ -1,0 +1,972 @@
+<style><!--
+#menu_ul>li:nth-child(3)>a{
+  color: #000 !important;
+  cursor: default;
+  font-weight: 700;
+}
+
+a:focus {
+  outline:none !important;
+  -moz-outline:none !important;
+}
+body{
+  line-height: normal !important;
+}
+li{
+  list-style: none;
+}
+.pro_detail li{
+  text-align: center;
+}
+.title{
+  text-transform: none !important;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+body{
+  background-color: #fff;
+}
+@font-face {
+  font-family: "Avalon_Italic";
+  src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff2?5501549469581235168") format("woff2"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.woff?5501549469581235168") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.ttf?5501549469581235168") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.eot?5501549469581235168") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Italic.svg?5501549469581235168") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avalon_Bold_Italic";
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.woff?16404743671803088182") format("woff"),
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.ttf?16404743671803088182") format("truetype"),
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.eot?16404743671803088182") format("embedded-opentype"),
+url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold_Italic.svg?16404743671803088182") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avalon_Bold";
+  src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff2?8612130786139656726") format("woff2"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.woff?8612130786139656726") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.ttf?8612130786139656726") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.eot?8612130786139656726") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon_Bold.svg?8612130786139656726") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avalon";
+  src: url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff2?298629140359487415") format("woff2"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.woff?298629140359487415") format("woff"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.ttf?298629140359487415") format("truetype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.eot?298629140359487415") format("embedded-opentype"),
+  url("https://cdn.shopify.com/s/files/1/1017/9603/files/Avalon.svg?298629140359487415") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*top*/
+.app .content .top{
+  width: 100%;
+  height: 900px;
+  background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/01TheONESmartPiano.png?13479628261811198722") center no-repeat;
+}
+.app .content .top .detail{
+  width: 1200px;
+  margin: 0 18%;
+  padding-top: 210px;
+}
+.app .content .top .detail .left{
+  float: left;
+}
+.app .content .top .detail .right{
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+}
+.app .content .top .detail .right .title{
+  width: 325px;
+  font-family: Avalon_Bold;
+  font-size: 52px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 55px;
+  color: #ffffff;
+}
+.app .content .top .detail .right .content_detail {
+  margin-top: 10px;
+  width: 306px;
+  font-family: Avalon;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  color: #ffffff;
+}
+.app .content .top .detail .right .download{
+  margin-top: 20px;
+  width: 400px;
+}
+/*轮播图*/
+*{
+  margin: 0;
+  padding: 0;
+}
+.app .content .slider{
+  margin: 100px auto;
+  width: 1920px;
+}
+.app .content .slider .box{
+  margin-top: 80px;
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+.app .content .slider .list{
+  width: 100%;
+  height: 532px;
+  overflow: hidden;
+  position: absolute;
+
+}
+.app .content .slider .list li img{
+  cursor: auto;
+}
+#slider-text,.app .content .slider .buttons{
+  cursor: auto;
+}
+.app .content .slider .btn{
+  position: absolute;
+  z-index: 9999;
+  top: 25%;
+  margin-top: -44px;
+  width: 20%;
+  height: 300px;
+  line-height: 100px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(0,255,0,0);
+  cursor: pointer;
+  list-style: none;
+}
+.app .content .slider .next{
+  right: 0;
+}
+.app .content .slider li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.app .content .slider img{
+  width: 715px;
+  height: 532px;
+  border:none;
+  float: left;
+}
+.app .content .slider .p1{
+  transform: translate3d(-155px,0,0) scale(0.54);
+  opacity: 1;
+}
+.app .content .slider .p2{
+  transform: translate3d(400px,0,0) scale(1);
+  transform-origin: 0 50%;
+  opacity: 1;
+  z-index: 9;
+}
+.app .content .slider .p3{
+  transform: translate3d(960px,0,0) scale(0.54);
+  z-index: 3;
+  opacity: 1;
+}
+.app .content .slider .p4{
+  transform: translate3d(1192px,0,0) scale(0.54);
+  transform-origin: 100% 50%;
+  opacity: 0.8;
+  z-index: 2;
+}
+.app .content .slider .buttons{
+  position: absolute !important;
+  width: 750px !important;
+  height: 30px !important;
+  bottom: -4px !important;
+  text-align: center !important;
+  padding-top: 10px !important;
+  margin-left: 20% !important;
+}
+.app .content .slider .buttons a{
+
+  width: 5px !important;
+  height: 5px !important;
+
+
+  border-radius: 50% !important;
+}
+.app .content .slider span{
+  display: inline-block !important;
+  width: 5px !important;
+  height: 5px !important;
+  cursor: pointer !important;
+  background-color: #c1c1c1 !important;
+  border-radius: 50% !important;
+}
+.app .content .slider .blue{
+  background-color: #21baff !important;
+}
+#slider-text{
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 21.5%;
+  width: 715px;
+}
+/*轮播图2*/
+.app .content .slider1{
+  margin: 100px 0 100px;
+}
+.slider1 #box {
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.slider1 #box .slide {
+  height: 500px;
+  position: relative;
+  z-index:1;
+}
+
+.slider1 #box .slide ul {
+  height: 100%;
+}
+
+.slider1 #box .slide li {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+
+.slider1 #box .slide li img {
+  width: 100%;
+}
+
+.slider1 #box .arraw {
+  opacity: 0;
+}
+
+.slider1 #box .arraw a {
+  width: 70px;
+  height: 110px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -55px;
+  z-index: 999;
+  cursor: pointer;
+}
+.slider1 #box .next {
+  background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/right_6d52ab8b-fc57-48c1-b1a4-8988722b235b.png?5217660188725984792) no-repeat;
+  right: -170px;
+}
+#text{
+  margin-top: 280px;
+  text-align: center;
+  font-size: 25px;
+}
+.slider1 #box .prev {
+  background: url(https://cdn.shopify.com/s/files/1/1017/9603/files/left_594b95a8-4a89-4d6a-a9b0-366b7606a41d.png?5217660188725984792) no-repeat;
+  left: -170px;
+}
+#slider-text,#text{
+  font-family: Avalon;
+}
+/*third*/
+.app .content .third{
+  width: 100%;
+  height: 900px;
+  background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/05_app.png?17847019586250689222") center no-repeat;
+}
+.app .content .third .third-content{
+  color: #fff;
+  padding-top: 120px;
+  text-align: center;
+}
+.app .content .third .third-content .title {
+  font-family: Avalon_Bold;
+  font-size: 52px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #ffffff;
+}
+.app .content .third .third-content .third-detail {
+  margin-top: 10px;
+  font-family: Avalon;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #b9b9b9;
+  text-align: center;
+}
+/*fourth*/
+.app .content .fourth{
+  width: 100%;
+  height: 900px;
+  background: url("https://cdn.shopify.com/s/files/1/1017/9603/files/4led.png?253414549071366178") center no-repeat;
+  margin-top: 50px;
+}
+.app .content .fourth .fourth-content{
+  padding: 70px 18% 0;
+  text-align: center;
+}
+.app .content .fourth .fourth-content .title {
+  font-family: Avalon_Bold;
+  font-size: 52px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #1f1f1f;
+}
+.app .content .fourth .fourth-content .fourth-detail {
+  width: 806px;
+  margin-top: 10px;
+  font-family: Avalon;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #151515;
+  display: inline-block;
+}
+/*推荐页*/
+.pro {
+  width: 100%;
+  height: 610px;
+  background: #f7f8fa;
+  padding-top: 50px;
+}
+
+.pro_main {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.pro_detail {
+  margin-top: 33px;
+}
+
+.pro_detail ul {
+  width: 1200px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.pro_detail ul li {
+  width: 290px;
+  height: 400px;
+  list-style: none;
+  background: #fff;
+  text-align: center;
+  cursor: auto;
+}
+
+.pro_detail ul li:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 4px -4px #cdcece;
+}
+.pro_detail p{
+  cursor: auto;
+}
+.pro_detail p a{
+  cursor: pointer;
+}
+
+.pro_detail ul li .li_img {
+  width: 290px;
+  height: 230px;
+  cursor: pointer;
+  display: block;
+}
+
+.pro_detail ul li .li_first {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/pic_11.png?17520978319174041741') center no-repeat;
+  background-size: cover;
+}
+
+.pro_detail ul li .li_second {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/top.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+
+.pro_detail ul li .li_third {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/toh_e6bede7b-6045-4c45-901c-0436393f94aa.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+
+.pro_detail ul li .li_forth {
+  background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/parts.png?5658618421159846973') center no-repeat;
+  background-size: cover;
+}
+
+.pro_detail .buy_now {
+  margin: 25px auto 0;
+  width: 180px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+.pro_detail .buy_now:hover {
+  background: #019bff;
+  border-radius: 7px;
+  color: #fff;
+}
+/*推荐页链接*/
+.buy_now a{
+  color: #000000;
+  outline:none;
+}
+.buy_now:hover a{
+  color: #fff;
+}
+/*底部*/
+.tok {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tok_eleven {
+  height: 130px;
+  background: #7829a2;
+}
+
+.tok_eleven ul {
+  width: 1200px;
+  height: 74px;
+  margin: 28px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tok_eleven ul li {
+  height: 74px;
+  line-height: 74px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+}
+
+.tok_eleven ul li img {
+  width: 74px;
+  height: 74px;
+  margin-right: 20px;
+}
+--></style>
+<div class="app">
+  <div class="content">
+    <div class="top">
+      <div class="detail">
+        <div class="left"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/icon_778ffff6-ad0c-466a-b99a-d87c0507eee0.png?182996916133024878" width="176" height="176" /></div>
+        <div class="right">
+          <div class="title">The ONE <br />Smart Piano</div>
+          <div class="content_detail">Award winning app to learn in your preferred way</div>
+          <div class="download"><a href="https://itunes.apple.com/us/app/the-one-smart-piano-by-the-one/id1267703721?mt=8" target="_blank" rel="noopener noreferrer"> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/App-Store.png?2245986623202007619" alt="" /> </a> <a href="https://play.google.com/store/apps/details?id=com.theonepiano.oversea.smartpiano&amp;hl=en_US" target="_blank" rel="noopener noreferrer"> <img style="margin-left: 10px;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/2000px-Get_it_on_Google_play.svg_f8675641-e1e0-41de-8bee-532967a6a4f4.png?5478191593510976319" alt="" /> </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="slider1">
+      <div id="box">
+        <div class="slide">
+          <ul>
+            <li class="p5"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/APP.png?14689710940876770988" /></li>
+            <li class="p4"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/11.png?14451309194875935372" /></li>
+            <li class="p3"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/22.png?14451309194875935372" /></li>
+            <li class="p2"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/33.png?14451309194875935372" /></li>
+            <li class="p1"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/44.png?14451309194875935372" /></li>
+          </ul>
+          <div class="arraw"><a class="next"></a> <a class="prev"></a></div>
+        </div>
+      </div>
+      <div id="text" class="animated fadeInLeft">Step by step crash course</div>
+    </div>
+    <div class="top" style="background: url('https://cdn.shopify.com/s/files/1/1017/9603/files/03OnePianist.png?14417659569388484187') center no-repeat;">
+      <div class="detail">
+        <div class="left"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/512.png?13010153726654645044" width="176" height="176" /></div>
+        <div class="right">
+          <div class="title">One Pianist</div>
+          <div class="content_detail">Fun piano learning for kids, positive screen time for families!</div>
+          <div class="download"><a href="https://itunes.apple.com/us/app/one-pianist-by-the-one/id1255389741?mt=8" target="_blank" rel="noopener noreferrer"> <img src="https://cdn.shopify.com/s/files/1/1017/9603/files/App-Store.png?13010153726654645044" alt="" /> </a> <a href="https://play.google.com/store/apps/details?id=com.theonepiano.pianist&amp;hl=en_US" target="_blank" rel="noopener noreferrer"> <img style="margin-left: 10px;" src="https://cdn.shopify.com/s/files/1/1017/9603/files/2000px-Get_it_on_Google_play.svg_f8675641-e1e0-41de-8bee-532967a6a4f4.png?13010153726654645044" alt="" /> </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="box">
+        <div class="list">
+          <ul>
+            <li class="p4"><a onclick="return false"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/4_34ed7e55-0c8b-42da-85c7-c351539ac716.png?15058581080148892265" /></a></li>
+            <li class="p3"><a onclick="return false"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/3_ac9dcbaf-eb0a-4d14-a743-f10dadd8ccd0.png?15058581080148892265" /></a></li>
+            <li class="p2"><a onclick="return false"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/2_f24246f4-aebd-42e5-8c76-cb4da6288692.png?15058581080148892265" /></a></li>
+            <li class="p1"><a onclick="return false"><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/1_a2fafafc-a74d-4928-a3e4-979c826e1a7f.png?15058581080148892265" /></a></li>
+          </ul>
+        </div>
+        <a class="prev btn">&lt;</a> <a class="next btn">&gt;</a>
+        <div id="slider-text">
+          <div>Fun and engaging curriculum designed for kids</div>
+        </div>
+        <div class="buttons"><span class="blue"></span> <span></span> <span></span> <span></span></div>
+      </div>
+    </div>
+    <div class="third">
+      <div class="third-content">
+        <div class="title">Endless Possibilities</div>
+        <p class="third-detail">The smart piano works with your favorite third-party apps, from audio playlists to</p>
+        <p class="third-detail">music composition.</p>
+      </div>
+    </div>
+    <div class="fourth">
+      <div class="fourth-content">
+        <div class="title">3 Steps to Start Using the App</div>
+        <div class="fourth-detail">Download, Connect, Start Playing</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pro">
+  <div class="pro_main"><span style="display: inline-block; font-size: 26px; border-left: 5px solid #792aa2; padding-left: 5px;"> Recommend</span>
+    <div class="pro_detail">
+      <ul>
+        <li align="center"><a class="li_img li_first" href="https://www.smartpiano.com/pages/light-keyboard" target="_blank" rel="noopener noreferrer"></a> <!--tok-->
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Light Keyboard</p>
+          <p style="font-size: 12px;"><a target="_blank" href="https://www.smartpiano.com/pages/light-keyboard" style="color: #019bff; outline: none;" rel="noopener noreferrer">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 299.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-light-keyboard" rel="noopener noreferrer">$ 299.99</a></p>
+        </li>
+        <li align="center"><a class="li_img li_second" href="https://www.smartpiano.com/pages/smart-piano" target="_blank" rel="noopener noreferrer"></a> <!--top-->
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Smart Piano</p>
+          <p style="font-size: 12px;"><a target="_blank" href="https://www.smartpiano.com/pages/smart-piano" style="color: #019bff; outline: none;" rel="noopener noreferrer">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 1,499.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-smart-piano" rel="noopener noreferrer">$ 1,499.99</a></p>
+        </li>
+        <li align="center"><a class="li_img li_third" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" target="_blank" rel="noopener noreferrer"></a>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Piano Hi-Lite</p>
+          <p style="font-size: 12px;"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" style="color: #019bff; outline: none;" rel="noopener noreferrer">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 269.99"><a target="_blank" href="https://www.smartpiano.com/products/the-one-piano-hi-lite" rel="noopener noreferrer">$ 269.99</a></p>
+        </li>
+        <li align="center"><a class="li_img li_forth" href="https://www.smartpiano.com/collections/accessories" target="_blank" rel="noopener noreferrer"></a>
+          <p style="font-size: 16px; color: #525252; margin-top: 30px; margin-bottom: 15px;">Accessories</p>
+          <p style="font-size: 12px;"><a target="_blank" href="https://www.smartpiano.com/collections/accessories" style="outline: none; color: #019bff;" rel="noopener noreferrer">Explore &gt;</a></p>
+          <p class="buy_now" data-price="$ 9.99 - $ 79.99"><a target="_blank" href="https://www.smartpiano.com/collections/accessories" rel="noopener noreferrer">$ 9.99 - $ 79.99</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="tok_eleven tok">
+  <ul>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/give.png?5658618421159846973" alt="" /> <span>Free Shipping</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/seven.png?5658618421159846973" alt="" /> <span>7-days Return</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/days.png?5658618421159846973" alt="" /> <span>30-days Replacement</span></li>
+    <li><img src="https://cdn.shopify.com/s/files/1/1017/9603/files/repair.png?5658618421159846973" alt="" /> <span>1-year Warranty</span></li>
+  </ul>
+</div>
+<script type="text/javascript">// <![CDATA[
+$(function () {
+  clearInterval(timer1);
+  //			进入页面自动开始定时器
+  var timer1=setInterval(nextimg,3000);
+  var $a=$(".slider .buttons span");
+  var $s=$(".slider .buttons span");
+  var cArr=["p4","p3","p2","p1"];
+  var ArrayT = {
+    4:"Detailed analysis score to help further improve",
+    1:"Fun and engaging curriculum designed for kids",
+    2:"Flowing Sheet Music with real time feedback",
+    3:"Staff game to make it more fun"
+  };
+  var index=0;
+  $(".next").click(
+    function(){
+      nextimg();
+    }
+  )
+  $(".prev").click(
+    function(){
+      previmg();
+    }
+  )
+  //上一张
+  function previmg(){
+    cArr.unshift(cArr[3]);
+    cArr.pop();
+    //i是元素的索引，从0开始
+    //e为当前处理的元素
+    //each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
+    $(".slider li").each(function(i,e){
+      $(e).removeClass().addClass(cArr[i]);
+    })
+    index--;
+    if (index<0) {
+      index=3;
+    }
+    console.log(index+1);
+    console.log(ArrayT[index+1]);
+    $("#slider-text").addClass("animated fadeInLeft").find("div").html(ArrayT[index+1])
+    show();
+    setTimeout(function () {
+      $("#slider-text").removeClass()
+    },1000)
+  }
+
+  //下一张
+  function nextimg(){
+    cArr.push(cArr[0]);
+    cArr.shift();
+    $(".slider li").each(function(i,e){
+      $(e).removeClass().addClass(cArr[i]);
+    })
+    index++;
+    if (index>3) {
+      index=0;
+    }
+    $("#slider-text").addClass("animated fadeInRight").find("div").html(ArrayT[index+1])
+    show();
+    setTimeout(function () {
+      $("#slider-text").removeClass()
+    },1000)
+  }
+  //通过底下按钮点击切换
+  $a.each(function(){
+    $(this).click(function(){
+      var myindex=$(this).index();
+      var b=myindex-index;
+      if(b==0){
+        return;
+      }
+      else if(b>0) {
+        /*
+         * splice(0,b)的意思是从索引0开始,取出数量为b的数组
+         * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
+         * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
+         * 这时候原本的数组也将这部分数组进行移除了
+         * 再把移除的数组添加的原本的数组的后面
+         */
+        var newarr=cArr.splice(0,b);
+        cArr=$.merge(cArr,newarr);
+        $(".slider li").each(function(i,e){
+          $(e).removeClass().addClass(cArr[i]);
+        })
+        index=myindex;
+        show();
+      }
+      else if(b<0){
+        /*
+         * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
+         * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
+         * 也就是从原本的照片到需要点击的照片的数组
+         * 然后将原本的数组跟取出的数组进行拼接
+         * 再次倒序,使原本的倒序变为正序
+         */
+        cArr.reverse();
+        var oldarr=cArr.splice(0,-b)
+        cArr=$.merge(cArr,oldarr);
+        cArr.reverse();
+        $(".slider li").each(function(i,e){
+          $(e).removeClass().addClass(cArr[i]);
+        })
+        index=myindex;
+        show();
+      }
+    })
+  })
+
+  //改变底下按钮的背景色
+  function show(){
+    $($s).eq(index).addClass("blue").siblings().removeClass("blue");
+  }
+
+  //点击class为p2的元素触发上一张照片的函数
+  $(document).on("click",".slider .p1",function(){
+    previmg();
+    return false;//返回一个false值，让a标签不跳转
+  });
+
+  //点击class为p4的元素触发下一张照片的函数
+  $(document).on("click",".slider .p4",function(){
+    nextimg();
+    return false;
+  });
+
+  //			鼠标移入box时清除定时器
+  $(".slider .box").mouseover(function(){
+    clearInterval(timer1);
+  })
+
+  //			鼠标移出box时开始定时器
+  $(".slider .box").mouseleave(function(){
+    clearInterval(timer1);
+    timer1=setInterval(nextimg,3000);
+  })
+})
+$(function () {
+  var box = document.querySelector('#box');
+  var slide = document.querySelector('#box .slide');
+  var arraw = document.querySelector('#box .arraw');
+  var lis = document.querySelectorAll('#box li');
+  var json = [  //  包含了5张图片里面所有的样式
+    {   //  1
+      width: 400,
+      top: 20,
+      left: 50,
+      opacity: 20,
+      z: 2,
+      id: 1,
+      text:"LED guided sheet music"
+    },
+    {  // 2
+      width: 600,
+      top: 70,
+      left: -50,
+      opacity: 60,
+      z: 3,
+      id: 2,
+      text:"Interactive video tutorials"
+    },
+    {   // 3
+      width: 800,
+      top: 120,
+      left: 200,
+      opacity: 100,
+      z: 4,
+      id: 3,
+      text:"Step by step crash course"
+    },
+    {  // 4
+      width: 600,
+      top: 70,
+      left: 650,
+      opacity: 60,
+      z: 3,
+      id: 4,
+      text:"Fun games with real piano "
+    },
+    {   //5
+      width: 400,
+      top: 20,
+      left: 750,
+      opacity: 20,
+      z: 2,
+      id: 5,
+      text:"Getting started in minutes"
+    }
+  ];
+  setTimeout(function () {
+    $("#text").removeClass()
+  },1000)
+  box.addEventListener('mouseover', function () {
+    clearInterval(timer);
+    animate(arraw, {opacity: 100});
+  });
+  box.addEventListener('mouseleave', function () {
+    animate(arraw, {opacity: 0});
+    clearInterval(timer);
+    run();
+  });
+
+  var next = document.querySelector('#box .next');
+  var prev = document.querySelector('#box .prev');
+  var timer = null;
+  var flag = true;
+  next.addEventListener('click', function () {
+    clearInterval(timer);
+    if (flag == true) {
+      move(true);
+      flag = false;
+    }
+  });
+  next.addEventListener('mouseleave', function () {
+    clearInterval(timer);
+    run();
+  });
+  prev.addEventListener('click', function () {
+    clearInterval(timer);
+    if (flag == true) {
+      move(false);
+      flag = false;
+    }
+  });
+  prev.addEventListener('mouseleave', function () {
+    run();
+  });
+
+  move();
+  run();
+
+  function run() {
+    clearInterval(timer);
+    timer = setInterval(function () {
+      if (flag == true) {
+        flag = false;
+        move(true);
+      }
+    }, 3000);
+  }
+
+  function move(x) {
+    if (x != undefined) {
+      if (x) {
+        json.push(json.shift());
+        $("#text").html(json[2].text).addClass("animated fadeInLeft")
+      } else {
+        json.unshift(json.pop());
+        $("#text").html(json[2].text).addClass("animated fadeInRight")
+      };
+      setTimeout(function () {
+        $("#text").removeClass()
+      },1000)
+    };
+
+    for (var i = 0; i < json.length; i++) {
+      animate(lis[i], {
+        width: json[i].width,
+        top: json[i].top,
+        left: json[i].left,
+        opacity: json[i].opacity,
+        zIndex: json[i].z
+      }, function () {
+        flag = true;
+      })
+    };
+  }
+
+  function animate(obj, json, callback) {
+// 先停止定时器
+    clearInterval(obj.timers);
+    obj.timers = setInterval(function () {
+      var stoped = true;
+      for (var k in json) {
+        var leader = 0;
+        if (k == 'opacity') {
+          leader = Math.round(getStyle(obj, k) * 100) || 100;
+        } else {
+          leader = parseInt(getStyle(obj, k)) || 0;
+        };
+        var step = (json[k] - leader) / 10;
+        step = step > 0 ? Math.ceil(step) : Math.floor(step);
+        leader = leader + step;
+        if (k == 'opacity') {
+          obj.style[k] = leader / 100;
+          obj.style['filter'] = 'alpha(opacity=' + leader + ')';
+        } else if (k == 'zIndex') {
+          obj.style['zIndex'] = json[k];
+        } else {
+          obj.style[k] = leader + "px";
+        }
+        if (leader != json[k]) {
+          stoped = false;
+        }
+      };
+      if (stoped) {
+        clearInterval(obj.timers);
+        callback && callback();
+      };
+    }, 50);
+  };
+
+  //获取属性值
+  function getStyle(obj, attr) {
+    if (obj.currentStyle) {
+      return obj.currentStyle[attr];
+    } else {
+      return window.getComputedStyle(obj, null)[attr];
+    };
+  };
+})
+$(function () {
+  //推荐
+  $('.buy_now').mouseenter(function () {
+    $(this).find("a").html(`Buy Now`);
+  });
+  $('.buy_now').mouseleave(function () {
+    $(this).find("a").text($(this).data('price'));
+  });
+  //页面截断
+  $(".container.main.content").css("padding-top","45px");
+  $("#menu_ul>li:nth-child(3)>a").attr({"href":"#","target":""});
+})
+// ]]></script>
